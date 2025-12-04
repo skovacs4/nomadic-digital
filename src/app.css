@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+/* Inter Variable */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+/* Cal Sans */
+@import url("https://cdn.jsdelivr.net/npm/@fontsource/cal-sans@latest/latin.css");
+
+/* Geist Sans */
+@import url("https://cdn.jsdelivr.net/npm/@vercel/geist@latest/dist/fonts/geist-sans.css");
+
+/* Tailwind v4 inline theme */
+@theme {
+  --font-inter: "Inter", sans-serif;
+  --font-calsans: "Cal Sans", sans-serif;
+  --font-geist: "Geist", sans-serif;
+
+  --font-sans: var(--font-inter);
+}
