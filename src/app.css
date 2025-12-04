@@ -1,19 +1,118 @@
 @import "tailwindcss";
 
-/* Inter Variable */
+/* -----------------------------------------------------------
+   FONT IMPORTS
+----------------------------------------------------------- */
+
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
-
-/* Cal Sans */
 @import url("https://cdn.jsdelivr.net/npm/@fontsource/cal-sans@latest/latin.css");
-
-/* Geist Sans */
 @import url("https://cdn.jsdelivr.net/npm/@vercel/geist@latest/dist/fonts/geist-sans.css");
 
-/* Tailwind v4 inline theme */
+/* -----------------------------------------------------------
+   TAILWIND THEME (INLINE CONFIG)
+   Valid for Tailwind v4 – clean comments only
+----------------------------------------------------------- */
+
 @theme {
+  /* Font families */
   --font-inter: "Inter", sans-serif;
   --font-calsans: "Cal Sans", sans-serif;
   --font-geist: "Geist", sans-serif;
-
   --font-sans: var(--font-inter);
+
+  /* Colors (brand palette) */
+  --color-background: #f5f5f5;
+  --color-foreground: #0c0c0c;
+  --color-muted: #6e6e6e;
+  --color-primary: #0d0d0d;
+  --color-secondary: #c6c6c6;
+  --color-accent: #c7a46c;
+
+  /* Semantic color tokens */
+  --color-border: var(--color-secondary);
+  --color-text: var(--color-foreground);
+  --color-heading: var(--color-primary);
+
+  /* Spacing scale (section layout) */
+  --spacing-section: 6rem;
+  --spacing-section-lg: 8rem;
+  --spacing-section-xl: 12rem;
+
+  /* Border radii */
+  --radius-card: 1rem;
+  --radius-button: 0.5rem;
+  --radius-image: 0.75rem;
+
+  /* Shadows */
+  --shadow-card: 0 2px 12px rgba(0,0,0,0.08);
+  --shadow-hover: 0 6px 30px rgba(0,0,0,0.14);
+
+  /* Breakpoints */
+  --breakpoint-xs: 480px;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+
+  /* Transitions */
+  --animate-fast: 150ms ease;
+  --animate-normal: 250ms ease;
+  --animate-smooth: 450ms cubic-bezier(.4,0,.2,1);
 }
+
+/* -----------------------------------------------------------
+   GLOBAL BASE STYLES
+----------------------------------------------------------- */
+
+/* Smooth scrolling everywhere */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Default body styles */
+body {
+  background: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+}
+
+/* Ensure layout takes full width nicely */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Remove tap highlight on mobile */
+a, button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Images should never exceed container width */
+img, video {
+  max-width: 100%;
+  display: block;
+}
+
+/* Optional: hide scrollbars (uncomment if you want that look) */
+/*
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+*/
+
+/* Optional: add nicer focus styles */
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* Prevent text selection on buttons, badges, etc. */
+button, .no-select {
+  user-select: none;
+}
+
