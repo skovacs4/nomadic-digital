@@ -1,26 +1,37 @@
 @import "tailwindcss";
 
 /* -----------------------------------------------------------
-   FONT IMPORTS
+   FONT IMPORTS (Framer-accurate)
 ----------------------------------------------------------- */
 
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
-@import url("https://cdn.jsdelivr.net/npm/@fontsource/cal-sans@latest/latin.css");
-@import url("https://cdn.jsdelivr.net/npm/@vercel/geist@latest/dist/fonts/geist-sans.css");
+/* Inter with optical sizing (same as Framer) */
+@import url("https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap");
+
+/* Cal Sans for display headings */
+@import url("https://cdn.jsdelivr.net/npm/@fontsource/cal-sans/latin.css");
+
+/* Geist Sans */
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+
+
+/* Manrope */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+
+
 
 /* -----------------------------------------------------------
    TAILWIND THEME (INLINE CONFIG)
-   Valid for Tailwind v4 – clean comments only
 ----------------------------------------------------------- */
 
 @theme {
   /* Font families */
-  --font-inter: "Inter", sans-serif;
+  --font-inter: "Inter", "Inter Placeholder", sans-serif;
   --font-calsans: "Cal Sans", sans-serif;
   --font-geist: "Geist", sans-serif;
   --font-sans: var(--font-inter);
 
-  /* Colors (brand palette) */
+  /* Colors */
   --color-background: #f5f5f5;
   --color-foreground: #0c0c0c;
   --color-muted: #6e6e6e;
@@ -28,12 +39,12 @@
   --color-secondary: #c6c6c6;
   --color-accent: #c7a46c;
 
-  /* Semantic color tokens */
+  /* Semantic tokens */
   --color-border: var(--color-secondary);
   --color-text: var(--color-foreground);
   --color-heading: var(--color-primary);
 
-  /* Spacing scale (section layout) */
+  /* Spacing */
   --spacing-section: 6rem;
   --spacing-section-lg: 8rem;
   --spacing-section-xl: 12rem;
@@ -61,43 +72,68 @@
   --animate-smooth: 450ms cubic-bezier(.4,0,.2,1);
 }
 
+
 /* -----------------------------------------------------------
    GLOBAL BASE STYLES
 ----------------------------------------------------------- */
 
-/* Smooth scrolling everywhere */
-html {
+/* Smooth, crisp text everywhere */
+html, body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
   scroll-behavior: smooth;
 }
 
-/* Default body styles */
+/* Default body settings */
 body {
   background: var(--color-background);
   color: var(--color-text);
-  font-family: var(--font-sans);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+  /* font-family: "Inter", "Inter Placeholder", sans-serif;; */
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  letter-spacing: 1.3;
+
   margin: 0;
   padding: 0;
 }
 
-/* Ensure layout takes full width nicely */
-*, *::before, *::after {
-  box-sizing: border-box;
+/* --------------------------
+   Custom Font Classes
+--------------------------- */
+
+.font-inter {
+  font-family: "Inter", "Inter Placeholder", sans-serif;
 }
 
-/* Remove tap highlight on mobile */
+.font-geist {
+  font-family: "Inter", "Inter Placeholder", sans-serif;
+}
+
+.font-calsans {
+  font-family: "Inter", "Inter Placeholder", sans-serif;
+}
+
+
+/* Apply Inter smoothing globally */
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+/* Mobile tap highlight disabled */
 a, button {
   -webkit-tap-highlight-color: transparent;
 }
 
-/* Images should never exceed container width */
+/* Images & videos behave nicely */
 img, video {
   max-width: 100%;
   display: block;
 }
 
-/* Optional: hide scrollbars (uncomment if you want that look) */
+/* Optional: hide scrollbars (commented by default) */
 /*
 ::-webkit-scrollbar {
   width: 0;
@@ -105,14 +141,86 @@ img, video {
 }
 */
 
-/* Optional: add nicer focus styles */
+/* Stronger focus style */
 :focus-visible {
   outline: 2px solid var(--color-accent);
   outline-offset: 2px;
 }
 
-/* Prevent text selection on buttons, badges, etc. */
+/* Avoid text selection on interactive UI */
 button, .no-select {
   user-select: none;
+}
+
+
+/* -----------------------------------------------------------
+   HEADINGS (Framer-style)
+----------------------------------------------------------- */
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+  /* color: var(--color-heading); */
+  
+}
+
+
+/* -----------------------------------------------------------
+   BODY TEXT
+----------------------------------------------------------- */
+
+p, li, a {
+  font-family: "Inter", "Inter Placeholder", sans-serif;
+  letter-spacing: -0.01em;
+  line-height: 1.5;
+}
+
+/* -----------------------------------------------------------
+   BOTTOM EDGE BLUR EFFECT
+   ----------------------------------------------------------*/
+.bottom-edge-blur {
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 150px;
+
+	pointer-events: none;
+	z-index: 50;
+
+	opacity: 0;
+  transition: opacity 300ms ease-out;
+
+	backdrop-filter: blur(14px);
+	-webkit-backdrop-filter: blur(14px);
+
+	mask-image: linear-gradient(
+		to top,
+		rgba(0, 0, 0, 1),
+		rgba(0, 0, 0, 0)
+	);
+	-webkit-mask-image: linear-gradient(
+		to top,
+		rgba(0, 0, 0, 1),
+		rgba(0, 0, 0, 0)
+	);
+}
+
+/* makes text unreadable */
+.bottom-edge-blur::before {
+	content: '';
+	position: absolute;
+	inset: 0;
+
+	background: linear-gradient(
+		to top,
+		rgba(255, 255, 255, 0.55),
+		rgba(255, 255, 255, 0)
+	);
+}
+
+.bottom-edge-blur.is-visible {
+	opacity: 1;
 }
 

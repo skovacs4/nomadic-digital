@@ -1,89 +1,68 @@
-<script>
-	// REMOVE all JS like visible = false
-</script>
-
-<section class="px-2 md:px-2 pt-8 md:pt-12 bg-white">
+<section class="px-2 md:px-0 pt-16">
 	<div
 		class="
 			relative
-			min-h-[85vh]
-			flex flex-col justify-center
-			px-6 md:px-12
-			opacity-0 animate-fadeIn
-			bg-gradient-to-b from-[#d9d9d9] to-[#bfbfbf]
-			rounded-[40px]
+			h-[94vh]
+			rounded-[0px]
 			overflow-hidden
-			shadow-[0_0_80px_-20px_rgba(0,0,0,0.25)]
+			bg-black
+			shadow-[0_0_60px_-20px_rgba(0,0,0,0.35)]
+			flex items-end
+			animate-fadeIn
 		"
 	>
 		<!-- Background Video -->
-		<div class="absolute inset-0 -z-20 overflow-hidden">
-			<video
-				src="videos/hero-video.mp4"
-				autoplay
-				muted
-				loop
-				playsinline
-				preload="auto"
-				class="absolute inset-0 w-full h-full object-cover opacity-60"
-			/>
-		</div>
+		<video
+			src="videos/hero-video.mp4"
+			autoplay
+			muted
+			loop
+			playsinline
+			preload="auto"
+			class="absolute inset-0 w-full h-full object-cover opacity-45"
+		></video>
 
 		<!-- Gradient Overlay -->
-		<div class="absolute inset-0 -z-10 bg-gradient-to-t from-black/40 to-black/10"></div>
+		<div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/45 to-black/10"></div>
 
-		<!-- Grain Placeholder -->
-		<div
-			class="
-				absolute inset-0 -z-10
-				opacity-[0.07]
-				bg-[url('https://placehold.co/600x600/eaeaea/cccccc?text=noise')]
-				mix-blend-soft-light
-				bg-cover bg-center
-			"
-		/>
+		<!-- Grain -->
+		<div class="grain-layer pointer-events-none absolute inset-0"></div>
 
 		<!-- CONTENT -->
-		<div class="relative z-10 max-w-7xl mx-auto space-y-8 py-20">
-			<h1 class="font-calsans text-5xl md:text-7xl leading-[1.1] text-white max-w-4xl">
-				Crafting premium digital experiences for brands that demand quality.
-			</h1>
+		<div class="relative z-10 w-full">
+			<div class="max-w-[1200px] mx-auto px-6 md:px-12 -translate-y-[100%] md:-translate-y-[60%]">
+				<p class="font-inter text-sm text-white/60 mb-6">Nomadic Digital ® — Digital Studio</p>
 
-			<p class="font-inter text-lg md:text-xl text-white/80 max-w-2xl">
-				We design, develop, and launch modern websites and digital products with a focus on clarity,
-				performance, and timeless design.
-			</p>
-
-			<div class="flex items-center gap-4 pt-2">
-				<a
-					href="/contact"
-					class="
-						px-6 py-3 rounded-full
-						bg-white text-black
-						font-geist text-sm uppercase tracking-wide
-						hover:bg-white/90 transition
-					"
+				<h1
+					class="font-calsans text-white text-[56px] sm:text-[72px] md:text-[96px] leading-[1.02] tracking-tight"
 				>
-					Start a Project
-				</a>
+					We build digital experiences
+					<span class="text-white/40"> that actually perform.</span>
+				</h1>
 
-				<a
-					href="/work"
-					class="font-geist text-sm tracking-wide uppercase text-white/90 hover:text-white"
-				>
-					View Work →
-				</a>
+				<p class="mt-8 font-inter text-lg md:text-xl text-white/70 max-w-[560px]">
+					Strategy, design, and development for brands that want clarity, speed, and measurable
+					growth.
+				</p>
+
+				<div class="mt-12 flex items-center gap-6">
+					<a
+						href="/contact"
+						class="inline-flex items-center gap-2 px-7 py-4 rounded-full bg-white text-black font-geist text-sm font-medium hover:bg-white/90 transition"
+					>
+						Start a project →
+					</a>
+					<a
+						href="#selected-work"
+						class="font-geist text-sm text-white/70 hover:text-white transition"
+					>
+						View selected work
+					</a>
+				</div>
 			</div>
 		</div>
+
+		<!-- FOOT NOTE -->
+		<p class="absolute bottom-8 right-10 text-white/30 text-sm">© 2025 Nomadic Digital</p>
 	</div>
 </section>
-
-<style>
-	@keyframes fadeIn {
-		from { opacity: 0; }
-		to { opacity: 1; }
-	}
-	.animate-fadeIn {
-		animation: fadeIn 0.8s ease forwards;
-	}
-</style>
