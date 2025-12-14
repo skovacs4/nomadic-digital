@@ -45,10 +45,11 @@
 	<div class="relative mx-auto rounded-[40px] overflow-hidden bg-black text-white">
 		<!-- Background -->
 		<img
-			src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=2000&auto=format&fit=crop"
-			alt=""
+			src="content/team-working.jpg"
+			alt="People working on laptops"
 			class="absolute inset-0 w-full h-full object-cover opacity-35"
 		/>
+
 		<div class="absolute inset-0 bg-gradient-to-r from-black/85 via-black/70 to-black/50"></div>
 
 		<div

@@ -36,9 +36,10 @@
 				<div>
 					<p class="font-geist md:text-3xl mb-4">Follow</p>
 					<ul class="space-y-3 text-sm text-black/60">
-						<li><a href="#" class="hover:text-black">Instagram</a></li>
-						<li><a href="#" class="hover:text-black">LinkedIn</a></li>
-						<li><a href="#" class="hover:text-black">Twitter / X</a></li>
+						<li><a href="https://www.instagram.com/nomadic.digital.apps/" target="_blank" class="hover:text-black">Instagram</a></li>
+						<li><a href="https://www.facebook.com/profile.php?id=61552759211758" target="_blank" class="hover:text-black">Facebook</a></li>
+						<li><a href="https://www.linkedin.com/company/nomadic-digital-apps/" class="hover:text-black" target="_blank">LinkedIn</a></li>
+						<li><a href="https://x.com/nomadicdigital0" target="_blank" class="hover:text-black">Twitter / X</a></li>
 					</ul>
 				</div>
 			</div>
@@ -58,7 +59,7 @@
 					Start a project
 				</a>
 				<a
-					href="/privacy"
+					href="/legals/privacy-policy"
 					class="text-sm text-black/50 hover:text-black transition"
 				>
 					Privacy Policy

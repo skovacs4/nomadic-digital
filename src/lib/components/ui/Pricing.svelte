@@ -1,66 +1,66 @@
 <script>
-	const plans = [
-		{
-			id: 'starter',
-			name: 'Starter',
-			price: '€1,200',
-			subtitle: 'One-time project',
-			highlight: false,
-			features: [
-				'Website or landing page',
-				'UX/UI design',
-				'Responsive layout',
-				'Basic SEO setup'
-			],
-			cta: {
-				label: 'Get started',
-				href: '/contact',
-				variant: 'primary'
-			}
-		},
-		{
-            id: 'pro',
-            name: 'Pro',
-            price: '€2,500',
-            subtitle: 'Most popular',
-            highlight: true,
-            features: [
-                'Everything in Starter',
-                'Custom integrations',
-                'Performance optimization',
-                'Advanced SEO & analytics',
-                'E-commerce websites (standard)',
-                'Mobile app development (simple apps: ordering, booking, MVP)',
-                'Priority support'
-            ],
-            cta: {
-                label: 'Start project',
-                href: '/contact',
-                variant: 'inverted'
-            }
-        },
-		{
-            id: 'enterprise',
-            name: 'Enterprise',
-            price: 'Custom',
-            subtitle: 'Tailored solution',
-            highlight: false,
-            features: [
-                'Complex platforms & SaaS',
-                'Custom e-commerce solutions',
-                'ERP / API integrations',
-                'Automation workflows',
-                'Advanced mobile applications',
-                'Long-term partnership'
-            ],
-            cta: {
-                label: 'Talk to us',
-                href: '/contact',
-                variant: 'outline'
-            }
-        }
+const plans = [
+	{
+		id: 'starter',
+		name: 'Starter',
+		price: '€1,200',
+		subtitle: 'For early-stage businesses',
+		highlight: false,
+		features: [
+			'Website or landing page',
+			'UX/UI design',
+			'Responsive layout',
+			'Basic SEO setup'
+		],
+		cta: {
+			label: 'Get started',
+			href: '/contact',
+			variant: 'primary'
+		}
+	},
+	{
+		id: 'pro',
+		name: 'Pro',
+		price: '€2,500',
+		subtitle: 'Best value for growing teams',
+		highlight: true,
+		features: [
+			'Everything in Starter',
+			'Custom integrations',
+			'Performance optimization',
+			'Advanced SEO & analytics',
+			'E-commerce websites (standard)',
+			'Mobile app development (simple apps: ordering, booking, MVP)',
+			'Priority support'
+		],
+		cta: {
+			label: 'Start project',
+			href: '/contact',
+			variant: 'inverted'
+		}
+	},
+	{
+		id: 'enterprise',
+		name: 'Enterprise',
+		price: 'Custom',
+		subtitle: 'Built around your business',
+		highlight: false,
+		features: [
+			'Complex platforms & SaaS',
+			'Custom e-commerce solutions',
+			'ERP / API integrations',
+			'Automation workflows',
+			'Advanced mobile applications',
+			'Long-term partnership'
+		],
+		cta: {
+			label: 'Talk to us',
+			href: '/contact',
+			variant: 'outline'
+		}
+	}
+];
 
-	];
 </script>
 
 <section class="mt-2 max-w-[1600px] mx-auto px-6 md:px-12 py-24">

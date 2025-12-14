@@ -7,8 +7,8 @@
 	export let caseStudy = {
 		label: 'Case study',
 		tags: 'UX/UI Redesign, Frontend Optimization.',
-		brand: 'fabrica®',
-		image: '/images/case-fabrica.jpg',
+		brand: 'CONTE',
+		image: '/content/grain-dark.jpg',
 		description: 'From branding to web development and marketing',
 		link: '/projects/fabrica'
 	};

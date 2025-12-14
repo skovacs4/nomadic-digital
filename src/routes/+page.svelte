@@ -77,7 +77,7 @@
 </div>
 
 <!-- PRICING -->
-<div data-aos="zoom-in">
+<div data-aos="zoom-in" id="pricing">
 	<Pricing />
 </div>
 
