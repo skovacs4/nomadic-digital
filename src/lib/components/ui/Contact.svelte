@@ -58,7 +58,7 @@
 			<!-- FORM -->
 			<div class="lg:col-span-4 lg:col-start-2">
 				<div class="bg-white text-black rounded-3xl p-8 shadow-2xl">
-					<p class="font-geist text-xs text-black/60 mb-2">fabrica®</p>
+					<p class="font-geist text-xs text-black/60 mb-2">Nomadic Digital ®</p>
 					<h3 class="font-calsans text-2xl mb-6">Have a project in mind?</h3>
 
 					<form class="space-y-4" on:submit|preventDefault={submit}>
@@ -87,7 +87,7 @@
 							type="submit"
 							disabled={loading}
 							class="w-full rounded-full bg-black text-white py-3 text-sm font-medium
-							hover:bg-black/90 transition disabled:opacity-60"
+							hover:bg-black/90 transition disabled:opacity-60 cursor-pointer"
 						>
 							{loading ? 'Sending…' : 'Send message'}
 						</button>
@@ -137,22 +137,41 @@
 
 				<!-- CONTACT CARD -->
 				<div
-					class="inline-flex items-center gap-4 bg-white text-black rounded-2xl px-5 py-4 shadow-lg"
+					class="
+		group inline-flex items-center gap-4
+		bg-white text-black rounded-2xl px-5 py-4
+		shadow-lg transition-all duration-300
+		hover:-translate-y-1 hover:shadow-2xl
+	"
 				>
 					<img
-						src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=200&auto=format&fit=crop"
-						class="w-14 h-14 rounded-xl object-cover"
+						src="/content/teodora.jpeg"
+						class="
+			w-14 h-14 rounded-xl object-cover
+		"
 						alt=""
 					/>
+
 					<div>
-						<p class="text-xs text-black/60">Team lead</p>
-						<p class="font-geist text-sm font-medium">Lauren Thompson</p>
+						<p class="text-xs text-black/60">Client & Growth Manager</p>
+						<p class="font-geist text-sm font-medium">Teodora Szelyes</p>
 					</div>
-					<button
-						class="ml-4 rounded-full bg-black text-white px-4 py-2 text-xs hover:bg-black/90 transition"
+
+					<a
+						href="https://wa.me/40754209068"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="
+			ml-4 rounded-full bg-black text-white
+			px-4 py-2 text-xs
+			transition-all duration-300
+			hover:bg-black/90 hover:scale-105
+			active:scale-95
+			whitespace-nowrap
+		"
 					>
 						Ask directly
-					</button>
+					</a>
 				</div>
 			</div>
 		</div>

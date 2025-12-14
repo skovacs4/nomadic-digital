@@ -78,7 +78,7 @@ const plans = [
 			<span class="text-black/40"> for growing teams.</span>
 		</h2>
 
-		<p class="mt-6 max-w-xl font-inter text-lg text-black/60">
+		<p class="mt-6 max-w-2xl font-inter text-lg text-black/60">
 			Transparent plans designed to scale with your business. No hidden fees.
 		</p>
 	</div>

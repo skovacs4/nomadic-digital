@@ -3,14 +3,14 @@
 	const { post } = data;
 </script>
 
-<section class="max-w-5xl mx-auto py-12 mb-12 px-4 sm:px-6 lg:px-8">
+<section class="max-w-5xl mx-auto py-36 md:py-48 mb-12 px-4 sm:px-6 lg:px-8">
 	<!-- Breadcrumb -->
 	<div class="text-sm text-gray-400 font-[600] mb-8">
 		<a href="/blog" class="hover:underline">Blog</a> / {post.title}
 	</div>
 
 	<!-- Title -->
-	<h1 class="text-3xl font-semibold text-gray-900 mb-8">{post.title}</h1>
+	<h1 class="font-calsans text-3xl md:text-5xl tracking-tight leading-[1.05] my-6">{post.title}</h1>
 
 	<!-- Author & Date -->
 	<div class="flex justify-between items-center mb-10">

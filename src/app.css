@@ -1,24 +1,10 @@
 @import "tailwindcss";
 
 /* -----------------------------------------------------------
-   FONT IMPORTS (Framer-accurate)
+   FONT IMPORT (SINGLE SOURCE OF TRUTH)
 ----------------------------------------------------------- */
 
-/* Inter with optical sizing (same as Framer) */
-@import url("https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap");
-
-/* Cal Sans for display headings */
-@import url("https://cdn.jsdelivr.net/npm/@fontsource/cal-sans/latin.css");
-
-/* Geist Sans */
-@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
-
-
-/* Manrope */
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
-
-
-
+@import url("https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;500;600;700&display=swap");
 
 /* -----------------------------------------------------------
    TAILWIND THEME (INLINE CONFIG)
@@ -26,9 +12,7 @@
 
 @theme {
   /* Font families */
-  --font-inter: "Inter", "Inter Placeholder", sans-serif;
-  --font-calsans: "Cal Sans", sans-serif;
-  --font-geist: "Geist", sans-serif;
+  --font-inter: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   --font-sans: var(--font-inter);
 
   /* Colors */
@@ -72,12 +56,10 @@
   --animate-smooth: 450ms cubic-bezier(.4,0,.2,1);
 }
 
-
 /* -----------------------------------------------------------
    GLOBAL BASE STYLES
 ----------------------------------------------------------- */
 
-/* Smooth, crisp text everywhere */
 html, body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -85,132 +67,111 @@ html, body {
   scroll-behavior: smooth;
 }
 
-/* Default body settings */
 body {
   background: var(--color-background);
   color: var(--color-text);
 
-  /* font-family: "Inter", "Inter Placeholder", sans-serif;; */
-  font-family: "Inter", sans-serif;
-  font-weight: 600;
-  letter-spacing: 1.3;
+  font-family: var(--font-inter);
+  font-weight: 500;
+  letter-spacing: -0.01em;
 
   margin: 0;
   padding: 0;
 }
 
-/* --------------------------
-   Custom Font Classes
---------------------------- */
+/* -----------------------------------------------------------
+   FONT UTILITY CLASSES (SINGLE FONT, DIFFERENT INTENT)
+----------------------------------------------------------- */
 
 .font-inter {
-  font-family: "Inter", "Inter Placeholder", sans-serif;
+  font-family: var(--font-inter);
 }
 
-.font-geist {
-  font-family: "Inter", "Inter Placeholder", sans-serif;
+.font-display {
+  font-family: var(--font-inter);
+  letter-spacing: -0.04em;
 }
 
-.font-calsans {
-  font-family: "Inter", "Inter Placeholder", sans-serif;
-}
-
-
-/* Apply Inter smoothing globally */
+/* Apply font inheritance cleanly */
 *, *::before, *::after {
   box-sizing: border-box;
   font-family: inherit;
 }
 
-/* Mobile tap highlight disabled */
+/* Disable tap highlight */
 a, button {
   -webkit-tap-highlight-color: transparent;
 }
 
-/* Images & videos behave nicely */
+/* Media defaults */
 img, video {
   max-width: 100%;
   display: block;
 }
 
-/* Optional: hide scrollbars (commented by default) */
-/*
-::-webkit-scrollbar {
-  width: 0;
-  height: 0;
-}
-*/
-
-/* Stronger focus style */
+/* Focus styles */
 :focus-visible {
   outline: 2px solid var(--color-accent);
   outline-offset: 2px;
 }
 
-/* Avoid text selection on interactive UI */
+/* Avoid text selection on UI */
 button, .no-select {
   user-select: none;
 }
 
-
 /* -----------------------------------------------------------
-   HEADINGS (Framer-style)
+   HEADINGS
 ----------------------------------------------------------- */
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   letter-spacing: -0.04em;
   line-height: 1.1;
-  /* color: var(--color-heading); */
-  
 }
-
 
 /* -----------------------------------------------------------
    BODY TEXT
 ----------------------------------------------------------- */
 
-p, li, a {
-  font-family: "Inter", "Inter Placeholder", sans-serif;
+p, li, a, span {
   letter-spacing: -0.01em;
   line-height: 1.5;
+  font-weight: 600;
 }
 
 /* -----------------------------------------------------------
    BOTTOM EDGE PURE BLUR EFFECT
-   ----------------------------------------------------------*/
+----------------------------------------------------------- */
+
 .bottom-edge-blur {
-	position: fixed;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	height: 150px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 150px;
 
-	pointer-events: none;
-	z-index: 50;
+  pointer-events: none;
+  z-index: 50;
 
-	opacity: 0;
-	transition: opacity 300ms ease-out;
+  opacity: 0;
+  transition: opacity 300ms ease-out;
 
-	/* REAL blur only */
-	backdrop-filter: blur(12px);
-	-webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 
-	/* Soft fade upwards */
-	mask-image: linear-gradient(
-		to top,
-		rgba(0, 0, 0, 1),
-		rgba(0, 0, 0, 0)
-	);
-	-webkit-mask-image: linear-gradient(
-		to top,
-		rgba(0, 0, 0, 1),
-		rgba(0, 0, 0, 0)
-	);
+  mask-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0)
+  );
+  -webkit-mask-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0)
+  );
 }
 
 .bottom-edge-blur.is-visible {
-	opacity: 1;
+  opacity: 1;
 }
-
-

@@ -24,7 +24,7 @@
 
 		<!-- Desktop nav -->
 		<nav class="hidden md:flex items-center gap-12">
-			<a class="font-inter text-lg font-bold text-black hover:opacity-60" href="/work">
+			<a class="font-inter text-lg font-bold text-black hover:opacity-60" href="/portfolio">
 				Work
 			</a>
 			<a class="font-inter text-lg font-bold text-black hover:opacity-60" href="/services">

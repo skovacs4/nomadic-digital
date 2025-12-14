@@ -91,7 +91,7 @@
 
 				<div>
 					<p class="font-geist text-sm mb-1">Response time</p>
-					<p class="font-inter text-black/60">Usually within 24 hours</p>
+					<p class="font-inter text-black/60">Usually within 48 hours</p>
 				</div>
 			</div>
 		</div>

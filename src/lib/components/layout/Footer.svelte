@@ -1,4 +1,4 @@
-<footer class="w-full border-t border-black/5">
+<footer class="w-full border-t border-black/5 font-bold">
 	<div class="max-w-[1600px] mx-auto px-6 md:px-12 py-24">
 		<!-- TOP -->
 		<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 mb-20">
@@ -17,7 +17,7 @@
 					<p class="font-geist md:text-3xl mb-4">Company</p>
 					<ul class="space-y-3 text-sm text-black/60">
 						<li><a href="/about" class="hover:text-black">About</a></li>
-						<li><a href="/work" class="hover:text-black">Work</a></li>
+						<li><a href="/portfolio" class="hover:text-black">Work</a></li>
 						<li><a href="/pricing" class="hover:text-black">Pricing</a></li>
 						<li><a href="/contact" class="hover:text-black">Contact</a></li>
 					</ul>

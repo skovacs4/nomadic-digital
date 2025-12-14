@@ -8,8 +8,8 @@
 <section class="w-full px-6 md:px-0 pt-24 pb-10 bg-[var(--color-background)]">
 	<div class="max-w-8xl mx-auto relative">
 
-		<!-- LEFT COUNT -->
-		<p class="text-sm text-black/50 absolute left-0 top-2 md:top-3">
+		<!-- LEFT LABEL -->
+		<p class="text-sm font-bold text-black/50 absolute left-0 top-2 md:top-3">
 			({count})
 		</p>
 
@@ -28,6 +28,7 @@
 				absolute right-0 top-4
 				font-inter text-sm text-black/60
 				max-w-xs leading-relaxed
+				font-bold
 			"
 		>
 			{description}

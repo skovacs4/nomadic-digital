@@ -19,10 +19,10 @@
 				<div class="w-2 h-2 rounded-full bg-black"></div>
 			</div>
 
-			<h2 class="font-inter text-sm font-bold text-black tracking-tight">Our clients</h2>
+			<h2 class="font-inter text-base font-bold text-black tracking-tight">Our clients</h2>
 		</div>
 
-		<p class="font-inter text-sm text-black tracking-wide">Selected client partnerships</p>
+		<p class="font-inter text-sm text-black/50 tracking-wide font-bold">(Selected client partnerships)</p>
 	</div>
 
 	<!-- LOGOS GRID -->
