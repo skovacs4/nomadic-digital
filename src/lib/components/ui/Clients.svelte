@@ -1,16 +1,16 @@
 <script>
 	// Placeholder logos in clean 300 × 120 ratio
 	export let logos = [
-		"https://placehold.co/300x120/FFFFFF/000000?text=Logo+1",
-		"https://placehold.co/300x120/FFFFFF/000000?text=Logo+2",
-		"https://placehold.co/300x120/FFFFFF/000000?text=Logo+3",
-		"https://placehold.co/300x120/FFFFFF/000000?text=Logo+4",
-		"https://placehold.co/300x120/FFFFFF/000000?text=Logo+5",
-		"https://placehold.co/300x120/FFFFFF/000000?text=Logo+6"
+		"/logos/clients/softone.png",
+		"/logos/clients/kronburg.png",
+		"/logos/clients/filicori.png",
+		"/logos/clients/conte.png",
+		"/logos/clients/natscent.png",
+		"/logos/clients/qbs.png"
 	];
 </script>
 
-<section class="px-6 md:px-12 py-4 md:py-12 md:my-24 bg-[#f5f5f5] ">
+<section class="px-6 md:px-12 py-4 md:py-12 md:my-24 bg-[#f5f5f5]">
 	<!-- TOP ROW -->
 	<div class="flex items-center justify-start gap-24 mb-10">
 		<!-- LEFT ICON + TITLE -->
@@ -22,8 +22,7 @@
 			<h2 class="font-inter text-sm font-bold text-black tracking-tight">Our clients</h2>
 		</div>
 
-		<!-- DATE -->
-		<p class="font-inter text-sm text-black tracking-wide">(2016–25©)</p>
+		<p class="font-inter text-sm text-black tracking-wide">Selected client partnerships</p>
 	</div>
 
 	<!-- LOGOS GRID -->

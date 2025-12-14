@@ -1,40 +1,40 @@
 <script>
     export let projects = [
         {
-            title: "Boltshift.",
+            title: "CONTE",
             year: 2025,
-            image: "https://placehold.co/1200x800/eee/222?text=Boltshift",
-            logo: "https://placehold.co/200x80/ffffff/000000?text=Boltshift"
+            image: "portfolio/conte/cover-3.png",
+            logo: "/logos/clients/conte-white.png"
         },
         {
-            title: "Ephemeral.",
+            title: "Locallia",
             year: 2025,
-            image: "https://placehold.co/1200x800/eee/222?text=Ephemeral",
-            logo: "https://placehold.co/200x80/ffffff/000000?text=Ephemeral"
+            image: "/portfolio/locallia/abstract-skeleton.jpg",
+            logo: "/portfolio/locallia/locallia-logo-white.png"
         },
         {
-            title: "Powersurge.",
-            year: 2024,
-            image: "https://placehold.co/1200x800/eee/222?text=Powersurge",
-            logo: "https://placehold.co/200x80/ffffff/000000?text=Powersurge"
+            title: "Kronburg",
+            year: 2025,
+            image: "/portfolio/kronburg/cover.png",
+            logo: "/logos/clients/kronburg-white.png"
         },
         {
-            title: "Mastermail.",
-            year: 2024,
-            image: "https://placehold.co/1200x800/eee/222?text=Mastermail",
-            logo: "https://placehold.co/200x80/ffffff/000000?text=Mastermail"
+            title: "Fluxum",
+            year: 2025,
+            image: "/portfolio/fluxum/fight-style.jpg",
+            logo: "/portfolio/fluxum/fluxum.png"
         },
         {
-            title: "WarpSpeed.",
-            year: 2023,
-            image: "https://placehold.co/1200x800/eee/222?text=WarpSpeed",
-            logo: "https://placehold.co/200x80/ffffff/000000?text=WarpSpeed"
+            title: "Natscent",
+            year: 2025,
+            image: "/portfolio/natscent/cover-2.jpg",
+            logo: "/logos/clients/natscent-logo-white.png"
         },
         {
-            title: "CloudWatch.",
+            title: "Viorica Cosmetic",
             year: 2020,
-            image: "https://placehold.co/1200x800/eee/222?text=CloudWatch",
-            logo: "https://placehold.co/200x80/ffffff/000000?text=CloudWatch"
+            image: "/portfolio/viorica/cover.jpg",
+            logo: "/portfolio/viorica/logo.png"
         }
     ];
 </script>

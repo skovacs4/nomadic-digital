@@ -5,14 +5,14 @@
 	export let subtitle =
 		"No fluff, just results. Thoughtful design and tools that make your work easier. We focus on smart design and useful features, project after project.";
 
-	export let image = "https://placehold.co/1000x1200?text=Portrait";
+	export let image = "/content/portrait-left-bar.png";
 
 	export let stats = [
 		{
-			value: "50+",
+			value: "20+",
 			index: "01",
 			label: "Successful projects completed",
-			desc: "We've delivered 50+ projects that help companies generate real results.",
+			desc: "Websites, e-commerce platforms, and complex integrations shipped for real businesses.",
 			logos: [
 				"https://placehold.co/50x20?text=A",
 				"https://placehold.co/50x20?text=B",
@@ -22,12 +22,12 @@
 		{
 			value: "95%",
 			index: "02",
-			label: "Customer satisfaction rate",
-			desc: "",
+			label: "Client satisfaction",
+			desc: "Long-term partnerships built on clear communication and reliable delivery.",
 			logos: [
-				"https://placehold.co/50x20?text=A",
-				"https://placehold.co/50x20?text=B",
-				"https://placehold.co/50x20?text=C"
+				"/logos/clients/kron-imobiliare.png",
+				"/logos/clients/kronburg.png",
+				"/logos/clients/adedari.png"
 			]
 		}
 	];
@@ -145,7 +145,7 @@
 
 			<!-- STATS GRID -->
 			<div class="grid grid-cols-1 md:grid-cols-2 gap-1">
-				{#each stats as s}
+				{#each stats as s, i}
 					<div class="bg-white rounded-3xl p-8 shadow-sm">
 						<!-- Top row -->
 						<div class="flex items-start justify-between mb-6">
@@ -163,12 +163,14 @@
 							</p>
 						{/if}
 
-						<!-- Logos -->
-						<div class="flex items-center gap-4 opacity-70">
-							{#each s.logos as l}
-								<img src={l} alt="logo" class="w-14 h-auto object-contain" />
-							{/each}
-						</div>
+						<!-- Logos: ONLY show on second card -->
+						{#if i === 1}
+							<div class="flex items-center gap-4 opacity-70">
+								{#each s.logos as l}
+									<img src={l} alt="client logo" class="w-14 h-auto object-contain" />
+								{/each}
+							</div>
+						{/if}
 					</div>
 				{/each}
 			</div>

@@ -177,7 +177,7 @@ p, li, a {
 }
 
 /* -----------------------------------------------------------
-   BOTTOM EDGE BLUR EFFECT
+   BOTTOM EDGE PURE BLUR EFFECT
    ----------------------------------------------------------*/
 .bottom-edge-blur {
 	position: fixed;
@@ -190,11 +190,13 @@ p, li, a {
 	z-index: 50;
 
 	opacity: 0;
-  transition: opacity 300ms ease-out;
+	transition: opacity 300ms ease-out;
 
-	backdrop-filter: blur(14px);
-	-webkit-backdrop-filter: blur(14px);
+	/* REAL blur only */
+	backdrop-filter: blur(12px);
+	-webkit-backdrop-filter: blur(12px);
 
+	/* Soft fade upwards */
 	mask-image: linear-gradient(
 		to top,
 		rgba(0, 0, 0, 1),
@@ -207,20 +209,8 @@ p, li, a {
 	);
 }
 
-/* makes text unreadable */
-.bottom-edge-blur::before {
-	content: '';
-	position: absolute;
-	inset: 0;
-
-	background: linear-gradient(
-		to top,
-		rgba(255, 255, 255, 0.55),
-		rgba(255, 255, 255, 0)
-	);
-}
-
 .bottom-edge-blur.is-visible {
 	opacity: 1;
 }
+
 

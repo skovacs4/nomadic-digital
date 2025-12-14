@@ -1,5 +1,5 @@
 <script>
-	export let count = 0;
+	export let count = "";
 	export let title = "Projects.";
 	export let year = 2025;
 	export let description = "";

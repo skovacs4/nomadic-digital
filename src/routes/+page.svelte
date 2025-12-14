@@ -30,7 +30,7 @@
 <!-- PROJECTS HEADER -->
 <div id="selected-work" class="mt-16 max-w-[1500px] mx-auto px-6 md:px-12" data-aos="fade-up">
 	<SectionHeader
-		count={27}
+		count={"Selected work"}
 		title="Projects"
 		description="We’ve helped businesses across industries achieve their goals. Here are some of our recent projects."
 	/>
