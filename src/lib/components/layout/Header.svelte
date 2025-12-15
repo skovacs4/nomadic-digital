@@ -1,61 +1,166 @@
 <script>
+	import { page } from '$app/stores';
+
 	let mobileOpen = false;
 	let scrolled = false;
+	const headerActive = scrolled || mobileOpen;
+
+
+	// detect portfolio detail page
+	$: isPortfolioDetail = $page.url.pathname.startsWith('/portfolio/')
+		&& $page.url.pathname !== '/portfolio';
 
 	if (typeof window !== "undefined") {
 		window.addEventListener("scroll", () => {
 			scrolled = window.scrollY > 10;
 		});
 	}
+
+	function closeMobileMenu() {
+		mobileOpen = false;
+	}
+
 </script>
+
+{#if mobileOpen}
+	<!-- svelte-ignore a11y_click_events_have_key_events -->
+	<!-- svelte-ignore a11y_no_static_element_interactions -->
+	<div
+		class="
+			fixed inset-0 z-40
+			backdrop-blur-[2px]
+			transition-opacity duration-300
+			{isPortfolioDetail ? 'bg-black/40' : 'bg-black/20'}
+		"
+		on:click={closeMobileMenu}
+	></div>
+{/if}
+
 
 <header
 	class="
 		fixed top-0 left-0 w-full z-50
 		transition-all duration-300
 	"
-	class:bg-[var(--color-background)]={scrolled}
-	class:backdrop-blur-md={scrolled}
-	class:shadow-sm={scrolled}
+	class:bg-[var(--color-background)]={(scrolled || mobileOpen) && !isPortfolioDetail}
+	class:bg-black={(scrolled || mobileOpen) && isPortfolioDetail}
+	class:backdrop-blur-md={scrolled || mobileOpen}
+	class:shadow-sm={scrolled || mobileOpen}
 >
 	<div class="mx-auto px-6 py-0 flex items-center justify-between gap-12">
 		<!-- Logo -->
-		<a href="/" class="font-calsans text-[18px] tracking-tight text-black font-100"> <img src="/logos/landscape-minimal-logo.png" class="" alt="Landscape Nomadic Digital Logo"> </a>
+		<a href="/" class="font-calsans text-[18px] tracking-tight">
+			<img
+				src={isPortfolioDetail
+					? '/logos/landscape-minimal-logo-white.png'
+					: '/logos/landscape-minimal-logo.png'}
+				alt="Nomadic Digital Logo"
+			/>
+		</a>
 
 		<!-- Desktop nav -->
-		<nav class="hidden md:flex items-center gap-12">
-			<a class="font-inter text-lg font-bold text-black hover:opacity-60" href="/portfolio">
+		<nav class="hidden [@media(min-width:900px)]:flex items-center gap-12">
+			<a
+				class="
+		font-inter text-lg font-bold transition
+		{isPortfolioDetail ? 'text-white hover:opacity-70' : 'text-black hover:opacity-60'}
+	"
+				href="/portfolio"
+			>
 				Work
 			</a>
-			<a class="font-inter text-lg font-bold text-black hover:opacity-60" href="/services">
+
+			<a
+				class="
+		font-inter text-lg font-bold transition
+		{isPortfolioDetail ? 'text-white hover:opacity-70' : 'text-black hover:opacity-60'}
+	"
+				href="/about"
+			>
+				About Us
+			</a>
+
+			<a
+				class="
+		font-inter text-lg font-bold transition
+		{isPortfolioDetail ? 'text-white hover:opacity-70' : 'text-black hover:opacity-60'}
+	"
+				href="/services"
+			>
 				Services
 			</a>
-			<a class="font-inter text-lg font-bold text-black hover:opacity-60" href="/about">
-				About
-			</a>
-			<a class="font-inter text-lg font-bold text-black hover:opacity-60" href="/contact">
+
+			<a
+				class="
+		font-inter text-lg font-bold transition
+		{isPortfolioDetail ? 'text-white hover:opacity-70' : 'text-black hover:opacity-60'}
+	"
+				href="/contact"
+			>
 				Contact
 			</a>
 
-			<!-- Availability badge identical to Fabrica -->
-			<span
+			<a
+				href="/contact"
 				class="
-					font-inter text-[12px] font-medium tracking-wide
-					px-3 py-1 rounded-full
-					bg-black text-white
-				"
+		group relative inline-flex items-center gap-3
+		px-4 py-2 rounded-full
+		text-sm font-inter font-semibold
+		transition-all duration-300
+		overflow-hidden
+		{isPortfolioDetail
+					? scrolled
+						? 'bg-white text-black'
+						: 'bg-white/90 text-black'
+					: 'bg-black text-white'}
+	"
 			>
-				AVAILABLE
-			</span>
+				<span class="relative z-10">Book a call</span>
+
+				<!-- Animated dot -->
+				<span
+					class="
+			relative z-10 w-2 h-2 rounded-full
+			bg-current
+			transition-transform duration-300
+			group-hover:translate-x-1
+		"
+				></span>
+
+				<!-- Subtle hover glow -->
+				<span
+					class="
+			absolute inset-0 rounded-full
+			opacity-0 group-hover:opacity-100
+			transition-opacity duration-300
+			{isPortfolioDetail ? 'bg-black/5' : 'bg-white/10'}
+		"
+				></span>
+			</a>
 		</nav>
 
 		<!-- Mobile menu button (Fabrica identical) -->
+		<!-- svelte-ignore a11y_consider_explicit_label -->
 		<button
-			class="md:hidden flex flex-col gap-[6px] p-2"
+			class="[@media(min-width:900px)]:hidden relative w-10 h-10 flex items-center justify-center"
 			on:click={() => (mobileOpen = !mobileOpen)}
+			aria-label="Toggle menu"
 		>
-			<div class="w-7 h-[2px] bg-black"></div>
-			<div class="w-7 h-[2px] bg-black"></div>
+			<span
+				class="
+			absolute w-7 h-[2px] transition-all duration-300 ease-out
+			{isPortfolioDetail ? 'bg-white' : 'bg-black'}
+			{mobileOpen ? 'rotate-45' : '-translate-y-[5px]'}
+		"
+			></span>
+
+			<span
+				class="
+			absolute w-7 h-[2px] transition-all duration-300 ease-out
+			{isPortfolioDetail ? 'bg-white' : 'bg-black'}
+			{mobileOpen ? '-rotate-45' : 'translate-y-[5px]'}
+		"
+			></span>
 		</button>
 	</div>
 
@@ -63,26 +168,42 @@
 	{#if mobileOpen}
 		<div
 			class="
-				md:hidden px-6 py-6 space-y-6
-				bg-[var(--color-background)]
-				
-				animate-fadeDown 
-			"
+			[@media(min-width:900px)]:hidden px-10 py-10 space-y-6
+			transition-colors duration-300
+			animate-fadeDown z-50 relative
+			{isPortfolioDetail ? 'bg-black text-white' : 'bg-[var(--color-background)] text-black'}
+		"
 		>
-			<a href="/work" class="block font-inter text-xl text-black ">Work</a>
-			<a href="/services" class="block font-inter text-xl text-black">Services</a>
-			<a href="/about" class="block font-inter text-xl text-black">About</a>
-			<a href="/contact" class="block font-inter text-xl text-black">Contact</a>
+			<a href="/portfolio" on:click={closeMobileMenu} class="block font-inter text-xl font-bold">
+				Work
+			</a>
 
-			<span
+			<a href="/services" on:click={closeMobileMenu} class="block font-inter text-xl font-bold">
+				Services
+			</a>
+
+			<a href="/about" on:click={closeMobileMenu} class="block font-inter text-xl font-bold">
+				About
+			</a>
+
+			<a href="/contact" on:click={closeMobileMenu} class="block font-inter text-xl font-bold">
+				Contact
+			</a>
+
+			<a
+				href="/contact"
+				on:click={closeMobileMenu}
 				class="
-					font-inter text-xs uppercase tracking-wider
-					inline-block px-3 py-1 rounded-full
-					bg-black text-white
-				"
+		inline-flex items-center gap-3
+		w-fit px-4 py-2 rounded-full
+		text-sm font-inter font-semibold
+		transition-all duration-300 mt-4
+		{isPortfolioDetail ? 'bg-white text-black' : 'bg-black text-white'}
+	"
 			>
-				AVAILABLE
-			</span>
+				Book a call
+				<span class="w-2 h-2 rounded-full bg-current"></span>
+			</a>
 		</div>
 	{/if}
 </header>
@@ -96,4 +217,9 @@
 	.animate-fadeDown {
 		animation: fadeDown 0.2s ease-out;
 	}
+
+	header {
+	backdrop-filter: saturate(180%) blur(3px);
+}
+
 </style>

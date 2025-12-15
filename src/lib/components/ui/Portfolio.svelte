@@ -1,51 +1,17 @@
 <script>
-    export let projects = [
-        {
-            title: "CONTE",
-            year: 2025,
-            image: "portfolio/conte/cover-3.png",
-            logo: "/logos/clients/conte-white.png"
-        },
-        {
-            title: "Locallia",
-            year: 2025,
-            image: "/portfolio/locallia/abstract-skeleton.jpg",
-            logo: "/portfolio/locallia/locallia-logo-white.png"
-        },
-        {
-            title: "Kronburg",
-            year: 2025,
-            image: "/portfolio/kronburg/cover.png",
-            logo: "/logos/clients/kronburg-white.png"
-        },
-        {
-            title: "Fluxum",
-            year: 2025,
-            image: "/portfolio/fluxum/fight-style.jpg",
-            logo: "/portfolio/fluxum/fluxum.png"
-        },
-        {
-            title: "Natscent",
-            year: 2025,
-            image: "/portfolio/natscent/cover-2.jpg",
-            logo: "/logos/clients/natscent-logo-white.png"
-        },
-        {
-            title: "Viorica Cosmetic",
-            year: 2020,
-            image: "/portfolio/viorica/cover.jpg",
-            logo: "/portfolio/viorica/logo.png"
-        }
-    ];
+	import { projects } from '$lib/data/portfolio.js';
+
 </script>
 
 <section class="px-6 md:px-0 py-24 bg-[var(--color-background)]">
 	<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
 		{#each projects as p}
-			<div class="group space-y-3 cursor-pointer">
+			<a href={`/portfolio/${p.slug}`} class="group space-y-3 cursor-pointer block">
 				<!-- HEADER -->
 				<div class="flex items-center justify-between bg-white rounded-xl px-5 py-3 shadow-sm">
-					<p class="font-inter font-semibold text-black text-sm">{p.title}</p>
+					<p class="font-inter font-semibold text-black text-lg">
+						{p.title}
+					</p>
 
 					<!-- Traffic lights -->
 					<div
@@ -67,7 +33,7 @@
 				<div class="relative bg-white rounded-3xl overflow-hidden shadow-sm">
 					<!-- Background image -->
 					<img
-						src={p.image}
+						src={p.thumbnail}
 						alt={p.title}
 						class="
 							absolute inset-0 w-full h-full object-cover
@@ -78,17 +44,17 @@
 						"
 					/>
 
-					<!-- Centered logo (STAYS SHARP) -->
+					<!-- Centered logo -->
 					<div
 						class="
-						absolute inset-0 flex items-center justify-center
-						transition-all duration-500
-						pointer-events-none
-					"
+							absolute inset-0 flex items-center justify-center
+							transition-all duration-500
+							pointer-events-none
+						"
 					>
 						<img
-							src={p.logo}
-							alt="{p.title} logo"
+							src={p.hero.logo}
+							alt={`${p.title} logo`}
 							class="
 								w-[150px] md:w-[170px]
 								transition-all duration-500
@@ -99,10 +65,10 @@
 						/>
 					</div>
 
-					<!-- Spacer box for card height -->
+					<!-- Spacer -->
 					<div class="invisible w-full h-[360px] md:h-[440px]"></div>
 				</div>
-			</div>
+			</a>
 		{/each}
 	</div>
 </section>

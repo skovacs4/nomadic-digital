@@ -1,6 +1,6 @@
 <script lang="ts">
 	import '../app.css';
-	import favicon from '$lib/assets/favicon.svg';
+	import favicon from '$lib/assets/favicon.png';
 	import Header from '$lib/components/layout/Header.svelte';
 	import Footer from '$lib/components/layout/Footer.svelte';
 
@@ -12,7 +12,7 @@
 	let scrollY = $state<number>(0);
 
 	// ✅ derived visibility state (NO `$:`)
-	const showBlur = $derived(scrollY > 1500);
+	const showBlur = $derived(scrollY > 300);
 
 	onMount(() => {
 		AOS.init({

@@ -4,7 +4,8 @@
 
 
 <div>
-<h2 class="text-4xl md:text-8xl tracking-tight leading-[1.05] max-w-[1600px] mx-auto px-6 md:px-12 py-48 text-center">
+<!-- svelte-ignore element_implicitly_closed -->
+<h2 class="text-4xl md:text-8xl tracking-tight leading-[1.05] max-w-[1600px] mx-auto px-6 md:px-12 py-48 text-center" data-aos="fade-up">
     Our Portfolio
 <Portfolio />
 </div>

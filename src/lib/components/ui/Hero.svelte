@@ -1,15 +1,15 @@
 <section class="px-2 md:px-0 pt-16">
 	<div
 		class="
-			relative
-			h-[94vh]
-			rounded-[0px]
-			overflow-hidden
-			bg-black
-			shadow-[0_0_60px_-20px_rgba(0,0,0,0.35)]
-			flex items-end
-			animate-fadeIn
-		"
+		relative
+		h-[94vh]
+		rounded-[0px]
+		overflow-hidden
+		bg-black
+		shadow-[0_0_60px_-20px_rgba(0,0,0,0.35)]
+		flex items-end
+		animate-[fadeIn_1.2s_ease-out]
+	"
 	>
 		<!-- Background Video -->
 		<video

@@ -45,7 +45,7 @@
 	<div class="relative mx-auto rounded-[40px] overflow-hidden bg-black text-white">
 		<!-- Background -->
 		<img
-			src="content/team-working.jpg"
+			src="/content/team-working.jpg"
 			alt="People working on laptops"
 			class="absolute inset-0 w-full h-full object-cover opacity-35"
 		/>

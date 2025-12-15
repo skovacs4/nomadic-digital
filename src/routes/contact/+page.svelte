@@ -34,10 +34,12 @@
 	}
 </script>
 
-<section class=" mx-auto px-6 md:px-0 py-24">
+<section class=" mx-auto py-24">
 	<!-- TOP BANNER -->
 	<div
 		class="relative mb-24 overflow-hidden bg-black text-white text-center min-h-[500px] flex items-center justify-center"
+		data-aos="fade"
+		data-aos-duration="300"
 	>
 		<!-- Background image -->
 		<img
@@ -50,22 +52,28 @@
 		<div class="absolute inset-0 bg-gradient-to-br from-black/80 via-black/60 to-black/40"></div>
 
 		<!-- Content -->
-		<div class="relative z-10 px-8 md:px-16 max-w-">
+		<div class="relative z-10 px-8 md:px-16 max-w-" data-aos="fade-up" data-aos-delay="50">
 			<p class="font-geist text-sm text-white/70 mb-4">Start a conversation</p>
 
-			<h2 class="font-calsans text-5xl md:text-6xl leading-[1.05] tracking-tight mb-6">
+			<h2
+				class="font-calsans text-5xl md:text-6xl leading-[1.05] tracking-tight mb-6"
+				data-aos="fade-up"
+				data-aos-delay="250"
+			>
 				Let’s build something
 				<span class="text-white/50"> meaningful.</span>
 			</h2>
 
-			<p class="font-inter text-lg text-white/70">
+			<p class="font-inter text-lg text-white/70" data-aos="fade-up" data-aos-delay="150">
 				Websites, e-commerce, mobile apps, and growth strategies — built with clarity, performance,
 				and long-term value in mind.
 			</p>
 		</div>
 	</div>
 
-	<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start max-w-[1600px] mx-auto">
+	<div
+		class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start max-w-[1600px] mx-auto px-6 md:px-12"
+	>
 		<!-- LEFT CONTENT -->
 		<div class="lg:col-span-5">
 			<div class="flex items-center gap-3 mb-6">
@@ -98,14 +106,20 @@
 
 		<!-- FORM -->
 		<div class="lg:col-span-6 lg:col-start-7">
-			<div class="bg-white border border-black/5 rounded-3xl p-8 md:p-10">
+			<div
+				class="bg-white border border-black/5 rounded-3xl p-8 md:p-10"
+				data-aos="fade-up"
+				data-aos-delay="250"
+				data-aos-duration="700"
+			>
 				<form class="space-y-6" on:submit|preventDefault={submit}>
 					<div>
 						<label class="block font-inter text-sm mb-2">Name</label>
 						<input
 							bind:value={form.name}
 							required
-							class="w-full rounded-xl bg-black/5 px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-black"
+							class="w-full rounded-xl bg-black/5 px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-black transition-all duration-200 focus:scale-[1.01]
+"
 							placeholder="Your name"
 						/>
 					</div>
@@ -116,7 +130,8 @@
 							type="email"
 							bind:value={form.email}
 							required
-							class="w-full rounded-xl bg-black/5 px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-black"
+							class="w-full rounded-xl bg-black/5 px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-black transition-all duration-200 focus:scale-[1.01]
+"
 							placeholder="you@email.com"
 						/>
 					</div>
@@ -127,7 +142,8 @@
 							rows="5"
 							bind:value={form.message}
 							required
-							class="w-full rounded-xl bg-black/5 px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-black resize-none"
+							class="w-full rounded-xl bg-black/5 px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-black resize-none transition-all duration-200 focus:scale-[1.01]
+"
 							placeholder="Tell us a bit about your project"
 						></textarea>
 					</div>
@@ -135,17 +151,27 @@
 					<button
 						type="submit"
 						disabled={loading}
-						class="w-full rounded-full bg-black text-white py-3 text-sm font-medium hover:bg-black/90 transition disabled:opacity-60"
+						class="
+		w-full rounded-full bg-black text-white py-3 text-sm font-medium cursor-pointer
+		transition-all duration-200
+		hover:bg-black/90
+		active:scale-[0.98]
+		disabled:opacity-60
+	"
 					>
 						{loading ? 'Sending…' : 'Send message'}
 					</button>
 
 					{#if success}
-						<p class="text-sm text-green-600">Message sent successfully. We’ll be in touch.</p>
+						<p class="text-sm text-green-600" data-aos="fade-in">
+							Message sent successfully. We’ll be in touch.
+						</p>
 					{/if}
 
 					{#if error}
-						<p class="text-sm text-red-600">{error}</p>
+						<p class="text-sm text-red-600" data-aos="fade-in">
+							{error}
+						</p>
 					{/if}
 
 					<p class="text-[11px] text-black/40">
