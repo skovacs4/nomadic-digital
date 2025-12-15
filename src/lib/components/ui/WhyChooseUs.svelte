@@ -101,14 +101,20 @@
 					<a
 						href="/contact"
 						class="
-					mt-4 inline-flex items-center gap-2 px-5 py-2
-					rounded-full bg-white text-black
-					font-geist text-sm
-					hover:bg-white/90 transition
-				"
+		mt-4 group/cta inline-flex items-center gap-2 px-5 py-2
+		rounded-full bg-white text-black
+		font-geist text-sm
+		hover:bg-white/90 transition-all duration-300
+	"
 					>
 						Let’s talk
-						<span class="w-2 h-2 rounded-full bg-black"></span>
+						<span
+							class="
+			w-2 h-2 rounded-full bg-black
+			transition-transform duration-300 ease-out
+			group-hover/cta:translate-x-1
+		"
+						></span>
 					</a>
 				</div>
 

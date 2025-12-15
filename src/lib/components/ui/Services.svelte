@@ -7,67 +7,86 @@
 
 	const services = [
 		{
-			id: '001',
-			title: 'Web design and development',
+			id: '01',
+			title: 'Web & E-commerce Platforms',
 			description:
-				'Modern, responsive, and user-friendly websites designed to engage visitors and drive conversions.',
-			image:
-				'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80',
+				'Fast, scalable websites and e-commerce platforms designed for performance, conversion, and long-term growth. Built cleanly, without unnecessary layers.',
+			image: '/content/services/mockup-open-laptop.jpg',
 			categories: [
-				'Packaging design',
-				'Logo design',
-				'Rebranding',
-				'Typography',
-				'Guidelines',
-				'Visual identity'
+				'Custom websites',
+				'E-commerce (B2C / B2B)',
+				'Performance optimization',
+				'SEO-ready architecture',
+				'Headless CMS',
+				'Conversion-focused UX'
 			]
 		},
 		{
-			id: '002',
-			title: 'Social media marketing',
+			id: '02',
+			title: 'SaaS & Custom Systems',
 			description:
-				'Strategic, data-driven social media campaigns designed to build brand awareness and connect with your audience.',
-			image:
-				'https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=800&q=80',
+				'Robust internal tools, SaaS platforms, and dashboards where reliability, security, and maintainability matter more than trends.',
+			image: '/content/services/saas-code-2.jpg',
 			categories: [
-				'Content strategy',
-				'Community management',
-				'Paid advertising',
-				'Analytics & reporting',
-				'Platform optimization'
+				'SaaS architecture',
+				'Admin dashboards',
+				'ERP Integrations',
+				'Stock Sync & Management',
+				'Role-based access',
+				'Payments & subscriptions',
+				'API integrations',
+				'Scalable backends'
 			]
 		},
 		{
-			id: '003',
-			title: 'SEO and content marketing',
+			id: '03',
+			title: 'UX, Brand & Product Design',
 			description:
-				'Search optimization and high-quality content that increases visibility, drives traffic, and builds authority.',
-			image:
-				'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80',
+				'Design systems and interfaces that remove friction, communicate clearly, and feel intentional across every touchpoint.',
+			image: '/content/services/design.jpg',
 			categories: [
-				'Keyword research',
-				'On-page optimization',
-				'Content creation',
-				'Link building'
+				'UX & UI design',
+				'Product structure',
+				'Design systems',
+				'Brand identity',
+				'Visual language',
+				'Usability testing'
 			]
 		},
 		{
-			id: '004',
-			title: 'Branding and identity',
+			id: '04',
+			title: 'Marketing, SEO & Growth',
 			description:
-				'Distinctive, memorable brand experiences that communicate your values and create emotional connections.',
-			image:
-				'https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&w=800&q=80',
+				'Focused marketing strategies built around measurable outcomes — visibility, acquisition, and sustainable growth.',
+			image: '/content/services/web-view.jpg',
 			categories: [
-				'Brand strategy',
-				'Logo design',
-				'Brand voice',
-				'Color systems',
-				'Brand guidelines',
-				'Identity applications'
+				'SEO strategy',
+				'Content marketing',
+				'Paid ads (Google / Meta)',
+				'Analytics & tracking',
+				'Conversion optimization',
+				'Growth experiments',
+				'Local Advertising'
+			]
+		},
+		{
+			id: '05',
+			title: 'Mobile App Development',
+			description:
+				'Native and cross-platform mobile applications built for reliability, performance, and real-world usage — not demos.',
+			image: '/content/services/app-development.jpg',
+			categories: [
+				'iOS & Android apps',
+				'Cross-platform (Flutter / React Native)',
+				'App architecture',
+				'API integrations',
+				'Performance optimization',
+				'App store deployment'
 			]
 		}
+
 	];
+
 
 	function toggle(id: string) {
 		openId = openId === id ? null : id;
@@ -132,8 +151,8 @@
 					<!-- Expanded content -->
 					{#if openId === s.id}
 						<div
-							class="mt-10 pl-[6.5rem] grid grid-cols-1 lg:grid-cols-[auto_1fr_auto] gap-12"
-							data-aos="fade-up"
+							class="mt-10 pl-[6.5rem] grid grid-cols-1 lg:grid-cols-[auto_1fr_auto] gap-12 transition-all duration-300"
+							data-aos="fade-in"
 							data-aos-delay="80"
 						>
 							<!-- Image -->

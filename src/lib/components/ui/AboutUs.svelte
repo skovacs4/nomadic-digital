@@ -1,6 +1,6 @@
 <script>
 	export let label = 'About us';
-	export let brand = 'nomadic®';
+	export let brand = 'Nomadic Digital ®';
 
 	export let titleBold = 'How we launch';
 	export let titleRest = 'websites and marketing campaigns.';

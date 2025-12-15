@@ -64,6 +64,12 @@
 				>
 					Privacy Policy
 				</a>
+				<a
+					href="/legals/terms-and-conditions"
+					class="text-sm text-black/50 hover:text-black transition"
+				>
+					Terms & Conditions
+				</a>
 			</div>
 		</div>
 	</div>

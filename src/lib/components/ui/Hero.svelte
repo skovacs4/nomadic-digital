@@ -1,8 +1,8 @@
-<section class="px-2 md:px-0 pt-16">
-	<div
-		class="
+<section class="px-2 md:px-0 ">
+<div
+	class="
 		relative
-		h-[94vh]
+		h-[100vh]
 		rounded-[0px]
 		overflow-hidden
 		bg-black
@@ -10,10 +10,11 @@
 		flex items-end
 		animate-[fadeIn_1.2s_ease-out]
 	"
-	>
+>
+
 		<!-- Background Video -->
 		<video
-			src="videos/hero-video.mp4"
+			src="videos/hero-video.mov"
 			autoplay
 			muted
 			loop

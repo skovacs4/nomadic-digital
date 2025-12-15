@@ -39,7 +39,7 @@
 	let visible = false;
 
 	/* ---------- SCORE ---------- */
-	const animatedScore = tweened(0, { duration: 900, easing: cubicOut });
+	const animatedScore = tweened(0, { duration: 2700, easing: cubicOut });
 
 	/* ---------- BARS ---------- */
 	const barStores = visits.months.map(

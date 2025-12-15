@@ -20,6 +20,23 @@
 		mobileOpen = false;
 	}
 
+	$: isHome = $page.url.pathname === '/';
+
+	$: isLightHeader =
+	isHome && !scrolled;
+
+
+	$: logoSrc =
+	isHome
+		? scrolled
+			? '/logos/landscape-minimal-logo.png'        // dark logo on scroll
+			: '/logos/landscape-minimal-logo-white.png' // white logo at top
+		: isPortfolioDetail
+			? '/logos/landscape-minimal-logo-white.png'
+			: '/logos/landscape-minimal-logo.png';
+
+
+
 </script>
 
 {#if mobileOpen}
@@ -28,14 +45,13 @@
 	<div
 		class="
 			fixed inset-0 z-40
-			backdrop-blur-[2px]
+			
 			transition-opacity duration-300
 			{isPortfolioDetail ? 'bg-black/40' : 'bg-black/20'}
 		"
 		on:click={closeMobileMenu}
 	></div>
 {/if}
-
 
 <header
 	class="
@@ -44,18 +60,12 @@
 	"
 	class:bg-[var(--color-background)]={(scrolled || mobileOpen) && !isPortfolioDetail}
 	class:bg-black={(scrolled || mobileOpen) && isPortfolioDetail}
-	class:backdrop-blur-md={scrolled || mobileOpen}
 	class:shadow-sm={scrolled || mobileOpen}
 >
 	<div class="mx-auto px-6 py-0 flex items-center justify-between gap-12">
 		<!-- Logo -->
 		<a href="/" class="font-calsans text-[18px] tracking-tight">
-			<img
-				src={isPortfolioDetail
-					? '/logos/landscape-minimal-logo-white.png'
-					: '/logos/landscape-minimal-logo.png'}
-				alt="Nomadic Digital Logo"
-			/>
+			<img src={logoSrc} alt="Nomadic Digital Logo" class="transition-opacity duration-300" />
 		</a>
 
 		<!-- Desktop nav -->
@@ -63,7 +73,8 @@
 			<a
 				class="
 		font-inter text-lg font-bold transition
-		{isPortfolioDetail ? 'text-white hover:opacity-70' : 'text-black hover:opacity-60'}
+		{isPortfolioDetail || isLightHeader ? 'text-white hover:opacity-70' : 'text-black hover:opacity-60'}
+
 	"
 				href="/portfolio"
 			>
@@ -73,7 +84,8 @@
 			<a
 				class="
 		font-inter text-lg font-bold transition
-		{isPortfolioDetail ? 'text-white hover:opacity-70' : 'text-black hover:opacity-60'}
+		{isPortfolioDetail || isLightHeader ? 'text-white hover:opacity-70' : 'text-black hover:opacity-60'}
+
 	"
 				href="/about"
 			>
@@ -83,7 +95,8 @@
 			<a
 				class="
 		font-inter text-lg font-bold transition
-		{isPortfolioDetail ? 'text-white hover:opacity-70' : 'text-black hover:opacity-60'}
+		{isPortfolioDetail || isLightHeader ? 'text-white hover:opacity-70' : 'text-black hover:opacity-60'}
+
 	"
 				href="/services"
 			>
@@ -93,7 +106,7 @@
 			<a
 				class="
 		font-inter text-lg font-bold transition
-		{isPortfolioDetail ? 'text-white hover:opacity-70' : 'text-black hover:opacity-60'}
+		{isPortfolioDetail || isLightHeader ? 'text-white hover:opacity-70' : 'text-black hover:opacity-60'}
 	"
 				href="/contact"
 			>
@@ -108,11 +121,12 @@
 		text-sm font-inter font-semibold
 		transition-all duration-300
 		overflow-hidden
-		{isPortfolioDetail
+		{isPortfolioDetail || isLightHeader
 					? scrolled
 						? 'bg-white text-black'
 						: 'bg-white/90 text-black'
 					: 'bg-black text-white'}
+
 	"
 			>
 				<span class="relative z-10">Book a call</span>
@@ -149,7 +163,8 @@
 			<span
 				class="
 			absolute w-7 h-[2px] transition-all duration-300 ease-out
-			{isPortfolioDetail ? 'bg-white' : 'bg-black'}
+			{isPortfolioDetail || isLightHeader ? 'bg-white' : 'bg-black'}
+
 			{mobileOpen ? 'rotate-45' : '-translate-y-[5px]'}
 		"
 			></span>
@@ -171,7 +186,10 @@
 			[@media(min-width:900px)]:hidden px-10 py-10 space-y-6
 			transition-colors duration-300
 			animate-fadeDown z-50 relative
-			{isPortfolioDetail ? 'bg-black text-white' : 'bg-[var(--color-background)] text-black'}
+			{isPortfolioDetail || isLightHeader
+				? 'bg-black text-white'
+				: 'bg-[var(--color-background)] text-black'}
+
 		"
 		>
 			<a href="/portfolio" on:click={closeMobileMenu} class="block font-inter text-xl font-bold">
@@ -219,7 +237,7 @@
 	}
 
 	header {
-	backdrop-filter: saturate(180%) blur(3px);
+	backdrop-filter: blur(3px);
 }
 
 </style>

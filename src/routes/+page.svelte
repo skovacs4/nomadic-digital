@@ -18,7 +18,7 @@
 </script>
 
 <!-- HERO -->
-<div class="my-4" data-aos="fade">
+<div class="mb-4" data-aos="fade">
 	<Hero />
 </div>
 
