@@ -1,37 +1,49 @@
 <script>
-	export let eyebrow = 'Testimonials';
-	export let title = 'Experiences';
-	export let year = '©2025';
+  import { t } from '$lib/i18n';
 
-	export let summary = {
-		rating: '4.9',
-		count: '56+',
-		text: 'We’ve delivered 56+ projects that help companies generate real results.'
-	};
+  // optional overrides via props (runes mode)
+  let {
+    eyebrow = null,
+    title = null,
+    year = null,
+    summary = null,
+    testimonials = null
+  } = $props();
 
-	export let testimonials = [
-		{
-			name: 'James Carter',
-			role: 'Wilson & Co',
-			text:
-				'Incredible team! They delivered exactly what we needed, on time and beyond expectations.',
-			rating: 5
-		},
-		{
-			name: 'Emily Davis',
-			role: 'StartUp Hub',
-			text:
-				'A smooth process from start to finish. Highly professional team!',
-			rating: 5
-		},
-		{
-			name: 'Anna Martinez',
-			role: 'Marketing Director',
-			text:
-				'Our new branding is exactly what we envisioned — clean, modern, and unique.',
-			rating: 5
-		}
-	];
+  const eyebrowText = $derived(eyebrow ?? $t('testimonials.eyebrow'));
+  const titleText = $derived(title ?? $t('testimonials.title'));
+  const yearText = $derived(year ?? $t('testimonials.year'));
+
+  const summaryData = $derived(
+    summary ?? {
+      rating: $t('testimonials.summary.rating'),
+      count: '56+',
+      text: $t('testimonials.summary.text')
+    }
+  );
+
+  const testimonialsData = $derived(
+    testimonials ?? [
+      {
+        name: $t('testimonials.items.1.name'),
+        role: $t('testimonials.items.1.role'),
+        text: $t('testimonials.items.1.text'),
+        rating: 5
+      },
+      {
+        name: $t('testimonials.items.2.name'),
+        role: $t('testimonials.items.2.role'),
+        text: $t('testimonials.items.2.text'),
+        rating: 5
+      },
+      {
+        name: $t('testimonials.items.3.name'),
+        role: $t('testimonials.items.3.role'),
+        text: $t('testimonials.items.3.text'),
+        rating: 5
+      }
+    ]
+  );
 </script>
 
 <section class="px-6 md:px-12 py-32 max-w-8xl mx-auto">
@@ -44,22 +56,16 @@
 			>
 				<div class="w-2 h-2 rounded-full bg-black"></div>
 			</div>
-			<p class="font-inter text-sm font-medium text-black">
-				{eyebrow}
-			</p>
+			<p class="font-inter text-sm font-medium text-black">{eyebrowText}</p>
 		</div>
 
 		<!-- Title -->
 		<div class="md:col-span-8 md:col-start-4">
-			<h2
-				class="text-[clamp(3.5rem,8vw,6.5rem)] font-semibold tracking-tight"
-			>
-				{title}
+			<h2 class="text-[clamp(3.5rem,8vw,6.5rem)] font-semibold tracking-tight">
+				{titleText}
 			</h2>
 
-			<p class="font-inter text-sm text-black/50 mt-3">
-				{year}
-			</p>
+			<p class="font-inter text-sm text-black/50 mt-3">{yearText}</p>
 		</div>
 	</div>
 
@@ -69,44 +75,33 @@
 		<div class="bg-white rounded-3xl p-8 border border-black/5 flex flex-col justify-between">
 			<div>
 				<p class="font-inter text-5xl text-black mb-2">
-					{summary.rating}
+					{summaryData.rating}
 					<span class="text-lg text-black/50">/5</span>
 				</p>
-				<p class="font-inter text-sm text-black/60">
-					{summary.text}
-				</p>
+				<p class="font-inter text-sm text-black/60">{summaryData.text}</p>
 			</div>
 
 			<button
 				class="mt-8 w-full rounded-full bg-black text-white py-3 text-sm font-inter hover:bg-black/90 transition"
 			>
-				Leave a review
+				{$t('testimonials.cta.leaveReview')}
 			</button>
 		</div>
 
 		<!-- Testimonial cards -->
-		{#each testimonials as t}
+		{#each testimonialsData as item}
 			<div class="bg-white rounded-3xl p-8 border border-black/5 flex flex-col justify-between">
-				<!-- Stars -->
 				<div class="flex gap-1 text-sm text-black/80 mb-6">
-					{#each Array(t.rating) as _}
+					{#each Array(item.rating) as _}
 						<span>★</span>
 					{/each}
 				</div>
 
-				<!-- Text -->
-				<p class="font-inter text-lg text-black leading-relaxed mb-8">
-					{t.text}
-				</p>
+				<p class="font-inter text-lg text-black leading-relaxed mb-8">{item.text}</p>
 
-				<!-- Author -->
 				<div>
-					<p class="font-inter text-sm text-black">
-						{t.name}
-					</p>
-					<p class="font-inter text-xs text-black/50">
-						{t.role}
-					</p>
+					<p class="font-inter text-sm text-black">{item.name}</p>
+					<p class="font-inter text-xs text-black/50">{item.role}</p>
 				</div>
 			</div>
 		{/each}

@@ -1,18 +1,19 @@
 <script>
-	export let title = "Proven results for every project,";
-	export let title2 = "with a focus on design and functionality.";
-
-	export let subtitle =
-		"No fluff, just results. Thoughtful design and tools that make your work easier. We focus on smart design and useful features, project after project.";
+	import { t } from '$lib/i18n';
 
 	export let image = "/content/portrait-left-bar.png";
 
-	export let stats = [
+	// localized defaults
+	$: title = $t('why.title1');
+	$: title2 = $t('why.title2');
+	$: subtitle = $t('why.subtitle');
+
+	$: stats = [
 		{
 			value: "20+",
 			index: "01",
-			label: "Successful projects completed",
-			desc: "Websites, e-commerce platforms, and complex integrations shipped for real businesses.",
+			label: $t('why.stat1.label'),
+			desc: $t('why.stat1.desc'),
 			logos: [
 				"https://placehold.co/50x20?text=A",
 				"https://placehold.co/50x20?text=B",
@@ -22,8 +23,8 @@
 		{
 			value: "95%",
 			index: "02",
-			label: "Client satisfaction",
-			desc: "Long-term partnerships built on clear communication and reliable delivery.",
+			label: $t('why.stat2.label'),
+			desc: $t('why.stat2.desc'),
 			logos: [
 				"/logos/clients/kron-imobiliare.png",
 				"/logos/clients/kronburg.png",
@@ -39,7 +40,7 @@
 		<div class="w-6 h-6 rounded-full border border-black flex items-center justify-center">
 			<div class="w-2.5 h-2.5 rounded-full bg-black"></div>
 		</div>
-		<p class="font-geist text-black text-md font-semibold">Why choose us</p>
+		<p class="font-geist text-black text-md font-semibold">{$t('why.label')}</p>
 	</div>
 
 	<div class="grid grid-cols-1 lg:grid-cols-3 gap-16">
@@ -53,7 +54,7 @@
 			rounded-[26px]
 			overflow-hidden
 			shadow-sm
-			aspect-[3/5] /* <<< MAKES IT RESPONSIVE */
+			aspect-[3/5]
 			bg-black/5
 		"
 			>
@@ -94,8 +95,7 @@
 			"
 				>
 					<p class="font-geist text-base md:text-lg leading-relaxed drop-shadow-xl">
-						Your digital journey begins with a conversation. <br />
-						Let's talk today.
+						{@html $t('why.overlay.text')}
 					</p>
 
 					<a
@@ -107,7 +107,7 @@
 		hover:bg-white/90 transition-all duration-300
 	"
 					>
-						Let’s talk
+						{$t('why.overlay.cta')}
 						<span
 							class="
 			w-2 h-2 rounded-full bg-black
@@ -153,23 +153,19 @@
 			<div class="grid grid-cols-1 md:grid-cols-2 gap-1">
 				{#each stats as s, i}
 					<div class="bg-white rounded-3xl p-8 shadow-sm">
-						<!-- Top row -->
 						<div class="flex items-start justify-between mb-6">
 							<p class="font-calsans text-4xl md:text-5xl text-black">{s.value}</p>
 							<p class="font-inter text-xs text-black/40">{s.index}</p>
 						</div>
 
-						<!-- Label -->
 						<p class="font-geist text-sm text-black font-semibold mb-6">{s.label}</p>
 
-						<!-- Description -->
 						{#if s.desc}
 							<p class="font-inter text-sm text-black/60 mb-6 leading-relaxed">
 								{s.desc}
 							</p>
 						{/if}
 
-						<!-- Logos: ONLY show on second card -->
 						{#if i === 1}
 							<div class="flex items-center gap-4 opacity-70">
 								{#each s.logos as l}

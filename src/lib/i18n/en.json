@@ -1,0 +1,671 @@
+{
+    "nav.work": "Work",
+    "nav.about": "About Us",
+    "nav.services": "Services",
+    "nav.contact": "Contact",
+    "nav.bookCall": "Book a call",
+    "nav.lang.en": "EN",
+    "nav.lang.ro": "RO",
+    "hero.kicker": "Nomadic Digital ® — Digital Studio",
+    "hero.title.main": "We build digital experiences",
+    "hero.title.muted": " that actually perform.",
+    "hero.subtitle": "Strategy, design, and development for brands that want clarity, speed, and measurable growth.",
+    "hero.cta.primary": "Start a project →",
+    "hero.cta.secondary": "View selected work",
+    "hero.footer": "© 2025 Nomadic Digital",
+    "clients.title": "Our clients",
+    "clients.subtitle": "(Selected client partnerships)",
+    "home.projects.count": "Selected work",
+    "home.projects.title": "Projects",
+    "home.projects.description": "We’ve helped businesses across industries achieve their goals. Here are some of our recent projects.",
+    "why.label": "Why choose us",
+    "why.title1": "Proven results for every project,",
+    "why.title2": "with a focus on design and functionality.",
+    "why.subtitle": "No fluff, just results. Thoughtful design and tools that make your work easier. We focus on smart design and useful features, project after project.",
+    "why.overlay.text": "Your digital journey begins with a conversation.<br />Let's talk today.",
+    "why.overlay.cta": "Let’s talk",
+    "why.stat1.label": "Successful projects completed",
+    "why.stat1.desc": "Websites, e-commerce platforms, and complex integrations shipped for real businesses.",
+    "why.stat2.label": "Client satisfaction",
+    "why.stat2.desc": "Long-term partnerships built on clear communication and reliable delivery.",
+    "services.kicker": "What we do",
+    "services.heading": "Services",
+    "services.categoriesLabel": "Categories",
+    "services.showLess": "Show less",
+    "services.01.title": "Web & E-commerce Platforms",
+    "services.01.desc": "Fast, scalable websites and e-commerce platforms designed for performance, conversion, and long-term growth. Built cleanly, without unnecessary layers.",
+    "services.01.cat.1": "Custom websites",
+    "services.01.cat.2": "E-commerce (B2C / B2B)",
+    "services.01.cat.3": "Performance optimization",
+    "services.01.cat.4": "SEO-ready architecture",
+    "services.01.cat.5": "Headless CMS",
+    "services.01.cat.6": "Conversion-focused UX",
+    "services.02.title": "SaaS & Custom Systems",
+    "services.02.desc": "Robust internal tools, SaaS platforms, and dashboards where reliability, security, and maintainability matter more than trends.",
+    "services.02.cat.1": "SaaS architecture",
+    "services.02.cat.2": "Admin dashboards",
+    "services.02.cat.3": "ERP Integrations",
+    "services.02.cat.4": "Stock Sync & Management",
+    "services.02.cat.5": "Role-based access",
+    "services.02.cat.6": "Payments & subscriptions",
+    "services.02.cat.7": "API integrations",
+    "services.02.cat.8": "Scalable backends",
+    "services.03.title": "UX, Brand & Product Design",
+    "services.03.desc": "Design systems and interfaces that remove friction, communicate clearly, and feel intentional across every touchpoint.",
+    "services.03.cat.1": "UX & UI design",
+    "services.03.cat.2": "Product structure",
+    "services.03.cat.3": "Design systems",
+    "services.03.cat.4": "Brand identity",
+    "services.03.cat.5": "Visual language",
+    "services.03.cat.6": "Usability testing",
+    "services.04.title": "Marketing, SEO & Growth",
+    "services.04.desc": "Focused marketing strategies built around measurable outcomes — visibility, acquisition, and sustainable growth.",
+    "services.04.cat.1": "SEO strategy",
+    "services.04.cat.2": "Content marketing",
+    "services.04.cat.3": "Paid ads (Google / Meta)",
+    "services.04.cat.4": "Analytics & tracking",
+    "services.04.cat.5": "Conversion optimization",
+    "services.04.cat.6": "Growth experiments",
+    "services.04.cat.7": "Local Advertising",
+    "services.05.title": "Mobile App Development",
+    "services.05.desc": "Native and cross-platform mobile applications built for reliability, performance, and real-world usage — not demos.",
+    "services.05.cat.1": "iOS & Android apps",
+    "services.05.cat.2": "Cross-platform (Flutter / React Native)",
+    "services.05.cat.3": "App architecture",
+    "services.05.cat.4": "API integrations",
+    "services.05.cat.5": "Performance optimization",
+    "services.05.cat.6": "App store deployment",
+    "about.label": "About us",
+    "about.brand": "Nomadic Digital ®",
+    "about.titleBold": "How we launch",
+    "about.titleRest": "websites and marketing campaigns.",
+    "about.description": "See how our team combines creativity, technology, and strategy to build powerful digital solutions.",
+    "how.steps.1.step": "STEP 1.",
+    "how.steps.1.title": "Discovery Phase",
+    "how.steps.1.desc": "Understanding your goals, pain points, audience, and what sets you apart.",
+    "how.steps.2.step": "STEP 2.",
+    "how.steps.2.title": "Project Kickoff",
+    "how.steps.2.desc": "Aligning on scope, milestones, and setting a clear direction for execution.",
+    "how.steps.3.step": "STEP 3.",
+    "how.steps.3.title": "Receive & Refine",
+    "how.steps.3.desc": "Reviewing work together, gathering feedback, and refining until it feels right.",
+    "how.steps.4.step": "STEP 4.",
+    "how.steps.4.title": "Continue & Grow",
+    "how.steps.4.desc": "Launching confidently and supporting long-term growth and iteration.",
+    "testimonials.eyebrow": "Testimonials",
+    "testimonials.title": "Experiences",
+    "testimonials.year": "©2025",
+    "testimonials.summary.rating": "4.9",
+    "testimonials.summary.text": "We’ve delivered 56+ projects that help companies generate real results.",
+    "testimonials.cta.leaveReview": "Leave a review",
+    "testimonials.items.1.name": "James Carter",
+    "testimonials.items.1.role": "Wilson & Co",
+    "testimonials.items.1.text": "Incredible team! They delivered exactly what we needed, on time and beyond expectations.",
+    "testimonials.items.2.name": "Emily Davis",
+    "testimonials.items.2.role": "StartUp Hub",
+    "testimonials.items.2.text": "A smooth process from start to finish. Highly professional team!",
+    "testimonials.items.3.name": "Anna Martinez",
+    "testimonials.items.3.role": "Marketing Director",
+    "testimonials.items.3.text": "Our new branding is exactly what we envisioned — clean, modern, and unique.",
+    "stats.1.value": "3m+",
+    "stats.1.label": "Ad impressions managed",
+    "stats.2.value": "27+",
+    "stats.2.label": "Successful projects launched",
+    "stats.3.value": "98%",
+    "stats.3.label": "Client satisfaction rate",
+    "stats.4.value": "50k+",
+    "stats.4.label": "Monthly visitors driven through SEO",
+    "case.label": "Case study",
+    "case.tags": "UX/UI Redesign, Frontend Optimization.",
+    "case.description": "From branding to web development and marketing",
+    "case.live": "Live website ↗",
+    "case.performance.title": "Performance boost",
+    "case.performance.conversionLabel": "Conversion rate",
+    "case.performance.boost": "Page speed +48%, Bounce rate -23%",
+    "case.performance.conversion": "4.2% → 5.9%",
+    "case.performance.testimonial": "Thanks to the redesign, we’ve seen a steady 60% increase in leads.",
+    "case.performance.author": "Angela Smith",
+    "case.scoreLabel": "Page speed score",
+    "case.visitsLabel": "Quarterly visits",
+    "case.month.dec": "Dec",
+    "case.month.jan": "Jan",
+    "case.month.feb": "Feb",
+    "case.month.mar": "Mar",
+    "case.month.apr": "Apr",
+    "case.month.may": "May",
+    "pricing.eyebrow": "Pricing",
+    "pricing.title": "Simple pricing",
+    "pricing.titleMuted": " for growing teams.",
+    "pricing.subtitle": "Transparent plans designed to scale with your business. No hidden fees.",
+    "pricing.plan.starter.name": "Starter",
+    "pricing.plan.starter.price": "€1,200",
+    "pricing.plan.starter.subtitle": "For early-stage businesses",
+    "pricing.plan.starter.features.1": "Website or landing page",
+    "pricing.plan.starter.features.2": "UX/UI design",
+    "pricing.plan.starter.features.3": "Responsive layout",
+    "pricing.plan.starter.features.4": "Basic SEO setup",
+    "pricing.plan.starter.cta": "Get started",
+    "pricing.plan.pro.name": "Pro",
+    "pricing.plan.pro.price": "€2,500",
+    "pricing.plan.pro.subtitle": "Best value for growing teams",
+    "pricing.plan.pro.features.1": "Everything in Starter",
+    "pricing.plan.pro.features.2": "Custom integrations",
+    "pricing.plan.pro.features.3": "Performance optimization",
+    "pricing.plan.pro.features.4": "Advanced SEO & analytics",
+    "pricing.plan.pro.features.5": "E-commerce websites (standard)",
+    "pricing.plan.pro.features.6": "Mobile app development (simple apps: ordering, booking, MVP)",
+    "pricing.plan.pro.features.7": "Priority support",
+    "pricing.plan.pro.cta": "Start project",
+    "pricing.plan.enterprise.name": "Enterprise",
+    "pricing.plan.enterprise.price": "Custom",
+    "pricing.plan.enterprise.subtitle": "Built around your business",
+    "pricing.plan.enterprise.features.1": "Complex platforms & SaaS",
+    "pricing.plan.enterprise.features.2": "Custom e-commerce solutions",
+    "pricing.plan.enterprise.features.3": "ERP / API integrations",
+    "pricing.plan.enterprise.features.4": "Automation workflows",
+    "pricing.plan.enterprise.features.5": "Advanced mobile applications",
+    "pricing.plan.enterprise.features.6": "Long-term partnership",
+    "pricing.plan.enterprise.cta": "Talk to us",
+    "team.eyebrow": "Team",
+    "team.titleA": "The people behind",
+    "team.titleB": "the work.",
+    "team.subtitle": "A multidisciplinary team of designers, developers, and strategists focused on building meaningful digital products.",
+    "team.member.stefan.role": "Founder & Lead Engineer",
+    "team.member.stefan.desc": "System architecture, complex integrations, and hands-on development across platforms.",
+    "team.member.teodora.role": "Client & Growth Manager",
+    "team.member.teodora.desc": "Client relationships, project coordination, and growth-focused strategy execution.",
+    "team.member.mihai.role": "Content & Strategy Consultant",
+    "team.member.mihai.desc": "Content production, strategic consulting, and risk assessment across projects.",
+    "team.member.dulca.role": "Lead Sales Consultant",
+    "team.member.dulca.desc": "Managing outbound sales, client acquisition, and first-contact negotiations.",
+    "faq.title": "FAQ",
+    "faq.subtitle": "Got questions? We’ve got answers. Everything you need to know about working with us.",
+    "faq.1.q": "How long does it take to build a website?",
+    "faq.1.a": "The timeline depends on complexity and scope. Most projects take between 4–8 weeks. We provide a clear timeline during the initial consultation.",
+    "faq.2.q": "Do you offer custom websites or use templates?",
+    "faq.2.a": "All projects are custom-designed. We don’t rely on generic templates — every solution is built around your business goals.",
+    "faq.3.q": "What’s included in your SEO services?",
+    "faq.3.a": "Our SEO services include technical optimization, keyword research, on-page improvements, performance tuning, and analytics setup.",
+    "faq.4.q": "How does the monthly subscription model work?",
+    "faq.4.a": "For ongoing services, we offer monthly subscriptions covering maintenance, optimization, and growth support. Plans are flexible and scalable.",
+    "faq.5.q": "Can you redesign my existing website?",
+    "faq.5.a": "Yes. We frequently redesign existing websites, improving UX, performance, and visual clarity while preserving your brand.",
+    "faq.6.q": "How do I get started?",
+    "faq.6.a": "Simply reach out through our contact form. We’ll schedule a discovery call to understand your needs and propose the next steps.",
+    "blog.section.titleA": "Newest trends",
+    "blog.section.titleB": " and insights from our team.",
+    "blog.section.subtitle": "Stay informed about our latest projects, trends, and industry insights.",
+    "blog.section.cta": "See all",
+    "contact.brand": "Nomadic Digital ®",
+    "contact.form.title": "Have a project in mind?",
+    "contact.form.name": "Your name",
+    "contact.form.email": "E-mail",
+    "contact.form.message": "Tell us about your project",
+    "contact.form.sending": "Sending…",
+    "contact.form.send": "Send message",
+    "contact.error.required": "Please fill in all fields.",
+    "contact.error.generic": "Failed to send message.",
+    "contact.success": "Message sent successfully. We’ll get back to you shortly.",
+    "contact.legal": "By submitting, you agree to our Terms & Privacy Policy.",
+    "contact.title": "Let’s talk.",
+    "contact.subtitle": "Tell us about your project—whether it’s a website, SEO, or marketing.",
+    "contact.benefit1.title": "Quick response",
+    "contact.benefit1.text": "We reply quickly and keep communication simple and direct.",
+    "contact.benefit2.title": "Clear next steps",
+    "contact.benefit2.text": "You’ll receive a concrete plan, scope, and timeline.",
+    "contact.card.role": "Client & Growth Manager",
+    "contact.card.name": "Teodora Szelyes",
+    "contact.card.cta": "Ask directly",
+    "footer.desc": "We design and build high-performance digital products — websites, platforms, and marketing systems that scale.",
+    "footer.company": "Company",
+    "footer.company.about": "About",
+    "footer.company.work": "Work",
+    "footer.company.pricing": "Pricing",
+    "footer.company.contact": "Contact",
+    "footer.services": "Services",
+    "footer.services.1": "Web Design",
+    "footer.services.2": "Web Development",
+    "footer.services.3": "SEO & Performance",
+    "footer.services.4": "Brand Strategy",
+    "footer.follow": "Follow",
+    "footer.follow.instagram": "Instagram",
+    "footer.follow.facebook": "Facebook",
+    "footer.follow.linkedin": "LinkedIn",
+    "footer.follow.x": "Twitter / X",
+    "footer.copyright": "© {year} Nomadic Digital ® . All rights reserved.",
+    "footer.cta": "Start a project",
+    "footer.privacy": "Privacy Policy",
+    "footer.terms": "Terms & Conditions",
+    "footer.logoAlt": "Nomadic Digital logo",
+    "about.pageTitle": "About us",
+    "about.studio": "Studio",
+    "about.hero.bold": "We build digital products with clarity, restraint, and purpose.",
+    "about.hero.sub": "Every decision is intentional — from structure and performance to how a brand feels when someone uses it.",
+    "about.hero.socialProof": "Trusted by founders, operators, and growing teams worldwide",
+    "about.hero.note": "No noise. No unnecessary layers. Just well-crafted digital work that holds up over time.",
+    "about.hero.imageAlt": "Studio collaboration",
+    "about.approach.kicker": "Every project we take on is designed for long-term success.",
+    "about.approach.line1": "Our approach is simple:",
+    "about.approach.line2": "functionality, speed, and clarity,",
+    "about.approach.line3": "without unnecessary complexity.",
+    "about.approach.body": "We don’t overpromise. We build durable, thoughtful digital products that scale with real business needs.",
+    "about.approach.cta": "Portfolio",
+    "about.difference.title": "What sets us apart",
+    "about.difference.subtitle": "Not louder. Not bigger. Just sharper where it matters.",
+    "about.difference.bold": "We don’t sell services.",
+    "about.difference.rest": "We solve specific business problems with focused, intentional digital work.",
+    "about.difference.body": "No bloated scopes. No unnecessary layers. Every line of code, every design choice, and every integration exists for a reason — to perform, scale, and last.",
+    "about.difference.cta": "Get in touch",
+    "about.editorial.1.title": "Meet the team",
+    "about.editorial.2.title": "How work gets done",
+    "services.pageTitle": "Services",
+    "services.capabilities": "Capabilities",
+    "services.hero.bold": "We design and build digital systems that support real growth.",
+    "services.hero.sub": "From strategy and UX to complex development and integrations, our work is focused on clarity, performance, and long-term value.",
+    "services.hero.note": "We don’t offer generic packages. Every engagement is shaped around the business problem, the product, and the stage you’re at.",
+    "services.hero.right": "Strategy-led. Outcome-driven. Built to last.",
+    "services.hero.imageAlt": "Studio collaboration",
+    "services.01.kicker": "Web & E-commerce Platforms",
+    "services.01.headline": "Fast, scalable platforms built for conversion.",
+    "services.01.body": "We design and develop modern websites and e-commerce platforms that load fast, scale cleanly, and support both marketing and operations.",
+    "services.01.points.1": "Custom storefronts",
+    "services.01.points.2": "B2C & B2B flows",
+    "services.01.points.3": "Performance optimization",
+    "services.01.points.4": "SEO-ready architecture",
+    "services.02.kicker": "SaaS & Custom Systems",
+    "services.02.headline": "Complex products, clean architecture.",
+    "services.02.body": "We build internal tools, SaaS platforms, and custom dashboards where reliability, security, and maintainability matter.",
+    "services.02.points.1": "Admin dashboards",
+    "services.02.points.2": "Role-based systems",
+    "services.02.points.3": "Payments & subscriptions",
+    "services.02.points.4": "Scalable backend logic",
+    "services.02.points.5": "ERP integrations",
+    "services.02.points.6": "Complex API integrations",
+    "services.03.kicker": "UX, Brand & Product Design",
+    "services.03.headline": "Design that removes friction.",
+    "services.03.body": "We design interfaces and brand systems that feel intentional, clear, and aligned with how users actually behave.",
+    "services.03.points.1": "UX & UI design",
+    "services.03.points.2": "Product structure",
+    "services.03.points.3": "Brand systems",
+    "services.03.points.4": "Design systems",
+    "services.03.points.5": "Print & on-demand production",
+    "services.03.points.6": "Physical brand assets (cards, apparel, packaging)",
+    "services.04.kicker": "Marketing & Growth",
+    "services.04.headline": "Marketing built on data, not assumptions.",
+    "services.04.body": "We plan and execute marketing systems that support growth long-term — aligned with product, infrastructure, and real business constraints.",
+    "services.04.points.1": "Performance marketing",
+    "services.04.points.2": "SEO & content strategy",
+    "services.04.points.3": "Analytics & conversion tracking",
+    "services.04.points.4": "Campaign structure & optimization",
+    "services.05.kicker": "Mobile App Development",
+    "services.05.headline": "Mobile apps built for real-world usage.",
+    "services.05.body": "We design and develop mobile applications that are reliable, performant, and easy to maintain — focused on long-term usability, not short-term demos.",
+    "services.05.points.1": "iOS & Android applications",
+    "services.05.points.2": "Cross-platform development (Flutter / React Native)",
+    "services.05.points.3": "API & backend integration",
+    "services.05.points.4": "Performance & scalability optimization",
+    "services.05.points.5": "App Store & Play Store deployment",
+    "services.highlights.1.tag": "Engineering",
+    "services.highlights.1.title": "Scalable systems",
+    "services.highlights.1.desc": "Architecture designed to grow with your business.",
+    "services.highlights.2.tag": "UX / UI",
+    "services.highlights.2.title": "Clear product design",
+    "services.highlights.2.desc": "Interfaces that reduce friction and increase conversion.",
+    "services.bottomCta.title": "Have a specific problem to solve?",
+    "services.bottomCta.sub": "If you’re unsure which service fits best, we’ll help you figure it out.",
+    "services.bottomCta.button": "Start a conversation",
+    "contact.hero.imageAlt": "Background image",
+    "contact.hero.eyebrow": "Start a conversation",
+    "contact.hero.title": "Let’s build something",
+    "contact.hero.titleMuted": "meaningful.",
+    "contact.hero.subtitle": "Websites, e-commerce, mobile apps, and growth strategies — built with clarity, performance, and long-term value in mind.",
+    "contact.left.kicker": "Contact",
+    "contact.left.title": "Let’s talk.",
+    "contact.left.description": "Tell us about your project. We’ll get back with clear next steps, no obligations.",
+    "contact.left.emailLabel": "Email",
+    "contact.left.responseLabel": "Response time",
+    "contact.left.responseValue": "Usually within 48 hours",
+    "contact.form.nameLabel": "Name",
+    "contact.form.namePlaceholder": "Your name",
+    "contact.form.emailLabel": "Email",
+    "contact.form.emailPlaceholder": "you@email.com",
+    "contact.form.messageLabel": "Message",
+    "contact.form.messagePlaceholder": "Tell us a bit about your project",
+    "contact.form.send": "Send message",
+    "contact.form.sending": "Sending…",
+    "contact.form.success": "Message sent successfully. We’ll be in touch.",
+    "contact.form.privacyNote": "By submitting this form you agree to our Privacy Policy.",
+    "contact.form.genericError": "Something went wrong",
+    "portfolioPageTitle": "Our Portfolio",
+    "portfolio": {
+        "pageTitle": "Our Work",
+        "meta": {
+            "client": "Client",
+            "category": "Category",
+            "year": "Year",
+            "status": "Status",
+            "title": "Portfolio — Nomadic Digital",
+            "description": "Explore selected projects and digital products crafted by Nomadic Digital."
+        },
+        "sections": {
+            "scope": "Scope",
+            "deliverables": "Deliverables",
+            "technology": "Technology"
+        },
+        "cta": {
+            "startSimilar": "Start a similar project"
+        },
+        "status": {
+            "live": "Live",
+            "inProgress": "In progress",
+            "completed": "Completed"
+        },
+        "categories": {
+            "ecommerceBrandPlatform": "E-commerce · Brand platform",
+            "saasDigitalAdvertising": "SaaS · Digital advertising",
+            "corporateWebsite": "Corporate website",
+            "saasSportsManagement": "SaaS · Sports management",
+            "ecommerceBrandWebsite": "E-commerce · Brand website",
+            "corporateBrandWebsite": "Corporate · Brand website"
+        },
+        "scope": {
+            "platformArchitecture": "Platform architecture",
+            "uxUiDesign": "UX / UI design",
+            "ecommerceDevelopment": "E-commerce development",
+            "erpApiIntegrations": "ERP & API integrations",
+            "performanceOptimization": "Performance optimization",
+            "saasArchitecture": "SaaS architecture",
+            "adminDashboard": "Admin dashboard",
+            "tabletInterface": "Tablet interface",
+            "reportingAnalytics": "Reporting & analytics",
+            "roleBasedAccess": "Role-based access",
+            "websiteDevelopment": "Website development",
+            "seoStructure": "SEO structure",
+            "memberManagement": "Member management",
+            "paymentFlows": "Payment flows",
+            "mobileFirstUx": "Mobile-first UX",
+            "brandUx": "Brand UX",
+            "productPresentation": "Product presentation",
+            "seoOptimization": "SEO optimization",
+            "websiteRedesign": "Website redesign",
+            "contentStructure": "Content structure",
+            "brandPresentation": "Brand presentation"
+        },
+        "deliverables": {
+            "customStorefront": "Custom storefront",
+            "adminDashboard": "Admin dashboard",
+            "productStockSync": "Product & stock sync",
+            "seoReadyStructure": "SEO-ready structure",
+            "analyticsSetup": "Analytics setup",
+            "webAdminPlatform": "Web admin platform",
+            "tabletUi": "Tablet UI",
+            "campaignReporting": "Campaign reporting",
+            "clientDashboards": "Client dashboards",
+            "corporateWebsite": "Corporate website",
+            "responsiveLayouts": "Responsive layouts",
+            "seoReadyPages": "SEO-ready pages",
+            "webAdminPanel": "Web admin panel",
+            "memberDashboard": "Member dashboard",
+            "paymentSystem": "Payment system",
+            "classScheduling": "Class scheduling",
+            "productPages": "Product pages",
+            "contentDrivenLayout": "Content-driven layout",
+            "multilingualStructure": "Multilingual structure"
+        },
+        "metrics": {
+            "pageSpeed": "Page speed",
+            "conversionRate": "Conversion rate",
+            "bounceRate": "Bounce rate",
+            "activeScreens": "Active screens",
+            "monthlyImpressions": "Monthly impressions",
+            "clubsOnboarded": "Clubs onboarded",
+            "activeMembers": "Active members"
+        },
+        "roles": {
+            "ecommerceOperations": "E-commerce & Operations"
+        },
+        "projects": {
+            "conte": {
+                "overview": {
+                    "headline": "A scalable e-commerce platform built for growth.",
+                    "description": "Conte needed a modern, performant platform that could support both B2C and B2B operations while maintaining a premium brand experience across all touchpoints."
+                },
+                "outcomes": {
+                    "headline": "Built to scale without friction.",
+                    "description": "The new platform removed operational bottlenecks, unified B2C and B2B flows, and significantly improved performance across devices. The result is a faster, more reliable shopping experience that supports growth without sacrificing brand quality."
+                },
+                "testimonial": {
+                    "quote": "The new platform gave us stability, speed, and the confidence to scale without friction."
+                }
+            },
+            "locallia": {
+                "overview": {
+                    "headline": "A location-based advertising platform for real-world impact.",
+                    "description": "Locallia connects brands with local audiences through smart, data-driven in-car advertising and transparent performance reporting."
+                },
+                "outcomes": {
+                    "headline": "Turning physical reach into measurable performance.",
+                    "description": "Locallia gained a robust SaaS foundation that supports real-time reporting, scalable device management, and transparent campaign insights—enabling both advertisers and operators to make data-driven decisions."
+                }
+            },
+            "kronburg": {
+                "overview": {
+                    "headline": "A clean corporate presence built on clarity and trust.",
+                    "description": "Kronburg required a restrained, professional website that communicated reliability and structure without visual noise."
+                },
+                "outcomes": {
+                    "headline": "A digital presence built on trust and restraint.",
+                    "description": "The website delivers a clear, professional brand message with minimal distraction, helping Kronburg communicate reliability and structure while maintaining fast load times and SEO clarity."
+                }
+            },
+            "fluxum": {
+                "overview": {
+                    "headline": "A modern platform for managing sports clubs and communities.",
+                    "description": "Fluxum simplifies memberships, payments, scheduling, and communication for gyms and sports clubs."
+                },
+                "outcomes": {
+                    "headline": "Simplifying complex club operations into one platform.",
+                    "description": "Fluxum centralizes memberships, payments, scheduling, and communication into a single system, reducing administrative overhead and improving the day-to-day experience for both club owners and members."
+                }
+            },
+            "natscent": {
+                "overview": {
+                    "headline": "A refined e-commerce experience for a fragrance brand.",
+                    "description": "Natscent required a calm, editorial-style storefront that balanced storytelling with conversion."
+                },
+                "outcomes": {
+                    "headline": "An editorial storefront designed to convert.",
+                    "description": "The new experience balances storytelling and commerce, allowing the brand to communicate mood and identity while maintaining a smooth, conversion-focused purchase flow."
+                }
+            },
+            "viorica": {
+                "overview": {
+                    "headline": "A brand-focused digital presence for a cosmetics company.",
+                    "description": "Viorica needed a clear, elegant website to present products and brand values to an international audience."
+                },
+                "outcomes": {
+                    "headline": "A clearer brand narrative for an international audience.",
+                    "description": "The refreshed website provided a structured, elegant presentation of products and brand values, supporting multilingual communication and long-term brand consistency."
+                }
+            }
+        }
+    },
+    "blog": {
+        "pageTitle": "Blog",
+        "index": {
+            "title": "Our News",
+            "subtitle": "Stories, updates, and inspirations to you."
+        },
+        "roles": {
+            "productStrategist": "Product Strategist",
+            "uiuxDesigner": "UI/UX Designer",
+            "securityLead": "Security Lead",
+            "cfoCoFounder": "CFO & Co-founder",
+            "growthAnalyst": "Growth Analyst"
+        },
+        "posts": {
+            "metricsForSaas": {
+                "title": "5 Metrics Every SaaS Founder Should Track",
+                "description": "Learn which KPIs matter when scaling your SaaS.",
+                "content": "<div class=\"space-y-10 text-gray-800 text-[15px] leading-relaxed\"><div><h2 class=\"text-2xl font-semibold mb-3\">Understanding the Numbers</h2><p class=\"font-[550]\">Knowing what to measure is essential when you’re growing a product. Metrics like churn, lifetime value, and customer acquisition cost offer powerful insights into the health of your business. Without these numbers, decisions are just guesses.</p></div><div><h2 class=\"text-2xl font-semibold mb-3\">The Metrics That Matter</h2><p class=\"font-[550]\">While there are many metrics to choose from, not all carry equal weight. Prioritize user engagement, conversion rates, and feature usage to truly understand how your product delivers value. These indicators guide you toward meaningful action.</p></div><div><h2 class=\"text-2xl font-semibold mb-3\">Applying the Insights</h2><p class=\"font-[550]\">Tracking metrics is only half the equation—what you do with them matters more. Use your data to validate ideas, improve user experiences, and spot areas of opportunity. Regular reviews lead to smarter decisions and more focused growth.</p></div></div>"
+            },
+            "simplerDashboard": {
+                "title": "How We Designed a Simpler Dashboard Experience",
+                "description": "A behind-the-scenes look at how we built a dashboard that’s clear, fast, and user-focused.",
+                "content": "<div class=\"space-y-10 text-gray-800 text-[15px] leading-relaxed\"><div><h2 class=\"text-2xl font-semibold mb-3\">Design Challenges</h2><p class=\"font-[550]\">We began by identifying the most confusing elements in our current dashboard...</p></div><div><h2 class=\"text-2xl font-semibold mb-3\">Simplifying the UI</h2><p class=\"font-[550]\">Through testing and feedback, we refined the layout to improve clarity and reduce clutter...</p></div></div>"
+            },
+            "secureSyncing": {
+                "title": "Why Secure Syncing Matters More Than Ever",
+                "description": "Explore how our security-first approach keeps your financial data safe and your mind at ease.",
+                "content": "<div class=\"space-y-10 text-gray-800 text-[15px] leading-relaxed\"><div><h2 class=\"text-2xl font-semibold mb-3\">Risks of Insecure Data</h2><p class=\"font-[550]\">Data syncing can expose vulnerabilities if not done correctly...</p></div><div><h2 class=\"text-2xl font-semibold mb-3\">How We Secure It</h2><p class=\"font-[550]\">We use end-to-end encryption and strict access controls to ensure only authorized users can access sensitive data...</p></div></div>"
+            },
+            "scalingFinance": {
+                "title": "Scaling Your Startup Finance Without Stress",
+                "description": "Discover practical strategies and tools to manage your finances as your startup grows.",
+                "content": "<div class=\"space-y-10 text-gray-800 text-[15px] leading-relaxed\"><div><h2 class=\"text-2xl font-semibold mb-3\">Establishing Financial Hygiene</h2><p class=\"font-[550]\">Even in early-stage startups, basic financial hygiene is critical...</p></div><div><h2 class=\"text-2xl font-semibold mb-3\">Tools for Scaling</h2><p class=\"font-[550]\">We recommend automated forecasting tools and clear cash flow tracking dashboards...</p></div></div>"
+            },
+            "lessons10k": {
+                "title": "What We Learned From 10K+ Users",
+                "description": "Insights and lessons from real users that are shaping the future of our product.",
+                "content": "<div class=\"space-y-10 text-gray-800 text-[15px] leading-relaxed\"><div><h2 class=\"text-2xl font-semibold mb-3\">User Behavior Insights</h2><p class=\"font-[550]\">From onboarding to long-term usage, we tracked trends that revealed unexpected needs...</p></div><div><h2 class=\"text-2xl font-semibold mb-3\">Adapting Our Product</h2><p class=\"font-[550]\">We made several changes in response to these findings, including simplifying signup and improving support visibility...</p></div></div>"
+            }
+        }
+    },
+    "privacy": {
+        "meta": {
+            "title": "Privacy Policy — Nomadic Digital",
+            "description": "Learn how Nomadic Digital collects, uses, and protects your personal data in compliance with GDPR."
+        },
+        "title": "Privacy Policy",
+        "lastUpdated": "Last updated: {date}",
+        "intro": "<b>Nomadic Digital</b> (“we”, “our”, or “us”) values your privacy. This Privacy Policy explains how we collect, use, and protect your information when you visit our website or contact us through our forms.",
+        "sections": {
+            "collect": {
+                "title": "1. Information we collect",
+                "text": "We may collect personal information that you voluntarily provide to us, including:",
+                "items": {
+                    "name": "Name",
+                    "email": "Email address",
+                    "message": "Message content",
+                    "optional": "Any information you choose to include when contacting us"
+                }
+            },
+            "usage": {
+                "title": "2. How we use your information",
+                "text": "We use the information we collect solely to:",
+                "items": {
+                    "reply": "Respond to inquiries and messages",
+                    "projects": "Communicate about potential projects or services",
+                    "improve": "Improve our website and services"
+                },
+                "note": "We do not sell, rent, or trade your personal data."
+            },
+            "security": {
+                "title": "3. Data storage & security",
+                "text": "We take reasonable technical and organizational measures to protect your data. Messages sent through our contact form are transmitted securely and accessed only by authorized personnel."
+            },
+            "cookies": {
+                "title": "4. Cookies & analytics",
+                "text": "Our website may use basic analytics tools to understand website traffic and usage. These tools collect anonymous, aggregated data and do not personally identify you."
+            },
+            "rights": {
+                "title": "5. Your rights (GDPR)",
+                "text": "If you are located in the European Union, you have the right to:",
+                "items": {
+                    "access": "Request access to your personal data",
+                    "modify": "Request correction or deletion of your data",
+                    "withdraw": "Withdraw consent at any time"
+                }
+            },
+            "contact": {
+                "title": "6. Contact",
+                "text": "If you have any questions about this Privacy Policy or how we handle your data, you can contact us at:"
+            }
+        }
+    },
+    "terms": {
+        "meta": {
+            "title": "Terms & Conditions — Nomadic Digital",
+            "description": "Read the terms and conditions governing the use of Nomadic Digital’s website and services."
+        },
+        "title": "Terms & Conditions",
+        "lastUpdated": "Last updated: {date}",
+        "intro": "These Terms & Conditions govern your use of the Nomadic Digital website and services. By accessing this site or contacting us, you agree to these terms.",
+        "sections": {
+            "about": {
+                "title": "1. About us",
+                "text": "Nomadic Digital provides digital services including web design, development, branding, SEO, and marketing strategy. All information on this site is provided for general informational purposes."
+            },
+            "usage": {
+                "title": "2. Use of the website",
+                "text": "You agree to use this website only for lawful purposes. You must not:",
+                "items": {
+                    "access": "Attempt to gain unauthorized access to the website or systems",
+                    "damage": "Use the website in a way that could damage or impair functionality",
+                    "copy": "Copy or reuse content without permission"
+                }
+            },
+            "services": {
+                "title": "3. Services & proposals",
+                "text": "Any services offered are subject to a separate agreement, proposal, or contract. Submitting a contact form or inquiry does not create a binding agreement."
+            },
+            "ip": {
+                "title": "4. Intellectual property",
+                "text": "All content on this website—including text, visuals, branding, and layout—is the property of Nomadic Digital unless otherwise stated. You may not reproduce or distribute any content without written permission."
+            },
+            "liability": {
+                "title": "5. Limitation of liability",
+                "text": "We make reasonable efforts to ensure the accuracy of information on this site, but we do not guarantee that all content is complete or up to date. We are not liable for any damages resulting from the use or inability to use this website."
+            },
+            "links": {
+                "title": "6. External links",
+                "text": "This website may contain links to third-party websites. We are not responsible for the content or practices of those sites."
+            },
+            "changes": {
+                "title": "7. Changes to these terms",
+                "text": "We may update these Terms & Conditions from time to time. Any changes will be posted on this page with an updated revision date."
+            },
+            "contact": {
+                "title": "8. Contact",
+                "text": "If you have any questions about these Terms & Conditions, you can contact us at:"
+            }
+        }
+    },
+    "meta": {
+        "about": {
+            "title": "About Nomadic Digital — Strategy, Design & Engineering",
+            "description": "Nomadic Digital is a digital studio focused on strategy, design, and scalable engineering for modern businesses."
+        },
+        "blog": {
+            "title": "Blog — Insights, Strategy & Digital Craft",
+            "description": "Stories, insights, and practical lessons from Nomadic Digital on strategy, design, and engineering."
+        }
+    },
+    "about": {
+        "pageTitle": "About us"
+    },
+    "contact": {
+        "meta": {
+            "title": "Contact — Nomadic Digital",
+            "description": "Start a conversation with Nomadic Digital. Tell us about your project and we’ll get back with clear next steps."
+        }
+    },
+    "pricing": {
+        "title": "Pricing",
+        "meta": {
+            "description": "Transparent pricing for digital strategy, design, and development services."
+        }
+    },
+    "services": {
+        "meta": {
+            "title": "Services",
+            "description": "Digital strategy, design, development, automation, and custom solutions built for growth."
+        }
+    },
+    "home": {
+        "meta": {
+            "title": "Digital Products, Platforms & Growth Systems",
+            "description": "We design and build high-performance websites, platforms, and digital systems that scale with your business."
+        }
+    }
+}

@@ -2,51 +2,108 @@
 	import { cubicOut } from 'svelte/easing';
 	import { tweened } from 'svelte/motion';
 	import { onMount } from 'svelte';
+	import { t } from '$lib/i18n';
 
-	/* ---------- DATA ---------- */
-	export let caseStudy = {
-		label: 'Case study',
-		tags: 'UX/UI Redesign, Frontend Optimization.',
-		brand: 'CONTE',
-		image: '/content/grain-dark.jpg',
-		description: 'From branding to web development and marketing',
-		link: '/projects/fabrica'
-	};
+	let {
+		caseStudy: caseStudyProp = null,
+		performance: performanceProp = null,
+		score: scoreProp = 92,
+		visits: visitsProp = null
+	} = $props();
 
-	export let performance = {
-		boost: 'Page speed +48%, Bounce rate -23%',
-		conversion: '4.2% → 5.9%',
-		testimonial: 'Thanks to the redesign, we’ve seen a steady 60% increase in leads.',
-		author: 'Angela Smith'
-	};
-
-	export let score = 92;
-
-	export let visits = {
-		total: '38K',
-		growth: '+30%',
-		months: [
-			{ label: 'Dec', value: 1 },
-			{ label: 'Jan', value: 1.3 },
-			{ label: 'Feb', value: 1.1 },
-			{ label: 'Mar', value: 1.5 },
-			{ label: 'Apr', value: 2.3 },
-			{ label: 'May', value: 5.3 }
-		]
-	};
-
-	let root;
-	let visible = false;
-
-	/* ---------- SCORE ---------- */
-	const animatedScore = tweened(0, { duration: 2700, easing: cubicOut });
-
-	/* ---------- BARS ---------- */
-	const barStores = visits.months.map(
-		() => tweened(0, { duration: 600, easing: cubicOut })
+	const caseStudy = $derived(
+		caseStudyProp ?? {
+			label: $t('case.label'),
+			tags: $t('case.tags'),
+			brand: 'CONTE',
+			image: '/content/grain-dark.jpg',
+			description: $t('case.description'),
+			link: '/portfolio/conte'
+		}
 	);
 
-	let barHeights = visits.months.map(() => 0);
+	const performance = $derived(
+		performanceProp ?? {
+			boost: $t('case.performance.boost'),
+			conversion: $t('case.performance.conversion'),
+			testimonial: $t('case.performance.testimonial'),
+			author: $t('case.performance.author')
+		}
+	);
+
+	const score = $derived(scoreProp ?? 92);
+
+	const visits = $derived(
+		visitsProp ?? {
+			total: '38K',
+			growth: '+30%',
+			months: [
+				{ label: $t('case.month.dec'), value: 1 },
+				{ label: $t('case.month.jan'), value: 1.3 },
+				{ label: $t('case.month.feb'), value: 1.1 },
+				{ label: $t('case.month.mar'), value: 1.5 },
+				{ label: $t('case.month.apr'), value: 2.3 },
+				{ label: $t('case.month.may'), value: 5.3 }
+			]
+		}
+	);
+
+	let root;
+	let visible = $state(false);
+
+	// score anim
+	const animatedScore = tweened(0, { duration: 2700, easing: cubicOut });
+
+	// bars
+	let barStores = [];
+	let barHeights = $state([]);
+	let unsubs = [];
+
+	function cleanupBars() {
+		for (const u of unsubs) if (typeof u === 'function') u();
+		unsubs = [];
+	}
+
+	function initBars() {
+		cleanupBars();
+
+		const n = visits.months.length;
+
+		// local array so we DON'T read barHeights inside subscriptions
+		const heights = Array(n).fill(0);
+
+		barStores = Array.from({ length: n }, () => tweened(0, { duration: 600, easing: cubicOut }));
+		barHeights = heights.slice();
+
+		unsubs = barStores.map((store, i) =>
+			store.subscribe((v) => {
+				heights[i] = v;
+				barHeights = heights.slice(); // reassign from local, no barHeights read
+			})
+		);
+	}
+
+	function animateBarsWithStagger() {
+		barStores.forEach((store, i) => {
+			setTimeout(() => {
+				store.set(visits.months[i].value);
+			}, i * 120);
+		});
+	}
+
+	// Re-init bars when visits changes (locale switch changes labels)
+	$effect(() => {
+		initBars();
+
+		if (visible) {
+			animatedScore.set(score);
+			animateBarsWithStagger();
+		} else {
+			animatedScore.set(0);
+		}
+
+		return () => cleanupBars();
+	});
 
 	onMount(() => {
 		const observer = new IntersectionObserver(
@@ -54,24 +111,19 @@
 				if (entry.isIntersecting) {
 					visible = true;
 					animatedScore.set(score);
-
-					barStores.forEach((store, i) => {
-						setTimeout(() => {
-							store.set(visits.months[i].value);
-						}, i * 120);
-
-						store.subscribe(v => {
-							barHeights[i] = v;
-						});
-					});
-
+					animateBarsWithStagger();
 					observer.disconnect();
 				}
 			},
 			{ threshold: 0.35 }
 		);
 
-		observer.observe(root);
+		if (root) observer.observe(root);
+
+		return () => {
+			observer.disconnect();
+			cleanupBars();
+		};
 	});
 </script>
 
@@ -97,7 +149,7 @@
 						href={caseStudy.link}
 						class="font-geist text-sm text-white/80 hover:text-white transition"
 					>
-						Live website ↗
+						{$t('case.live')}
 					</a>
 				</div>
 			</div>
@@ -108,10 +160,12 @@
 				style="animation-delay:.1s"
 			>
 				<div>
-					<p class="font-inter text-sm text-black/50 mb-2">Performance boost</p>
+					<p class="font-inter text-sm text-black/50 mb-2">{$t('case.performance.title')}</p>
 					<p class="font-calsans text-2xl mb-6">{performance.boost}</p>
 
-					<p class="font-inter text-sm text-black/50 mb-2">Conversion rate</p>
+					<p class="font-inter text-sm text-black/50 mb-2">
+						{$t('case.performance.conversionLabel')}
+					</p>
 					<p class="font-calsans text-2xl">{performance.conversion}</p>
 				</div>
 
@@ -145,7 +199,7 @@
 				</svg>
 
 				<p class="font-calsans text-2xl mt-4">{$animatedScore.toFixed(0)}</p>
-				<p class="font-inter text-sm text-black/60">Page speed score</p>
+				<p class="font-inter text-sm text-black/60">{$t('case.scoreLabel')}</p>
 			</div>
 
 			<!-- VISITS -->
@@ -158,7 +212,7 @@
 						{visits.total}
 						<span class="text-sm text-black/50 ml-2">{visits.growth}</span>
 					</p>
-					<p class="font-inter text-sm text-black/60">Quarterly visits</p>
+					<p class="font-inter text-sm text-black/60">{$t('case.visitsLabel')}</p>
 				</div>
 
 				<div class="flex items-end gap-2 h-28">
@@ -166,7 +220,7 @@
 						<div class="flex flex-col items-center gap-2">
 							<div
 								class="w-4 rounded-full bg-black origin-bottom transition-all"
-								style="height:{barHeights[i] * 18}px"
+								style="height:{(barHeights[i] ?? 0) * 18}px"
 							/>
 							<span class="text-xs text-black/40">{m.label}</span>
 						</div>

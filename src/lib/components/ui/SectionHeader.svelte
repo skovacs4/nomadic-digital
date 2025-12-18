@@ -9,7 +9,7 @@
 	<div class="max-w-8xl mx-auto relative">
 
 		<!-- LEFT LABEL -->
-		<p class="text-sm font-bold text-black/50 absolute left-0 top-2 md:top-3">
+		<p class="text-sm font-bold text-black/50 absolute left-0 top-2 md:top-3 hidden md:block">
 			({count})
 		</p>
 

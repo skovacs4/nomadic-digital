@@ -1,34 +1,21 @@
 <script>
 	import { slide, fade } from 'svelte/transition';
+	import { t } from '$lib/i18n';
 
-	let open = -1;
+	let open = $state(-1);
 
-	const faqs = [
-		{
-			q: 'How long does it take to build a website?',
-			a: 'The timeline depends on complexity and scope. Most projects take between 4–8 weeks. We provide a clear timeline during the initial consultation.'
-		},
-		{
-			q: 'Do you offer custom websites or use templates?',
-			a: 'All projects are custom-designed. We don’t rely on generic templates — every solution is built around your business goals.'
-		},
-		{
-			q: 'What’s included in your SEO services?',
-			a: 'Our SEO services include technical optimization, keyword research, on-page improvements, performance tuning, and analytics setup.'
-		},
-		{
-			q: 'How does the monthly subscription model work?',
-			a: 'For ongoing services, we offer monthly subscriptions covering maintenance, optimization, and growth support. Plans are flexible and scalable.'
-		},
-		{
-			q: 'Can you redesign my existing website?',
-			a: 'Yes. We frequently redesign existing websites, improving UX, performance, and visual clarity while preserving your brand.'
-		},
-		{
-			q: 'How do I get started?',
-			a: 'Simply reach out through our contact form. We’ll schedule a discovery call to understand your needs and propose the next steps.'
-		}
-	];
+	let { faqs: faqsProp = null } = $props();
+
+	const faqs = $derived(
+		faqsProp ?? [
+			{ q: $t('faq.1.q'), a: $t('faq.1.a') },
+			{ q: $t('faq.2.q'), a: $t('faq.2.a') },
+			{ q: $t('faq.3.q'), a: $t('faq.3.a') },
+			{ q: $t('faq.4.q'), a: $t('faq.4.a') },
+			{ q: $t('faq.5.q'), a: $t('faq.5.a') },
+			{ q: $t('faq.6.q'), a: $t('faq.6.a') }
+		]
+	);
 </script>
 
 <section class="mt-2 max-w-[1600px] mx-auto px-6 md:px-12 py-24">
@@ -36,11 +23,11 @@
 		<!-- LEFT -->
 		<div class="lg:col-span-4">
 			<h2 class="font-calsans text-6xl md:text-7xl tracking-tight mb-6">
-				FAQ<span class="text-black/40"></span>
+				{$t('faq.title')}<span class="text-black/40"></span>
 			</h2>
 
 			<p class="font-inter text-lg text-black/60 max-w-sm">
-				Got questions? We’ve got answers. Everything you need to know about working with us.
+				{$t('faq.subtitle')}
 			</p>
 		</div>
 
@@ -50,11 +37,10 @@
 				<div class="rounded-2xl bg-white border border-black/5 px-8 py-6 transition cursor-pointer">
 					<button
 						class="w-full flex items-center justify-between text-left cursor-pointer"
+						type="button"
 						on:click={() => (open = open === i ? -1 : i)}
 					>
-						<span class="font-geist text-lg">
-							{item.q}
-						</span>
+						<span class="font-geist text-lg">{item.q}</span>
 
 						<span
 							class="w-8 h-8 rounded-full border border-black flex items-center justify-center text-sm

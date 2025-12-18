@@ -1,5 +1,7 @@
 <script lang="ts">
 	// @ts-nocheck
+	import { t } from '$lib/i18n';
+
 	let openId: string | null = null;
 
 	const VISIBLE_TAGS = 5;
@@ -8,85 +10,78 @@
 	const services = [
 		{
 			id: '01',
-			title: 'Web & E-commerce Platforms',
-			description:
-				'Fast, scalable websites and e-commerce platforms designed for performance, conversion, and long-term growth. Built cleanly, without unnecessary layers.',
+			titleKey: 'services.01.title',
+			descKey: 'services.01.desc',
 			image: '/content/services/mockup-open-laptop.jpg',
 			categories: [
-				'Custom websites',
-				'E-commerce (B2C / B2B)',
-				'Performance optimization',
-				'SEO-ready architecture',
-				'Headless CMS',
-				'Conversion-focused UX'
+				'services.01.cat.1',
+				'services.01.cat.2',
+				'services.01.cat.3',
+				'services.01.cat.4',
+				'services.01.cat.5',
+				'services.01.cat.6'
 			]
 		},
 		{
 			id: '02',
-			title: 'SaaS & Custom Systems',
-			description:
-				'Robust internal tools, SaaS platforms, and dashboards where reliability, security, and maintainability matter more than trends.',
+			titleKey: 'services.02.title',
+			descKey: 'services.02.desc',
 			image: '/content/services/saas-code-2.jpg',
 			categories: [
-				'SaaS architecture',
-				'Admin dashboards',
-				'ERP Integrations',
-				'Stock Sync & Management',
-				'Role-based access',
-				'Payments & subscriptions',
-				'API integrations',
-				'Scalable backends'
+				'services.02.cat.1',
+				'services.02.cat.2',
+				'services.02.cat.3',
+				'services.02.cat.4',
+				'services.02.cat.5',
+				'services.02.cat.6',
+				'services.02.cat.7',
+				'services.02.cat.8'
 			]
 		},
 		{
 			id: '03',
-			title: 'UX, Brand & Product Design',
-			description:
-				'Design systems and interfaces that remove friction, communicate clearly, and feel intentional across every touchpoint.',
+			titleKey: 'services.03.title',
+			descKey: 'services.03.desc',
 			image: '/content/services/design.jpg',
 			categories: [
-				'UX & UI design',
-				'Product structure',
-				'Design systems',
-				'Brand identity',
-				'Visual language',
-				'Usability testing'
+				'services.03.cat.1',
+				'services.03.cat.2',
+				'services.03.cat.3',
+				'services.03.cat.4',
+				'services.03.cat.5',
+				'services.03.cat.6'
 			]
 		},
 		{
 			id: '04',
-			title: 'Marketing, SEO & Growth',
-			description:
-				'Focused marketing strategies built around measurable outcomes — visibility, acquisition, and sustainable growth.',
+			titleKey: 'services.04.title',
+			descKey: 'services.04.desc',
 			image: '/content/services/web-view.jpg',
 			categories: [
-				'SEO strategy',
-				'Content marketing',
-				'Paid ads (Google / Meta)',
-				'Analytics & tracking',
-				'Conversion optimization',
-				'Growth experiments',
-				'Local Advertising'
+				'services.04.cat.1',
+				'services.04.cat.2',
+				'services.04.cat.3',
+				'services.04.cat.4',
+				'services.04.cat.5',
+				'services.04.cat.6',
+				'services.04.cat.7'
 			]
 		},
 		{
 			id: '05',
-			title: 'Mobile App Development',
-			description:
-				'Native and cross-platform mobile applications built for reliability, performance, and real-world usage — not demos.',
+			titleKey: 'services.05.title',
+			descKey: 'services.05.desc',
 			image: '/content/services/app-development.jpg',
 			categories: [
-				'iOS & Android apps',
-				'Cross-platform (Flutter / React Native)',
-				'App architecture',
-				'API integrations',
-				'Performance optimization',
-				'App store deployment'
+				'services.05.cat.1',
+				'services.05.cat.2',
+				'services.05.cat.3',
+				'services.05.cat.4',
+				'services.05.cat.5',
+				'services.05.cat.6'
 			]
 		}
-
 	];
-
 
 	function toggle(id: string) {
 		openId = openId === id ? null : id;
@@ -118,11 +113,11 @@
 				<span class="w-5 h-5 rounded-full border border-white/40 flex items-center justify-center"
 					>+</span
 				>
-				<span>What we do</span>
+				<span>{$t('services.kicker')}</span>
 			</div>
 
 			<h2 class="text-[clamp(3.5rem,8vw,6.5rem)] font-semibold tracking-tight">
-				Services<span class="text-white/40"></span>
+				{$t('services.heading')}<span class="text-white/40"></span>
 			</h2>
 		</div>
 
@@ -137,7 +132,7 @@
 					>
 						<div class="flex items-center gap-10">
 							<span class="text-white/40 text-sm w-16">({s.id})</span>
-							<h3 class="text-xl md:text-2xl font-semibold">{s.title}</h3>
+							<h3 class="text-xl md:text-2xl font-semibold">{$t(s.titleKey)}</h3>
 						</div>
 
 						<span
@@ -162,19 +157,19 @@
 
 							<!-- Text -->
 							<div>
-								<p class="text-white/60 max-w-xl mb-6">{s.description}</p>
+								<p class="text-white/60 max-w-xl mb-6">{$t(s.descKey)}</p>
 							</div>
 
 							<!-- Categories -->
 							<div class="max-w-sm">
 								<span class="block text-xs uppercase tracking-wider text-white/40 mb-3">
-									Categories
+									{$t('services.categoriesLabel')}
 								</span>
 
 								<div class="flex flex-wrap gap-2">
 									{#each expandedCategories[s.id] ? s.categories : s.categories.slice(0, VISIBLE_TAGS) as c}
 										<span class="px-3 py-1.5 text-xs rounded-full bg-white text-black font-medium">
-											{c}
+											{$t(c)}
 										</span>
 									{/each}
 
@@ -186,7 +181,7 @@
 											hover:bg-white/20 hover:text-white transition"
 										>
 											{expandedCategories[s.id]
-												? 'Show less'
+												? $t('services.showLess')
 												: `+${s.categories.length - VISIBLE_TAGS}`}
 										</button>
 									{/if}

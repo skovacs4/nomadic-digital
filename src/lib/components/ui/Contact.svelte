@@ -1,18 +1,20 @@
 <script>
+	import { t } from '$lib/i18n';
+
 	let name = '';
 	let email = '';
 	let message = '';
 
-	let loading = false;
-	let success = false;
-	let error = '';
+	let loading = $state(false);
+	let success = $state(false);
+	let error = $state('');
 
 	async function submit() {
 		error = '';
 		success = false;
 
 		if (!name || !email || !message) {
-			error = 'Please fill in all fields.';
+			error = $t('contact.error.required');
 			return;
 		}
 
@@ -25,16 +27,20 @@
 				body: JSON.stringify({ name, email, message })
 			});
 
-			const data = await res.json();
+			const data = await res.json().catch(() => ({}));
 
-			if (!res.ok) throw new Error(data.error || 'Something went wrong');
+			if (!res.ok) {
+				// If your API returns a human message, you can show it,
+				// otherwise fall back to translated generic error
+				throw new Error(data.error || $t('contact.error.generic'));
+			}
 
 			success = true;
 			name = '';
 			email = '';
 			message = '';
 		} catch (err) {
-			error = err.message || 'Failed to send message.';
+			error = err?.message || $t('contact.error.generic');
 		} finally {
 			loading = false;
 		}
@@ -58,28 +64,28 @@
 			<!-- FORM -->
 			<div class="lg:col-span-4 lg:col-start-2">
 				<div class="bg-white text-black rounded-3xl p-8 shadow-2xl">
-					<p class="font-geist text-xs text-black/60 mb-2">Nomadic Digital ®</p>
-					<h3 class="font-calsans text-2xl mb-6">Have a project in mind?</h3>
+					<p class="font-geist text-xs text-black/60 mb-2">{$t('contact.brand')}</p>
+					<h3 class="font-calsans text-2xl mb-6">{$t('contact.form.title')}</h3>
 
 					<form class="space-y-4" on:submit|preventDefault={submit}>
 						<input
 							bind:value={name}
 							type="text"
-							placeholder="Your name"
+							placeholder={$t('contact.form.name')}
 							class="w-full rounded-xl bg-black/5 px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-black"
 						/>
 
 						<input
 							bind:value={email}
 							type="email"
-							placeholder="E-mail"
+							placeholder={$t('contact.form.email')}
 							class="w-full rounded-xl bg-black/5 px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-black"
 						/>
 
 						<textarea
 							bind:value={message}
 							rows="4"
-							placeholder="Tell us about your project"
+							placeholder={$t('contact.form.message')}
 							class="w-full rounded-xl bg-black/5 px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-black resize-none"
 						></textarea>
 
@@ -89,7 +95,7 @@
 							class="w-full rounded-full bg-black text-white py-3 text-sm font-medium
 							hover:bg-black/90 transition disabled:opacity-60 cursor-pointer"
 						>
-							{loading ? 'Sending…' : 'Send message'}
+							{loading ? $t('contact.form.sending') : $t('contact.form.send')}
 						</button>
 
 						{#if error}
@@ -98,12 +104,12 @@
 
 						{#if success}
 							<p class="text-xs text-green-600">
-								Message sent successfully. We’ll get back to you shortly.
+								{$t('contact.success')}
 							</p>
 						{/if}
 
 						<p class="text-[11px] text-black/40 mt-2">
-							By submitting, you agree to our Terms & Privacy Policy.
+							{$t('contact.legal')}
 						</p>
 					</form>
 				</div>
@@ -112,25 +118,25 @@
 			<!-- CONTENT -->
 			<div class="lg:col-span-5 lg:col-start-7">
 				<h2 class="font-calsans text-6xl md:text-7xl tracking-tight leading-[1.05] mb-6">
-					Let’s talk.
+					{$t('contact.title')}
 				</h2>
 
 				<p class="font-inter text-lg text-white/70 max-w-lg mb-14">
-					Tell us about your project—whether it’s a website, SEO, or marketing.
+					{$t('contact.subtitle')}
 				</p>
 
 				<div class="grid grid-cols-1 sm:grid-cols-2 gap-12 mb-16">
 					<div>
-						<p class="font-geist text-sm mb-2">Quick response</p>
+						<p class="font-geist text-sm mb-2">{$t('contact.benefit1.title')}</p>
 						<p class="text-sm text-white/60 leading-relaxed">
-							We reply quickly and keep communication simple and direct.
+							{$t('contact.benefit1.text')}
 						</p>
 					</div>
 
 					<div>
-						<p class="font-geist text-sm mb-2">Clear next steps</p>
+						<p class="font-geist text-sm mb-2">{$t('contact.benefit2.title')}</p>
 						<p class="text-sm text-white/60 leading-relaxed">
-							You’ll receive a concrete plan, scope, and timeline.
+							{$t('contact.benefit2.text')}
 						</p>
 					</div>
 				</div>
@@ -138,23 +144,17 @@
 				<!-- CONTACT CARD -->
 				<div
 					class="
-		group inline-flex items-center gap-4
-		bg-white text-black rounded-2xl px-5 py-4
-		shadow-lg transition-all duration-300
-		hover:-translate-y-1 hover:shadow-2xl
-	"
+						group inline-flex items-center gap-4
+						bg-white text-black rounded-2xl px-5 py-4
+						shadow-lg transition-all duration-300
+						hover:-translate-y-1 hover:shadow-2xl
+					"
 				>
-					<img
-						src="/content/teodora.jpeg"
-						class="
-			w-14 h-14 rounded-xl object-cover
-		"
-						alt=""
-					/>
+					<img src="/content/teodora.jpeg" class="w-14 h-14 rounded-xl object-cover" alt="" />
 
 					<div>
-						<p class="text-xs text-black/60">Client & Growth Manager</p>
-						<p class="font-geist text-sm font-medium">Teodora Szelyes</p>
+						<p class="text-xs text-black/60">{$t('contact.card.role')}</p>
+						<p class="font-geist text-sm font-medium">{$t('contact.card.name')}</p>
 					</div>
 
 					<a
@@ -162,15 +162,15 @@
 						target="_blank"
 						rel="noopener noreferrer"
 						class="
-			ml-4 rounded-full bg-black text-white
-			px-4 py-2 text-xs
-			transition-all duration-300
-			hover:bg-black/90 hover:scale-105
-			active:scale-95
-			whitespace-nowrap
-		"
+							ml-4 rounded-full bg-black text-white
+							px-4 py-2 text-xs
+							transition-all duration-300
+							hover:bg-black/90 hover:scale-105
+							active:scale-95
+							whitespace-nowrap
+						"
 					>
-						Ask directly
+						{$t('contact.card.cta')}
 					</a>
 				</div>
 			</div>

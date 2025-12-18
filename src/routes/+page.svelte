@@ -1,4 +1,7 @@
 <script>
+	import { t } from '$lib/i18n';
+	import { page } from '$app/stores';
+
 	import Hero from "$lib/components/ui/Hero.svelte";
 	import Clients from "$lib/components/ui/Clients.svelte";
 	import Portfolio from "$lib/components/ui/Portfolio.svelte";
@@ -15,7 +18,30 @@
 	import FAQ from "$lib/components/ui/FAQ.svelte";
 	import Blog from "$lib/components/ui/Blog.svelte";
 	import Contact from "$lib/components/ui/Contact.svelte";
+
+	const url = $page.url.href;
+
+	$: title = `${$t('home.meta.title')} | Nomadic Digital`;
+	$: description = $t('home.meta.description');
+
 </script>
+
+<svelte:head>
+	<title>{title}</title>
+	<meta name="description" content={description} />
+	<link rel="canonical" href={url} />
+
+	<!-- Open Graph -->
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content={title} />
+	<meta property="og:description" content={description} />
+	<meta property="og:url" content={url} />
+
+	<!-- Twitter -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content={title} />
+	<meta name="twitter:description" content={description} />
+</svelte:head>
 
 <!-- HERO -->
 <div class="mb-4" data-aos="fade">
@@ -30,9 +56,9 @@
 <!-- PROJECTS HEADER -->
 <div id="selected-work" class="mt-16 max-w-[1500px] mx-auto px-6 md:px-12" data-aos="fade-up">
 	<SectionHeader
-		count={"Selected work"}
-		title="Projects"
-		description="We’ve helped businesses across industries achieve their goals. Here are some of our recent projects."
+		count={$t('home.projects.count')}
+		title={$t('home.projects.title')}
+		description={$t('home.projects.description')}
 	/>
 </div>
 

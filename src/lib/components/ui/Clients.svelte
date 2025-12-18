@@ -1,4 +1,6 @@
 <script>
+	import { t } from '$lib/i18n';
+
 	// Placeholder logos in clean 300 × 120 ratio
 	export let logos = [
 		"/logos/clients/softone.png",
@@ -19,10 +21,14 @@
 				<div class="w-2 h-2 rounded-full bg-black"></div>
 			</div>
 
-			<h2 class="font-inter text-base font-bold text-black tracking-tight">Our clients</h2>
+			<h2 class="font-inter text-base font-bold text-black tracking-tight">
+				{$t('clients.title')}
+			</h2>
 		</div>
 
-		<p class="font-inter text-sm text-black/50 tracking-wide font-bold">(Selected client partnerships)</p>
+		<p class="font-inter text-sm text-black/50 tracking-wide font-bold">
+			{$t('clients.subtitle')}
+		</p>
 	</div>
 
 	<!-- LOGOS GRID -->

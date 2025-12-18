@@ -3,7 +3,7 @@
 
 </script>
 
-<section class="px-6 md:px-0 py-24 bg-[var(--color-background)]">
+<section class="px-6 py-24 bg-[var(--color-background)]">
 	<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
 		{#each projects as p}
 			<a href={`/portfolio/${p.slug}`} class="group space-y-3 cursor-pointer block">

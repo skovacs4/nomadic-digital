@@ -1,0 +1,671 @@
+{
+    "nav.work": "Portofoliu",
+    "nav.about": "Despre noi",
+    "nav.services": "Servicii",
+    "nav.contact": "Contact",
+    "nav.bookCall": "Programează un apel",
+    "nav.lang.en": "EN",
+    "nav.lang.ro": "RO",
+    "hero.kicker": "Nomadic Digital ® — Studio Digital",
+    "hero.title.main": "Construim experiențe digitale",
+    "hero.title.muted": " care chiar performează.",
+    "hero.subtitle": "Strategie, design și dezvoltare pentru branduri care vor claritate, viteză și creștere măsurabilă.",
+    "hero.cta.primary": "Începe un proiect →",
+    "hero.cta.secondary": "Vezi proiecte selectate",
+    "hero.footer": "© 2025 Nomadic Digital",
+    "clients.title": "Clienții noștri",
+    "clients.subtitle": "(Parteneriate selectate)",
+    "home.projects.count": "Proiecte selectate",
+    "home.projects.title": "Proiecte",
+    "home.projects.description": "Am ajutat business-uri din industrii diferite să-și atingă obiectivele. Iată câteva proiecte recente.",
+    "why.label": "De ce noi",
+    "why.title1": "Rezultate dovedite pentru fiecare proiect,",
+    "why.title2": "cu focus pe design și funcționalitate.",
+    "why.subtitle": "Fără balast, doar rezultate. Design atent și soluții care îți fac munca mai ușoară. Ne concentrăm pe funcționalitate și impact, proiect după proiect.",
+    "why.overlay.text": "Drumul tău digital începe cu o conversație.<br />Hai să vorbim azi.",
+    "why.overlay.cta": "Hai să vorbim",
+    "why.stat1.label": "Proiecte livrate cu succes",
+    "why.stat1.desc": "Website-uri, platforme e-commerce și integrări complexe livrate pentru business-uri reale.",
+    "why.stat2.label": "Satisfacția clienților",
+    "why.stat2.desc": "Parteneriate pe termen lung, construite pe comunicare clară și livrare predictibilă.",
+    "services.kicker": "Ce facem",
+    "services.heading": "Servicii",
+    "services.categoriesLabel": "Categorii",
+    "services.showLess": "Arată mai puțin",
+    "services.01.title": "Platforme Web & E-commerce",
+    "services.01.desc": "Website-uri rapide, scalabile și platforme e-commerce construite pentru performanță, conversie și creștere pe termen lung. Fără straturi inutile.",
+    "services.01.cat.1": "Website-uri custom",
+    "services.01.cat.2": "E-commerce (B2C / B2B)",
+    "services.01.cat.3": "Optimizare performanță",
+    "services.01.cat.4": "Arhitectură SEO-ready",
+    "services.01.cat.5": "Headless CMS",
+    "services.01.cat.6": "UX orientat pe conversie",
+    "services.02.title": "SaaS & Sisteme Custom",
+    "services.02.desc": "Tool-uri interne, platforme SaaS și dashboard-uri unde contează fiabilitatea, securitatea și mentenanța — nu trendurile.",
+    "services.02.cat.1": "Arhitectură SaaS",
+    "services.02.cat.2": "Dashboard-uri admin",
+    "services.02.cat.3": "Integrări ERP",
+    "services.02.cat.4": "Sync & management stoc",
+    "services.02.cat.5": "Acces pe roluri",
+    "services.02.cat.6": "Plăți & abonamente",
+    "services.02.cat.7": "Integrări API",
+    "services.02.cat.8": "Backend-uri scalabile",
+    "services.03.title": "UX, Brand & Product Design",
+    "services.03.desc": "Design systems și interfețe care reduc fricțiunea, comunică clar și se simt intenționate în fiecare punct de contact.",
+    "services.03.cat.1": "Design UX & UI",
+    "services.03.cat.2": "Structură produs",
+    "services.03.cat.3": "Design systems",
+    "services.03.cat.4": "Identitate de brand",
+    "services.03.cat.5": "Limbaj vizual",
+    "services.03.cat.6": "Testare de utilizabilitate",
+    "services.04.title": "Marketing, SEO & Growth",
+    "services.04.desc": "Strategii de marketing construite pe rezultate măsurabile — vizibilitate, achiziție și creștere sustenabilă.",
+    "services.04.cat.1": "Strategie SEO",
+    "services.04.cat.2": "Content marketing",
+    "services.04.cat.3": "Reclame plătite (Google / Meta)",
+    "services.04.cat.4": "Analytics & tracking",
+    "services.04.cat.5": "Optimizare conversie",
+    "services.04.cat.6": "Experimente de growth",
+    "services.04.cat.7": "Publicitate locală",
+    "services.05.title": "Dezvoltare Aplicații Mobile",
+    "services.05.desc": "Aplicații mobile native și cross-platform construite pentru fiabilitate, performanță și utilizare reală — nu demo-uri.",
+    "services.05.cat.1": "Aplicații iOS & Android",
+    "services.05.cat.2": "Cross-platform (Flutter / React Native)",
+    "services.05.cat.3": "Arhitectură aplicație",
+    "services.05.cat.4": "Integrări API",
+    "services.05.cat.5": "Optimizare performanță",
+    "services.05.cat.6": "Publicare în App Store",
+    "about.label": "Despre noi",
+    "about.brand": "Nomadic Digital ®",
+    "about.titleBold": "Cum lansăm",
+    "about.titleRest": "website-uri și campanii de marketing.",
+    "about.description": "Vezi cum combinăm creativitatea, tehnologia și strategia pentru a construi soluții digitale cu impact.",
+    "how.steps.1.step": "PASUL 1.",
+    "how.steps.1.title": "Faza de descoperire",
+    "how.steps.1.desc": "Înțelegem obiectivele, provocările, publicul și ce te diferențiază.",
+    "how.steps.2.step": "PASUL 2.",
+    "how.steps.2.title": "Start proiect",
+    "how.steps.2.desc": "Aliniem scope-ul, etapele și stabilim o direcție clară pentru execuție.",
+    "how.steps.3.step": "PASUL 3.",
+    "how.steps.3.title": "Revizuim & rafinăm",
+    "how.steps.3.desc": "Revizuim împreună, colectăm feedback și rafinăm până arată exact cum trebuie.",
+    "how.steps.4.step": "PASUL 4.",
+    "how.steps.4.title": "Continuăm & creștem",
+    "how.steps.4.desc": "Lansăm cu încredere și susținem creșterea pe termen lung și iterațiile.",
+    "testimonials.eyebrow": "Testimoniale",
+    "testimonials.title": "Experiențe",
+    "testimonials.year": "©2025",
+    "testimonials.summary.rating": "4,9",
+    "testimonials.summary.text": "Am livrat 56+ proiecte care ajută companiile să obțină rezultate reale.",
+    "testimonials.cta.leaveReview": "Lasă un review",
+    "testimonials.items.1.name": "James Carter",
+    "testimonials.items.1.role": "Wilson & Co",
+    "testimonials.items.1.text": "Echipă excelentă! Au livrat exact ce aveam nevoie, la timp și peste așteptări.",
+    "testimonials.items.2.name": "Emily Davis",
+    "testimonials.items.2.role": "StartUp Hub",
+    "testimonials.items.2.text": "Proces fluent de la început până la final. Echipă foarte profesionistă!",
+    "testimonials.items.3.name": "Anna Martinez",
+    "testimonials.items.3.role": "Director Marketing",
+    "testimonials.items.3.text": "Noul nostru branding este exact cum ni l-am imaginat — curat, modern și unic.",
+    "stats.1.value": "3m+",
+    "stats.1.label": "Afișări de reclame gestionate",
+    "stats.2.value": "27+",
+    "stats.2.label": "Proiecte lansate cu succes",
+    "stats.3.value": "98%",
+    "stats.3.label": "Rată de satisfacție a clienților",
+    "stats.4.value": "50k+",
+    "stats.4.label": "Vizitatori/lună generați prin SEO",
+    "case.label": "Studiu de caz",
+    "case.tags": "Redesign UX/UI, Optimizare Frontend.",
+    "case.description": "De la branding la dezvoltare web și marketing",
+    "case.live": "Website live ↗",
+    "case.performance.title": "Creștere performanță",
+    "case.performance.conversionLabel": "Rată de conversie",
+    "case.performance.boost": "Viteză pagină +48%, Bounce rate -23%",
+    "case.performance.conversion": "4,2% → 5,9%",
+    "case.performance.testimonial": "Datorită redesign-ului, am văzut o creștere constantă de 60% a lead-urilor.",
+    "case.performance.author": "Angela Smith",
+    "case.scoreLabel": "Scor viteză pagină",
+    "case.visitsLabel": "Vizite trimestriale",
+    "case.month.dec": "Dec",
+    "case.month.jan": "Ian",
+    "case.month.feb": "Feb",
+    "case.month.mar": "Mar",
+    "case.month.apr": "Apr",
+    "case.month.may": "Mai",
+    "pricing.eyebrow": "Prețuri",
+    "pricing.title": "Prețuri simple",
+    "pricing.titleMuted": " pentru echipe în creștere.",
+    "pricing.subtitle": "Planuri transparente, construite să crească odată cu business-ul tău. Fără costuri ascunse.",
+    "pricing.plan.starter.name": "Starter",
+    "pricing.plan.starter.price": "€1.200",
+    "pricing.plan.starter.subtitle": "Pentru business-uri la început",
+    "pricing.plan.starter.features.1": "Website sau landing page",
+    "pricing.plan.starter.features.2": "Design UX/UI",
+    "pricing.plan.starter.features.3": "Layout responsive",
+    "pricing.plan.starter.features.4": "Setare SEO de bază",
+    "pricing.plan.starter.cta": "Începe acum",
+    "pricing.plan.pro.name": "Pro",
+    "pricing.plan.pro.price": "€2.500",
+    "pricing.plan.pro.subtitle": "Cea mai bună valoare pentru echipe în creștere",
+    "pricing.plan.pro.features.1": "Totul din Starter",
+    "pricing.plan.pro.features.2": "Integrări custom",
+    "pricing.plan.pro.features.3": "Optimizare performanță",
+    "pricing.plan.pro.features.4": "SEO & analytics avansat",
+    "pricing.plan.pro.features.5": "Website-uri e-commerce (standard)",
+    "pricing.plan.pro.features.6": "Dezvoltare aplicații mobile (apps simple: comenzi, programări, MVP)",
+    "pricing.plan.pro.features.7": "Suport prioritar",
+    "pricing.plan.pro.cta": "Pornește proiectul",
+    "pricing.plan.enterprise.name": "Enterprise",
+    "pricing.plan.enterprise.price": "Personalizat",
+    "pricing.plan.enterprise.subtitle": "Construit pe nevoile business-ului tău",
+    "pricing.plan.enterprise.features.1": "Platforme complexe & SaaS",
+    "pricing.plan.enterprise.features.2": "Soluții e-commerce custom",
+    "pricing.plan.enterprise.features.3": "Integrări ERP / API",
+    "pricing.plan.enterprise.features.4": "Fluxuri de automatizare",
+    "pricing.plan.enterprise.features.5": "Aplicații mobile avansate",
+    "pricing.plan.enterprise.features.6": "Parteneriat pe termen lung",
+    "pricing.plan.enterprise.cta": "Discută cu noi",
+    "team.eyebrow": "Echipă",
+    "team.titleA": "Oamenii din spatele",
+    "team.titleB": "rezultatelor.",
+    "team.subtitle": "O echipă multidisciplinară de designeri, developeri și consultanți, focusată pe produse digitale cu impact.",
+    "team.member.stefan.role": "Fondator & Lead Engineer",
+    "team.member.stefan.desc": "Arhitectură de sistem, integrări complexe și dezvoltare hands-on pe multiple platforme.",
+    "team.member.teodora.role": "Client & Growth Manager",
+    "team.member.teodora.desc": "Relația cu clienții, coordonarea proiectelor și execuție orientată spre creștere.",
+    "team.member.mihai.role": "Consultant Conținut & Strategie",
+    "team.member.mihai.desc": "Producție de conținut, consultanță strategică și evaluare de risc în proiecte.",
+    "team.member.dulca.role": "Consultant Principal Vânzări",
+    "team.member.dulca.desc": "Outbound sales, atragere de clienți și negocieri la primul contact.",
+    "faq.title": "Întrebări frecvente",
+    "faq.subtitle": "Ai întrebări? Avem răspunsuri. Tot ce trebuie să știi despre colaborarea cu noi.",
+    "faq.1.q": "Cât durează realizarea unui website?",
+    "faq.1.a": "Durata depinde de complexitate și scop. Majoritatea proiectelor durează între 4–8 săptămâni. Stabilim un timeline clar încă din prima discuție.",
+    "faq.2.q": "Faceți website-uri custom sau folosiți template-uri?",
+    "faq.2.a": "Toate proiectele sunt realizate custom. Nu folosim template-uri generice — fiecare soluție este construită în jurul obiectivelor tale.",
+    "faq.3.q": "Ce include serviciul de SEO?",
+    "faq.3.a": "SEO include optimizare tehnică, research de cuvinte cheie, îmbunătățiri on-page, optimizare de performanță și configurare analytics.",
+    "faq.4.q": "Cum funcționează abonamentul lunar?",
+    "faq.4.a": "Pentru servicii continue, oferim abonamente lunare pentru mentenanță, optimizări și suport de creștere. Planurile sunt flexibile și scalabile.",
+    "faq.5.q": "Puteți face redesign la website-ul meu existent?",
+    "faq.5.a": "Da. Refacem frecvent website-uri existente, îmbunătățind UX, performanța și claritatea vizuală, păstrând identitatea brandului.",
+    "faq.6.q": "Cum încep?",
+    "faq.6.a": "Scrie-ne prin formularul de contact. Programăm un discovery call ca să înțelegem nevoile tale și să stabilim pașii următori.",
+    "blog.section.titleA": "Tendințe noi",
+    "blog.section.titleB": " și insight-uri de la echipa noastră.",
+    "blog.section.subtitle": "Rămâi la curent cu proiectele noastre recente, trenduri și insight-uri din industrie.",
+    "blog.section.cta": "Vezi tot",
+    "contact.brand": "Nomadic Digital ®",
+    "contact.form.title": "Ai un proiect în minte?",
+    "contact.form.name": "Numele tău",
+    "contact.form.email": "E-mail",
+    "contact.form.message": "Spune-ne despre proiectul tău",
+    "contact.form.sending": "Se trimite…",
+    "contact.form.send": "Trimite mesajul",
+    "contact.error.required": "Te rugăm să completezi toate câmpurile.",
+    "contact.error.generic": "Nu am putut trimite mesajul.",
+    "contact.success": "Mesaj trimis cu succes. Revenim către tine în scurt timp.",
+    "contact.legal": "Prin trimitere, ești de acord cu Termenii & Politica de confidențialitate.",
+    "contact.title": "Hai să vorbim.",
+    "contact.subtitle": "Spune-ne despre proiectul tău — fie că e website, SEO sau marketing.",
+    "contact.benefit1.title": "Răspuns rapid",
+    "contact.benefit1.text": "Răspundem rapid și păstrăm comunicarea simplă și directă.",
+    "contact.benefit2.title": "Pași clari",
+    "contact.benefit2.text": "Vei primi un plan concret, un scope clar și un timeline.",
+    "contact.card.role": "Client & Growth Manager",
+    "contact.card.name": "Teodora Szelyes",
+    "contact.card.cta": "Întreabă direct",
+    "footer.desc": "Proiectăm și construim produse digitale performante — website-uri, platforme și sisteme de marketing care pot scala.",
+    "footer.company": "Companie",
+    "footer.company.about": "Despre",
+    "footer.company.work": "Portofoliu",
+    "footer.company.pricing": "Prețuri",
+    "footer.company.contact": "Contact",
+    "footer.services": "Servicii",
+    "footer.services.1": "Web Design",
+    "footer.services.2": "Dezvoltare Web",
+    "footer.services.3": "SEO & Performanță",
+    "footer.services.4": "Strategie de brand",
+    "footer.follow": "Urmărește-ne",
+    "footer.follow.instagram": "Instagram",
+    "footer.follow.facebook": "Facebook",
+    "footer.follow.linkedin": "LinkedIn",
+    "footer.follow.x": "Twitter / X",
+    "footer.copyright": "© {year} Nomadic Digital ® . Toate drepturile rezervate.",
+    "footer.cta": "Începe un proiect",
+    "footer.privacy": "Politica de confidențialitate",
+    "footer.terms": "Termeni & condiții",
+    "footer.logoAlt": "Logo Nomadic Digital",
+    "about.pageTitle": "Despre noi",
+    "about.studio": "Studio",
+    "about.hero.bold": "Construim produse digitale cu claritate, disciplină și scop.",
+    "about.hero.sub": "Fiecare decizie este intenționată — de la structură și performanță, până la felul în care se simte un brand atunci când cineva îl folosește.",
+    "about.hero.socialProof": "De încredere pentru fondatori, operatori și echipe în creștere din toată lumea",
+    "about.hero.note": "Fără zgomot. Fără straturi inutile. Doar muncă digitală bine făcută, care rezistă în timp.",
+    "about.hero.imageAlt": "Colaborare în studio",
+    "about.approach.kicker": "Fiecare proiect pe care îl acceptăm este gândit pentru succes pe termen lung.",
+    "about.approach.line1": "Abordarea noastră este simplă:",
+    "about.approach.line2": "funcționalitate, viteză și claritate,",
+    "about.approach.line3": "fără complexitate inutilă.",
+    "about.approach.body": "Nu promitem exagerat. Construim produse digitale durabile și bine gândite, care cresc odată cu nevoile reale ale unui business.",
+    "about.approach.cta": "Portofoliu",
+    "about.difference.title": "Ce ne diferențiază",
+    "about.difference.subtitle": "Nu mai zgomotoși. Nu mai mari. Doar mai preciși acolo unde contează.",
+    "about.difference.bold": "Nu vindem servicii.",
+    "about.difference.rest": "Rezolvăm probleme de business specifice prin muncă digitală focusată și intenționată.",
+    "about.difference.body": "Fără scope umflat. Fără straturi inutile. Fiecare linie de cod, fiecare alegere de design și fiecare integrare există cu un scop — să performeze, să scaleze și să reziste.",
+    "about.difference.cta": "Contactează-ne",
+    "about.editorial.1.title": "Cunoaște echipa",
+    "about.editorial.2.title": "Cum lucrăm",
+    "services.pageTitle": "Servicii",
+    "services.capabilities": "Capabilități",
+    "services.hero.bold": "Proiectăm și construim sisteme digitale care susțin creșterea reală.",
+    "services.hero.sub": "De la strategie și UX până la dezvoltare complexă și integrări, munca noastră este orientată spre claritate, performanță și valoare pe termen lung.",
+    "services.hero.note": "Nu oferim pachete generice. Fiecare colaborare este construită în jurul problemei de business, produsului și stadiului în care te afli.",
+    "services.hero.right": "Ghidat de strategie. Orientat pe rezultate. Construit să reziste.",
+    "services.hero.imageAlt": "Colaborare în studio",
+    "services.01.kicker": "Platforme Web & E-commerce",
+    "services.01.headline": "Platforme rapide și scalabile, construite pentru conversie.",
+    "services.01.body": "Proiectăm și dezvoltăm website-uri moderne și platforme e-commerce care se încarcă rapid, scalează curat și susțin atât marketingul, cât și operațiunile.",
+    "services.01.points.1": "Storefront-uri custom",
+    "services.01.points.2": "Fluxuri B2C & B2B",
+    "services.01.points.3": "Optimizare de performanță",
+    "services.01.points.4": "Arhitectură pregătită pentru SEO",
+    "services.02.kicker": "SaaS & Sisteme Custom",
+    "services.02.headline": "Produse complexe, arhitectură curată.",
+    "services.02.body": "Construim tool-uri interne, platforme SaaS și dashboard-uri custom unde fiabilitatea, securitatea și mentenanța contează.",
+    "services.02.points.1": "Dashboard-uri de administrare",
+    "services.02.points.2": "Sisteme cu roluri și permisiuni",
+    "services.02.points.3": "Plăți & abonamente",
+    "services.02.points.4": "Logică backend scalabilă",
+    "services.02.points.5": "Integrări ERP",
+    "services.02.points.6": "Integrări API complexe",
+    "services.03.kicker": "UX, Brand & Product Design",
+    "services.03.headline": "Design care elimină fricțiunea.",
+    "services.03.body": "Proiectăm interfețe și sisteme de brand care sunt intenționate, clare și aliniate cu felul în care utilizatorii chiar se comportă.",
+    "services.03.points.1": "Design UX & UI",
+    "services.03.points.2": "Structură de produs",
+    "services.03.points.3": "Sisteme de brand",
+    "services.03.points.4": "Design systems",
+    "services.03.points.5": "Print & producție on-demand",
+    "services.03.points.6": "Materiale fizice de brand (cărți de vizită, apparel, packaging)",
+    "services.04.kicker": "Marketing & Growth",
+    "services.04.headline": "Marketing construit pe date, nu pe presupuneri.",
+    "services.04.body": "Planificăm și executăm sisteme de marketing care susțin creșterea pe termen lung — aliniate cu produsul, infrastructura și constrângerile reale ale business-ului.",
+    "services.04.points.1": "Marketing de performanță",
+    "services.04.points.2": "SEO & strategie de conținut",
+    "services.04.points.3": "Analytics & tracking de conversii",
+    "services.04.points.4": "Structură de campanii & optimizare",
+    "services.05.kicker": "Dezvoltare Aplicații Mobile",
+    "services.05.headline": "Aplicații mobile construite pentru utilizare reală.",
+    "services.05.body": "Proiectăm și dezvoltăm aplicații mobile fiabile, performante și ușor de menținut — focusate pe utilizabilitate pe termen lung, nu pe demo-uri de moment.",
+    "services.05.points.1": "Aplicații iOS & Android",
+    "services.05.points.2": "Dezvoltare cross-platform (Flutter / React Native)",
+    "services.05.points.3": "Integrare API & backend",
+    "services.05.points.4": "Optimizare de performanță & scalabilitate",
+    "services.05.points.5": "Publicare în App Store & Play Store",
+    "services.highlights.1.tag": "Engineering",
+    "services.highlights.1.title": "Sisteme scalabile",
+    "services.highlights.1.desc": "Arhitectură gândită să crească odată cu business-ul tău.",
+    "services.highlights.2.tag": "UX / UI",
+    "services.highlights.2.title": "Design de produs clar",
+    "services.highlights.2.desc": "Interfețe care reduc fricțiunea și cresc conversia.",
+    "services.bottomCta.title": "Ai o problemă specifică de rezolvat?",
+    "services.bottomCta.sub": "Dacă nu ești sigur ce ți se potrivește, te ajutăm să alegi direcția corectă.",
+    "services.bottomCta.button": "Începe o conversație",
+    "contact.hero.imageAlt": "Imagine fundal",
+    "contact.hero.eyebrow": "Începe o conversație",
+    "contact.hero.title": "Hai să construim ceva",
+    "contact.hero.titleMuted": "cu sens.",
+    "contact.hero.subtitle": "Website-uri, e-commerce, aplicații mobile și strategii de creștere — construite cu claritate, performanță și valoare pe termen lung.",
+    "contact.left.kicker": "Contact",
+    "contact.left.title": "Hai să vorbim.",
+    "contact.left.description": "Spune-ne despre proiectul tău. Revenim cu pași clari, fără obligații.",
+    "contact.left.emailLabel": "Email",
+    "contact.left.responseLabel": "Timp de răspuns",
+    "contact.left.responseValue": "De obicei în maximum 48 de ore",
+    "contact.form.nameLabel": "Nume",
+    "contact.form.namePlaceholder": "Numele tău",
+    "contact.form.emailLabel": "Email",
+    "contact.form.emailPlaceholder": "tu@email.com",
+    "contact.form.messageLabel": "Mesaj",
+    "contact.form.messagePlaceholder": "Spune-ne pe scurt despre proiect",
+    "contact.form.send": "Trimite mesaj",
+    "contact.form.sending": "Se trimite…",
+    "contact.form.success": "Mesaj trimis cu succes. Revenim în scurt timp.",
+    "contact.form.privacyNote": "Prin trimiterea formularului ești de acord cu Politica de confidențialitate.",
+    "contact.form.genericError": "A apărut o eroare",
+    "portfolioPageTitle": "Portofoliu",
+    "portfolio": {
+        "pageTitle": "Portofoliu",
+        "meta": {
+            "client": "Client",
+            "category": "Categorie",
+            "year": "An",
+            "status": "Status",
+            "title": "Portfoliu — Nomadic Digital",
+            "description": "Explorează proiecte selectate și produse digitale create de Nomadic Digital."
+        },
+        "sections": {
+            "scope": "Scope",
+            "deliverables": "Livrabile",
+            "technology": "Tehnologie"
+        },
+        "cta": {
+            "startSimilar": "Începe un proiect similar"
+        },
+        "status": {
+            "live": "Live",
+            "inProgress": "În lucru",
+            "completed": "Finalizat"
+        },
+        "categories": {
+            "ecommerceBrandPlatform": "E-commerce · Platformă de brand",
+            "saasDigitalAdvertising": "SaaS · Publicitate digitală",
+            "corporateWebsite": "Website corporate",
+            "saasSportsManagement": "SaaS · Management sport",
+            "ecommerceBrandWebsite": "E-commerce · Website de brand",
+            "corporateBrandWebsite": "Corporate · Website de brand"
+        },
+        "scope": {
+            "platformArchitecture": "Arhitectură platformă",
+            "uxUiDesign": "Design UX / UI",
+            "ecommerceDevelopment": "Dezvoltare e-commerce",
+            "erpApiIntegrations": "Integrări ERP & API",
+            "performanceOptimization": "Optimizare performanță",
+            "saasArchitecture": "Arhitectură SaaS",
+            "adminDashboard": "Dashboard admin",
+            "tabletInterface": "Interfață tabletă",
+            "reportingAnalytics": "Raportare & analytics",
+            "roleBasedAccess": "Acces pe roluri",
+            "websiteDevelopment": "Dezvoltare website",
+            "seoStructure": "Structură SEO",
+            "memberManagement": "Management membri",
+            "paymentFlows": "Fluxuri de plată",
+            "mobileFirstUx": "UX mobile-first",
+            "brandUx": "Brand UX",
+            "productPresentation": "Prezentare produse",
+            "seoOptimization": "Optimizare SEO",
+            "websiteRedesign": "Redesign website",
+            "contentStructure": "Structură conținut",
+            "brandPresentation": "Prezentare brand"
+        },
+        "deliverables": {
+            "customStorefront": "Storefront custom",
+            "adminDashboard": "Dashboard admin",
+            "productStockSync": "Sincronizare produse & stoc",
+            "seoReadyStructure": "Structură SEO-ready",
+            "analyticsSetup": "Setare analytics",
+            "webAdminPlatform": "Platformă web admin",
+            "tabletUi": "Interfață tabletă",
+            "campaignReporting": "Raportare campanii",
+            "clientDashboards": "Dashboard-uri clienți",
+            "corporateWebsite": "Website corporate",
+            "responsiveLayouts": "Layout-uri responsive",
+            "seoReadyPages": "Pagini SEO-ready",
+            "webAdminPanel": "Panou web admin",
+            "memberDashboard": "Dashboard membri",
+            "paymentSystem": "Sistem de plăți",
+            "classScheduling": "Programare clase",
+            "productPages": "Pagini de produs",
+            "contentDrivenLayout": "Layout orientat pe conținut",
+            "multilingualStructure": "Structură multilingvă"
+        },
+        "metrics": {
+            "pageSpeed": "Viteză pagină",
+            "conversionRate": "Rată de conversie",
+            "bounceRate": "Rată de respingere",
+            "activeScreens": "Ecrane active",
+            "monthlyImpressions": "Impresii lunare",
+            "clubsOnboarded": "Cluburi înscrise",
+            "activeMembers": "Membri activi"
+        },
+        "roles": {
+            "ecommerceOperations": "E-commerce & Operațiuni"
+        },
+        "projects": {
+            "conte": {
+                "overview": {
+                    "headline": "O platformă e-commerce scalabilă, construită pentru creștere.",
+                    "description": "Conte avea nevoie de o platformă modernă și performantă, care să susțină atât operațiuni B2C, cât și B2B, păstrând în același timp o experiență premium de brand în toate punctele de contact."
+                },
+                "outcomes": {
+                    "headline": "Construită să scaleze fără fricțiune.",
+                    "description": "Noua platformă a eliminat blocajele operaționale, a unificat fluxurile B2C și B2B și a îmbunătățit semnificativ performanța pe toate dispozitivele. Rezultatul este o experiență de cumpărare mai rapidă și mai stabilă, care susține creșterea fără a compromite calitatea brandului."
+                },
+                "testimonial": {
+                    "quote": "Noua platformă ne-a oferit stabilitate, viteză și încrederea de a scala fără fricțiune."
+                }
+            },
+            "locallia": {
+                "overview": {
+                    "headline": "O platformă de publicitate locală, cu impact în lumea reală.",
+                    "description": "Locallia conectează brandurile cu audiențe locale prin publicitate inteligentă în mașini și raportare transparentă, bazată pe date."
+                },
+                "outcomes": {
+                    "headline": "Transformă reach-ul fizic în performanță măsurabilă.",
+                    "description": "Locallia a obținut o fundație SaaS robustă, cu raportare în timp real, management scalabil al dispozitivelor și insights transparente despre campanii—permițând decizii bazate pe date atât pentru advertiseri, cât și pentru operatori."
+                }
+            },
+            "kronburg": {
+                "overview": {
+                    "headline": "O prezență corporate curată, construită pe claritate și încredere.",
+                    "description": "Kronburg avea nevoie de un website sobru și profesional, care să comunice fiabilitate și structură, fără zgomot vizual."
+                },
+                "outcomes": {
+                    "headline": "O prezență digitală construită pe încredere și sobrietate.",
+                    "description": "Website-ul oferă un mesaj de brand clar și profesionist, cu distrageri minime, păstrând timpi de încărcare rapizi și o structură SEO solidă."
+                }
+            },
+            "fluxum": {
+                "overview": {
+                    "headline": "O platformă modernă pentru managementul cluburilor sportive și comunităților.",
+                    "description": "Fluxum simplifică abonamentele, plățile, programările și comunicarea pentru săli și cluburi sportive."
+                },
+                "outcomes": {
+                    "headline": "Simplifică operațiuni complexe într-o singură platformă.",
+                    "description": "Fluxum centralizează abonamentele, plățile, programările și comunicarea într-un singur sistem, reducând munca administrativă și îmbunătățind experiența zilnică atât pentru administratori, cât și pentru membri."
+                }
+            },
+            "natscent": {
+                "overview": {
+                    "headline": "O experiență e-commerce rafinată pentru un brand de parfumuri.",
+                    "description": "Natscent avea nevoie de un storefront calm, editorial, care să balanseze storytelling-ul cu conversia."
+                },
+                "outcomes": {
+                    "headline": "Un storefront editorial, gândit pentru conversie.",
+                    "description": "Noua experiență echilibrează povestea și comerțul, permițând brandului să comunice identitate și atmosferă, păstrând un flux de cumpărare fluent și orientat spre conversie."
+                }
+            },
+            "viorica": {
+                "overview": {
+                    "headline": "O prezență digitală orientată pe brand pentru o companie de cosmetice.",
+                    "description": "Viorica avea nevoie de un website clar și elegant, pentru a prezenta produsele și valorile brandului către o audiență internațională."
+                },
+                "outcomes": {
+                    "headline": "O poveste de brand mai clară pentru o audiență internațională.",
+                    "description": "Website-ul actualizat a oferit o prezentare structurată și elegantă a produselor și valorilor brandului, susținând comunicarea multilingvă și consistența pe termen lung."
+                }
+            }
+        }
+    },
+    "blog": {
+        "pageTitle": "Blog",
+        "index": {
+            "title": "Noutați din blog",
+            "subtitle": "Insight-uri, studii de caz și lecții învățate din proiectele noastre recente."
+        },
+        "roles": {
+            "productStrategist": "Strateg produs",
+            "uiuxDesigner": "Designer UI/UX",
+            "securityLead": "Responsabil securitate",
+            "cfoCoFounder": "CFO & co-fondator",
+            "growthAnalyst": "Analist growth"
+        },
+        "posts": {
+            "metricsForSaas": {
+                "title": "5 metrici pe care orice fondator SaaS ar trebui să le urmărească",
+                "description": "Află ce KPI-uri contează când scalezi un SaaS.",
+                "content": "<div class=\"space-y-10 text-gray-800 text-[15px] leading-relaxed\"><div><h2 class=\"text-2xl font-semibold mb-3\">Înțelegerea numerelor</h2><p class=\"font-[550]\">Să știi ce să măsori este esențial atunci când crești un produs. Metrici precum churn, valoarea pe durata de viață a clientului (LTV) și costul de achiziție (CAC) oferă perspective puternice despre sănătatea businessului. Fără aceste numere, deciziile devin simple presupuneri.</p></div><div><h2 class=\"text-2xl font-semibold mb-3\">Metricile care contează</h2><p class=\"font-[550]\">Deși există multe metrici posibile, nu toate au aceeași greutate. Prioritizează engagement-ul, ratele de conversie și utilizarea funcțiilor pentru a înțelege cum livrează produsul valoare. Acești indicatori te ghidează spre acțiuni cu impact.</p></div><div><h2 class=\"text-2xl font-semibold mb-3\">Aplicarea insight-urilor</h2><p class=\"font-[550]\">Urmărirea metricilor este doar jumătate din ecuație—mai important este ce faci cu ele. Folosește datele ca să validezi idei, să îmbunătățești experiența utilizatorilor și să identifici oportunități. Revizuirile regulate duc la decizii mai bune și creștere mai focusată.</p></div></div>"
+            },
+            "simplerDashboard": {
+                "title": "Cum am proiectat o experiență de dashboard mai simplă",
+                "description": "O privire din culise asupra modului în care am construit un dashboard clar, rapid și orientat către utilizator.",
+                "content": "<div class=\"space-y-10 text-gray-800 text-[15px] leading-relaxed\"><div><h2 class=\"text-2xl font-semibold mb-3\">Provocări de design</h2><p class=\"font-[550]\">Am început prin a identifica elementele cele mai confuze din dashboard-ul actual...</p></div><div><h2 class=\"text-2xl font-semibold mb-3\">Simplificarea interfeței</h2><p class=\"font-[550]\">Prin testare și feedback, am rafinat structura pentru a crește claritatea și a reduce aglomerația...</p></div></div>"
+            },
+            "secureSyncing": {
+                "title": "De ce sincronizarea sigură contează mai mult ca niciodată",
+                "description": "Vezi cum abordarea noastră security-first îți protejează datele și îți oferă liniște.",
+                "content": "<div class=\"space-y-10 text-gray-800 text-[15px] leading-relaxed\"><div><h2 class=\"text-2xl font-semibold mb-3\">Riscurile datelor nesigure</h2><p class=\"font-[550]\">Sincronizarea datelor poate expune vulnerabilități dacă nu este făcută corect...</p></div><div><h2 class=\"text-2xl font-semibold mb-3\">Cum securizăm sincronizarea</h2><p class=\"font-[550]\">Folosim criptare end-to-end și controale stricte de acces pentru ca doar utilizatorii autorizați să poată vedea date sensibile...</p></div></div>"
+            },
+            "scalingFinance": {
+                "title": "Cum scalezi finanțele unui startup fără stres",
+                "description": "Strategii și instrumente practice pentru a-ți gestiona finanțele pe măsură ce crești.",
+                "content": "<div class=\"space-y-10 text-gray-800 text-[15px] leading-relaxed\"><div><h2 class=\"text-2xl font-semibold mb-3\">Igiena financiară</h2><p class=\"font-[550]\">Chiar și în stadiile incipiente, igiena financiară de bază este critică...</p></div><div><h2 class=\"text-2xl font-semibold mb-3\">Instrumente pentru scalare</h2><p class=\"font-[550]\">Recomandăm instrumente de forecasting automatizat și dashboard-uri clare pentru cash flow...</p></div></div>"
+            },
+            "lessons10k": {
+                "title": "Ce am învățat de la peste 10.000 de utilizatori",
+                "description": "Insight-uri reale care modelează direcția viitoare a produsului nostru.",
+                "content": "<div class=\"space-y-10 text-gray-800 text-[15px] leading-relaxed\"><div><h2 class=\"text-2xl font-semibold mb-3\">Insight-uri din comportamentul utilizatorilor</h2><p class=\"font-[550]\">De la onboarding până la utilizarea pe termen lung, am urmărit trenduri care au scos la iveală nevoi neașteptate...</p></div><div><h2 class=\"text-2xl font-semibold mb-3\">Adaptarea produsului</h2><p class=\"font-[550]\">Am făcut schimbări pe baza acestor observații, inclusiv simplificarea înscrierii și îmbunătățirea vizibilității suportului...</p></div></div>"
+            }
+        }
+    },
+    "privacy": {
+        "meta": {
+            "title": "Politica de Confidențialitate — Nomadic Digital",
+            "description": "Află cum Nomadic Digital colectează, utilizează și protejează datele tale personale, conform GDPR."
+        },
+        "title": "Politica de confidențialitate",
+        "lastUpdated": "Ultima actualizare: {date}",
+        "intro": "<b>Nomadic Digital</b> („noi”, „al nostru”) respectă confidențialitatea ta. Această politică explică modul în care colectăm, utilizăm și protejăm informațiile tale atunci când vizitezi website-ul nostru sau ne contactezi prin formulare.",
+        "sections": {
+            "collect": {
+                "title": "1. Informații colectate",
+                "text": "Putem colecta informații personale furnizate voluntar, inclusiv:",
+                "items": {
+                    "name": "Nume",
+                    "email": "Adresă de email",
+                    "message": "Conținutul mesajului",
+                    "optional": "Orice alte informații pe care alegi să le furnizezi"
+                }
+            },
+            "usage": {
+                "title": "2. Cum folosim informațiile tale",
+                "text": "Folosim informațiile colectate exclusiv pentru:",
+                "items": {
+                    "reply": "A răspunde solicitărilor și mesajelor",
+                    "projects": "A comunica despre proiecte sau servicii potențiale",
+                    "improve": "Îmbunătățirea website-ului și a serviciilor noastre"
+                },
+                "note": "Nu vindem, nu închiriem și nu distribuim datele tale personale."
+            },
+            "security": {
+                "title": "3. Stocarea și securitatea datelor",
+                "text": "Aplicăm măsuri tehnice și organizatorice rezonabile pentru a proteja datele tale. Mesajele trimise prin formularul de contact sunt transmise în siguranță și accesibile doar personalului autorizat."
+            },
+            "cookies": {
+                "title": "4. Cookie-uri și analiză",
+                "text": "Website-ul poate utiliza instrumente de analiză de bază pentru a înțelege traficul și utilizarea. Acestea colectează date anonime, agregate și nu permit identificarea personală."
+            },
+            "rights": {
+                "title": "5. Drepturile tale (GDPR)",
+                "text": "Dacă te afli în Uniunea Europeană, ai dreptul să:",
+                "items": {
+                    "access": "Soliciți acces la datele tale personale",
+                    "modify": "Soliciți corectarea sau ștergerea datelor",
+                    "withdraw": "Îți retragi consimțământul în orice moment"
+                }
+            },
+            "contact": {
+                "title": "6. Contact",
+                "text": "Pentru orice întrebări legate de această politică sau de modul în care gestionăm datele tale, ne poți contacta la:"
+            }
+        }
+    },
+    "terms": {
+        "meta": {
+            "title": "Termeni și Condiții — Nomadic Digital",
+            "description": "Citește termenii și condițiile care reglementează utilizarea site-ului și serviciilor Nomadic Digital."
+        },
+        "title": "Termeni și condiții",
+        "lastUpdated": "Ultima actualizare: {date}",
+        "intro": "Acești Termeni și condiții reglementează utilizarea website-ului și a serviciilor Nomadic Digital. Prin accesarea acestui site sau contactarea noastră, ești de acord cu acești termeni.",
+        "sections": {
+            "about": {
+                "title": "1. Despre noi",
+                "text": "Nomadic Digital oferă servicii digitale precum web design, dezvoltare, branding, SEO și strategie de marketing. Informațiile de pe acest site sunt furnizate exclusiv în scop informativ."
+            },
+            "usage": {
+                "title": "2. Utilizarea website-ului",
+                "text": "Ești de acord să utilizezi acest website doar în scopuri legale. Este interzis să:",
+                "items": {
+                    "access": "Încerci să obții acces neautorizat la website sau sisteme",
+                    "damage": "Folosești website-ul într-un mod care poate afecta funcționalitatea",
+                    "copy": "Copiezi sau reutilizezi conținutul fără permisiune"
+                }
+            },
+            "services": {
+                "title": "3. Servicii și oferte",
+                "text": "Orice servicii oferite sunt supuse unui acord, unei propuneri sau unui contract separat. Trimiterea unui formular de contact nu creează o obligație contractuală."
+            },
+            "ip": {
+                "title": "4. Proprietate intelectuală",
+                "text": "Întregul conținut al acestui website — inclusiv texte, elemente vizuale, branding și structură — aparține Nomadic Digital, dacă nu se specifică altfel. Reproducerea sau distribuirea fără acord scris este interzisă."
+            },
+            "liability": {
+                "title": "5. Limitarea răspunderii",
+                "text": "Depunem eforturi rezonabile pentru a menține informațiile actualizate și corecte, însă nu garantăm exhaustivitatea acestora. Nu ne asumăm răspunderea pentru eventuale daune rezultate din utilizarea sau imposibilitatea utilizării website-ului."
+            },
+            "links": {
+                "title": "6. Linkuri externe",
+                "text": "Website-ul poate conține linkuri către site-uri terțe. Nu suntem responsabili pentru conținutul sau practicile acestora."
+            },
+            "changes": {
+                "title": "7. Modificări ale termenilor",
+                "text": "Ne rezervăm dreptul de a actualiza acești Termeni și condiții. Orice modificare va fi publicată pe această pagină, împreună cu data actualizării."
+            },
+            "contact": {
+                "title": "8. Contact",
+                "text": "Pentru orice întrebări legate de acești Termeni și condiții, ne poți contacta la:"
+            }
+        }
+    },
+    "meta": {
+        "about": {
+            "title": "Despre Nomadic Digital — Strategie, Design și Inginerie",
+            "description": "Nomadic Digital este un studio digital axat pe strategie, design și dezvoltare scalabilă pentru afaceri moderne."
+        },
+        "blog": {
+            "title": "Blog — Insight-uri, Strategie și Digital",
+            "description": "Articole, idei și lecții practice de la Nomadic Digital despre strategie, design și dezvoltare."
+        }
+    },
+    "about": {
+        "pageTitle": "Despre noi"
+    },
+    "contact": {
+        "meta": {
+            "title": "Contact — Nomadic Digital",
+            "description": "Începe o conversație cu Nomadic Digital. Spune-ne despre proiectul tău și revenim cu următorii pași."
+        }
+    },
+    "pricing": {
+        "title": "Prețuri",
+        "meta": {
+            "description": "Structuri de preț transparente pentru servicii digitale, design și dezvoltare."
+        }
+    },
+    "services": {
+        "meta": {
+            "title": "Servicii",
+            "description": "Strategie digitală, design, dezvoltare, automatizări și soluții personalizate pentru creștere."
+        }
+    },
+    "home": {
+        "meta": {
+            "title": "Produse Digitale, Platforme și Sisteme de Creștere",
+            "description": "Proiectăm și dezvoltăm website-uri, platforme și sisteme digitale performante care cresc odată cu afacerea ta."
+        }
+    }
+}

@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { setLocale } from '$lib/i18n';
 	import '../app.css';
 	import favicon from '$lib/assets/favicon.png';
 	import Header from '$lib/components/layout/Header.svelte';
@@ -8,11 +9,15 @@
 	import AOS from 'aos';
 	import 'aos/dist/aos.css';
 
-	// ✅ reactive scroll position
-	let scrollY = $state<number>(0);
+	const { data, children } = $props();
 
-	// ✅ derived visibility state (NO `$:`)
+	let scrollY = $state<number>(0);
 	const showBlur = $derived(scrollY > 300);
+
+	$effect(() => {
+		const lang = data?.lang === 'ro' ? 'ro' : 'en';
+		setLocale(lang, false);
+	});
 
 	onMount(() => {
 		AOS.init({
@@ -22,20 +27,16 @@
 			offset: 80
 		});
 	});
-
-	let { children } = $props();
 </script>
 
 <svelte:head>
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
-<!-- ✅ native, reactive scroll binding -->
 <svelte:window bind:scrollY />
 
 <Header />
 {@render children()}
 <Footer />
 
-<!-- Bottom edge blur -->
 <div class="bottom-edge-blur" class:is-visible={showBlur} />
