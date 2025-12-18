@@ -426,66 +426,142 @@
         },
         "projects": {
             "conte": {
+                "demos": {
+                    "stock": {
+                        "title": "Real-time stock synchronization",
+                        "body": "Automatic stock updates between the e-commerce platform and the ERP system, ensuring accurate availability across all channels without manual intervention."
+                    },
+                    "dashboard": {
+                        "title": "Unified admin dashboard",
+                        "body": "A centralized dashboard providing full visibility over orders, inventory, and integrations, designed for operational clarity and speed."
+                    },
+                    "uiux": {
+                        "title": "UX & UI optimization",
+                        "body": "Interface optimizations focused on clarity, usability, and conversion across all devices while preserving a premium brand feel."
+                    },
+                    "platform": {
+                        "title": "E-commerce platform architecture",
+                        "body": "A scalable platform supporting both B2C and B2B flows, built for performance, reliability, and long-term growth."
+                    }
+                },
                 "overview": {
                     "headline": "A scalable e-commerce platform built for growth.",
                     "description": "Conte needed a modern, performant platform that could support both B2C and B2B operations while maintaining a premium brand experience across all touchpoints."
                 },
                 "outcomes": {
                     "headline": "Built to scale without friction.",
-                    "description": "The new platform removed operational bottlenecks, unified B2C and B2B flows, and significantly improved performance across devices. The result is a faster, more reliable shopping experience that supports growth without sacrificing brand quality."
+                    "description": "Operational bottlenecks were removed, flows were unified, and performance improved across devices—resulting in a faster, more reliable shopping experience."
                 },
                 "testimonial": {
                     "quote": "The new platform gave us stability, speed, and the confidence to scale without friction."
                 }
             },
             "locallia": {
+                "demos": {
+                    "dashboard": {
+                        "title": "Campaign & device dashboard",
+                        "body": "A real-time dashboard for managing campaigns, devices, and impressions across the advertising network."
+                    },
+                    "analytics": {
+                        "title": "Reporting & analytics",
+                        "body": "Transparent reporting that turns physical ad exposure into measurable, data-driven insights."
+                    },
+                    "platform": {
+                        "title": "SaaS platform architecture",
+                        "body": "A scalable SaaS foundation supporting multi-tenant usage, device management, and future expansion."
+                    }
+                },
                 "overview": {
                     "headline": "A location-based advertising platform for real-world impact.",
                     "description": "Locallia connects brands with local audiences through smart, data-driven in-car advertising and transparent performance reporting."
                 },
                 "outcomes": {
                     "headline": "Turning physical reach into measurable performance.",
-                    "description": "Locallia gained a robust SaaS foundation that supports real-time reporting, scalable device management, and transparent campaign insights—enabling both advertisers and operators to make data-driven decisions."
+                    "description": "A robust SaaS foundation enabling real-time reporting, scalable device management, and clear performance insights."
                 }
             },
             "kronburg": {
+                "demos": {
+                    "uiux": {
+                        "title": "Corporate UX & UI design",
+                        "body": "A restrained, professional interface designed to communicate trust, structure, and clarity."
+                    },
+                    "website": {
+                        "title": "Corporate website development",
+                        "body": "A fast, SEO-optimized website focused on clear communication and long-term maintainability."
+                    }
+                },
                 "overview": {
                     "headline": "A clean corporate presence built on clarity and trust.",
                     "description": "Kronburg required a restrained, professional website that communicated reliability and structure without visual noise."
                 },
                 "outcomes": {
                     "headline": "A digital presence built on trust and restraint.",
-                    "description": "The website delivers a clear, professional brand message with minimal distraction, helping Kronburg communicate reliability and structure while maintaining fast load times and SEO clarity."
+                    "description": "A clear brand message delivered with fast load times, SEO clarity, and minimal distraction."
                 }
             },
             "fluxum": {
+                "demos": {
+                    "dashboard": {
+                        "title": "Club & admin dashboard",
+                        "body": "A centralized dashboard for managing members, classes, payments, and communication across clubs."
+                    },
+                    "payments": {
+                        "title": "Payments & subscriptions",
+                        "body": "Integrated recurring payments and subscription management tailored for sports organizations."
+                    },
+                    "platform": {
+                        "title": "SaaS system architecture",
+                        "body": "A scalable platform designed to support multiple clubs, roles, and future feature expansion."
+                    }
+                },
                 "overview": {
                     "headline": "A modern platform for managing sports clubs and communities.",
                     "description": "Fluxum simplifies memberships, payments, scheduling, and communication for gyms and sports clubs."
                 },
                 "outcomes": {
                     "headline": "Simplifying complex club operations into one platform.",
-                    "description": "Fluxum centralizes memberships, payments, scheduling, and communication into a single system, reducing administrative overhead and improving the day-to-day experience for both club owners and members."
+                    "description": "Club operations are centralized into a single system, reducing administrative overhead and improving daily workflows."
                 }
             },
             "natscent": {
+                "demos": {
+                    "uiux": {
+                        "title": "Editorial UX & visual identity",
+                        "body": "A calm, editorial interface designed to support storytelling while guiding users toward conversion."
+                    },
+                    "ecommerce": {
+                        "title": "E-commerce storefront",
+                        "body": "A streamlined shopping experience optimized for product discovery and smooth checkout."
+                    }
+                },
                 "overview": {
                     "headline": "A refined e-commerce experience for a fragrance brand.",
                     "description": "Natscent required a calm, editorial-style storefront that balanced storytelling with conversion."
                 },
                 "outcomes": {
                     "headline": "An editorial storefront designed to convert.",
-                    "description": "The new experience balances storytelling and commerce, allowing the brand to communicate mood and identity while maintaining a smooth, conversion-focused purchase flow."
+                    "description": "The experience balances brand narrative and commerce while maintaining a smooth purchase flow."
                 }
             },
             "viorica": {
+                "demos": {
+                    "erpSync": {
+                        "title": "ERP product & stock synchronization",
+                        "body": "Automated synchronization between the online store and the ERP system, ensuring product data, stock levels, and pricing remain consistent across systems."
+                    },
+                    "orderAutomation": {
+                        "title": "Order processing automation",
+                        "body": "Orders placed online are automatically pushed into the ERP, reducing manual processing, operational delays, and human error."
+                    }
+                },
                 "overview": {
-                    "headline": "A brand-focused digital presence for a cosmetics company.",
-                    "description": "Viorica needed a clear, elegant website to present products and brand values to an international audience."
+                    "headline": "ERP integration and operational automation for a cosmetics brand.",
+                    "description": "Viorica required a reliable integration layer between their e-commerce platform and ERP system to streamline operations and maintain data accuracy at scale."
                 },
                 "outcomes": {
-                    "headline": "A clearer brand narrative for an international audience.",
-                    "description": "The refreshed website provided a structured, elegant presentation of products and brand values, supporting multilingual communication and long-term brand consistency."
+                    "headline": "Reduced manual work through reliable ERP automation.",
+                    "description": "The integration enabled automated product sync and order processing, improving operational efficiency and reducing the risk of inconsistencies across systems."
                 }
             }
         }

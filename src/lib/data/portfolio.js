@@ -1,6 +1,5 @@
 export const projects = [
     {
-        thumbnail: '/portfolio/conte/cover-3.png',
         slug: 'conte',
         i18nKey: 'portfolio.projects.conte',
         title: 'CONTE',
@@ -9,11 +8,34 @@ export const projects = [
         categoryKey: 'portfolio.categories.ecommerceBrandPlatform',
         statusKey: 'portfolio.status.live',
 
+        thumbnail: '/portfolio/conte/cover-3.png',
+
         hero: {
             image: '/portfolio/conte/cover-3.png',
             logo: '/logos/clients/conte-white.png',
             theme: 'dark'
         },
+
+        demos: [
+            {
+                video: '/portfolio/conte/videos/video-1.mp4',
+                titleKey: 'portfolio.projects.conte.demos.stock.title',
+                bodyKey: 'portfolio.projects.conte.demos.stock.body',
+                inverted: false
+            },
+            {
+                video: '/portfolio/conte/videos/video-2.mp4',
+                titleKey: 'portfolio.projects.conte.demos.dashboard.title',
+                bodyKey: 'portfolio.projects.conte.demos.dashboard.body',
+                inverted: true
+            },
+            {
+                video: '/portfolio/conte/videos/video-3.mp4',
+                titleKey: 'portfolio.projects.conte.demos.uiux.title',
+                bodyKey: 'portfolio.projects.conte.demos.uiux.body',
+                inverted: false
+            }
+        ],
 
         overview: {
             headlineKey: 'portfolio.projects.conte.overview.headline',
@@ -50,10 +72,10 @@ export const projects = [
         ],
 
         gallery: [
-            'https://placehold.co/1600x1000/png?text=Project+Preview+01',
-            'https://placehold.co/1600x1000/png?text=Project+Preview+02',
-            'https://placehold.co/1600x1000/png?text=Project+Preview+03',
-            'https://placehold.co/1600x1000/png?text=Project+Preview+04'
+            { src: '/portfolio/conte/logo-brand-conte.jpeg', video: false },
+            { src: '/portfolio/conte/logo-brand-conte-2.jpeg', video: false },
+            { src: '/portfolio/conte/logo-brand-conte-3.jpg', video: false },
+            { src: '/portfolio/conte/logo-brand-conte-4.jpg', video: false }
         ],
 
         testimonial: {
@@ -63,8 +85,11 @@ export const projects = [
         }
     },
 
+    /* ------------------------------------------------------------------ */
+    /* LOCALLIA */
+    /* ------------------------------------------------------------------ */
+
     {
-        thumbnail: '/portfolio/locallia/abstract-skeleton.jpg',
         slug: 'locallia',
         i18nKey: 'portfolio.projects.locallia',
         title: 'Locallia',
@@ -73,11 +98,28 @@ export const projects = [
         categoryKey: 'portfolio.categories.saasDigitalAdvertising',
         statusKey: 'portfolio.status.live',
 
+        thumbnail: '/portfolio/locallia/abstract-skeleton.jpg',
+
         hero: {
             image: '/portfolio/locallia/abstract-skeleton.jpg',
             logo: '/portfolio/locallia/locallia-logo-white.png',
             theme: 'dark'
         },
+
+        demos: [
+            {
+                video: '/portfolio/locallia/videos/video-1.mp4',
+                titleKey: 'portfolio.projects.locallia.demos.analytics.title',
+                bodyKey: 'portfolio.projects.locallia.demos.analytics.body',
+                inverted: true
+            },
+            {
+                video: '/portfolio/locallia/videos/video-2.mp4',
+                titleKey: 'portfolio.projects.locallia.demos.dashboard.title',
+                bodyKey: 'portfolio.projects.locallia.demos.dashboard.body',
+                inverted: false
+            }
+        ],
 
         overview: {
             headlineKey: 'portfolio.projects.locallia.overview.headline',
@@ -92,16 +134,14 @@ export const projects = [
         scopeKeys: [
             'portfolio.scope.saasArchitecture',
             'portfolio.scope.adminDashboard',
-            'portfolio.scope.tabletInterface',
             'portfolio.scope.reportingAnalytics',
             'portfolio.scope.roleBasedAccess'
         ],
 
         deliverableKeys: [
             'portfolio.deliverables.webAdminPlatform',
-            'portfolio.deliverables.tabletUi',
-            'portfolio.deliverables.campaignReporting',
-            'portfolio.deliverables.clientDashboards'
+            'portfolio.deliverables.clientDashboards',
+            'portfolio.deliverables.campaignReporting'
         ],
 
         tech: ['SvelteKit', 'Firebase', 'Chart.js', 'Stripe'],
@@ -111,11 +151,17 @@ export const projects = [
             { labelKey: 'portfolio.metrics.monthlyImpressions', value: '250K+' }
         ],
 
-        gallery: ['/portfolio/locallia/screen-1.jpg', '/portfolio/locallia/screen-2.jpg']
+        gallery: [
+            { src: '/portfolio/locallia/mockup-dashboard-cover.jpg', video: false },
+            { src: '/portfolio/locallia/mockup-dashboard-cover-2.jpg', video: false }
+        ]
     },
 
+    /* ------------------------------------------------------------------ */
+    /* KRONBURG */
+    /* ------------------------------------------------------------------ */
+
     {
-        thumbnail: '/portfolio/kronburg/cover.png',
         slug: 'kronburg',
         i18nKey: 'portfolio.projects.kronburg',
         title: 'Kronburg',
@@ -124,11 +170,28 @@ export const projects = [
         categoryKey: 'portfolio.categories.corporateWebsite',
         statusKey: 'portfolio.status.live',
 
+        thumbnail: '/portfolio/kronburg/cover.png',
+
         hero: {
             image: '/portfolio/kronburg/cover.png',
             logo: '/logos/clients/kronburg-white.png',
             theme: 'light'
         },
+
+        demos: [
+            {
+                video: '/portfolio/kronburg/videos/video-1.mp4',
+                titleKey: 'portfolio.projects.kronburg.demos.website.title',
+                bodyKey: 'portfolio.projects.kronburg.demos.website.body',
+                inverted: true
+            },
+            {
+                video: '/portfolio/kronburg/videos/video-2.mp4',
+                titleKey: 'portfolio.projects.kronburg.demos.uiux.title',
+                bodyKey: 'portfolio.projects.kronburg.demos.uiux.body',
+                inverted: false
+            }
+        ],
 
         overview: {
             headlineKey: 'portfolio.projects.kronburg.overview.headline',
@@ -143,24 +206,27 @@ export const projects = [
         scopeKeys: [
             'portfolio.scope.uxUiDesign',
             'portfolio.scope.websiteDevelopment',
-            'portfolio.scope.seoStructure',
-            'portfolio.scope.performanceOptimization'
+            'portfolio.scope.seoStructure'
         ],
 
         deliverableKeys: [
             'portfolio.deliverables.corporateWebsite',
             'portfolio.deliverables.responsiveLayouts',
-            'portfolio.deliverables.contentStructure',
             'portfolio.deliverables.seoReadyPages'
         ],
 
         tech: ['SvelteKit', 'Tailwind CSS'],
 
-        gallery: ['/portfolio/kronburg/screen-1.jpg']
+        gallery: [{ src: '/portfolio/kronburg/content.png', video: false },
+        { src: '/portfolio/kronburg/content-2.png', video: false }
+        ]
     },
 
+    /* ------------------------------------------------------------------ */
+    /* FLUXUM */
+    /* ------------------------------------------------------------------ */
+
     {
-        thumbnail: '/portfolio/fluxum/fight-style.jpg',
         slug: 'fluxum',
         i18nKey: 'portfolio.projects.fluxum',
         title: 'Fluxum',
@@ -169,11 +235,28 @@ export const projects = [
         categoryKey: 'portfolio.categories.saasSportsManagement',
         statusKey: 'portfolio.status.inProgress',
 
+        thumbnail: '/portfolio/fluxum/fight-style.jpg',
+
         hero: {
             image: '/portfolio/fluxum/fight-style.jpg',
             logo: '/portfolio/fluxum/fluxum.png',
             theme: 'dark'
         },
+
+        demos: [
+            {
+                video: '/portfolio/placeholders/demo-dashboard.mp4',
+                titleKey: 'portfolio.projects.fluxum.demos.dashboard.title',
+                bodyKey: 'portfolio.projects.fluxum.demos.dashboard.body',
+                inverted: false
+            },
+            {
+                video: '/portfolio/placeholders/demo-payments.mp4',
+                titleKey: 'portfolio.projects.fluxum.demos.payments.title',
+                bodyKey: 'portfolio.projects.fluxum.demos.payments.body',
+                inverted: true
+            }
+        ],
 
         overview: {
             headlineKey: 'portfolio.projects.fluxum.overview.headline',
@@ -188,7 +271,6 @@ export const projects = [
         scopeKeys: [
             'portfolio.scope.saasArchitecture',
             'portfolio.scope.adminDashboard',
-            'portfolio.scope.memberManagement',
             'portfolio.scope.paymentFlows',
             'portfolio.scope.mobileFirstUx'
         ],
@@ -196,22 +278,22 @@ export const projects = [
         deliverableKeys: [
             'portfolio.deliverables.webAdminPanel',
             'portfolio.deliverables.memberDashboard',
-            'portfolio.deliverables.paymentSystem',
-            'portfolio.deliverables.classScheduling'
+            'portfolio.deliverables.paymentSystem'
         ],
 
-        tech: ['SvelteKit', 'Supabase', 'Stripe', 'Chart.js'],
+        tech: ['SvelteKit', 'Supabase', 'Stripe'],
 
-        results: [
-            { labelKey: 'portfolio.metrics.clubsOnboarded', value: '20+' },
-            { labelKey: 'portfolio.metrics.activeMembers', value: '1,000+' }
-        ],
-
-        gallery: ['/portfolio/fluxum/screen-1.jpg', '/portfolio/fluxum/screen-2.jpg']
+        gallery: [
+            { src: '/portfolio/fluxum/screen-1.jpg', video: false },
+            { src: '/portfolio/fluxum/screen-2.jpg', video: false }
+        ]
     },
 
+    /* ------------------------------------------------------------------ */
+    /* NATSCENT */
+    /* ------------------------------------------------------------------ */
+
     {
-        thumbnail: '/portfolio/natscent/cover-2.jpg',
         slug: 'natscent',
         i18nKey: 'portfolio.projects.natscent',
         title: 'Natscent',
@@ -220,11 +302,28 @@ export const projects = [
         categoryKey: 'portfolio.categories.ecommerceBrandWebsite',
         statusKey: 'portfolio.status.live',
 
+        thumbnail: '/portfolio/natscent/cover-2.jpg',
+
         hero: {
             image: '/portfolio/natscent/cover-2.jpg',
             logo: '/logos/clients/natscent-logo-white.png',
             theme: 'light'
         },
+
+        demos: [
+            {
+                video: '/portfolio/natscent/videos/video-1.mp4',
+                titleKey: 'portfolio.projects.natscent.demos.uiux.title',
+                bodyKey: 'portfolio.projects.natscent.demos.uiux.body',
+                inverted: true
+            },
+            {
+                video: '/portfolio/natscent/videos/video-2.mp4',
+                titleKey: 'portfolio.projects.natscent.demos.ecommerce.title',
+                bodyKey: 'portfolio.projects.natscent.demos.ecommerce.body',
+                inverted: false
+            }
+        ],
 
         overview: {
             headlineKey: 'portfolio.projects.natscent.overview.headline',
@@ -239,24 +338,29 @@ export const projects = [
         scopeKeys: [
             'portfolio.scope.brandUx',
             'portfolio.scope.ecommerceDevelopment',
-            'portfolio.scope.productPresentation',
             'portfolio.scope.seoOptimization'
         ],
 
         deliverableKeys: [
             'portfolio.deliverables.customStorefront',
-            'portfolio.deliverables.productPages',
-            'portfolio.deliverables.contentDrivenLayout',
-            'portfolio.deliverables.analyticsSetup'
+            'portfolio.deliverables.productPages'
         ],
 
         tech: ['SvelteKit', 'Tailwind CSS', 'Stripe'],
 
-        gallery: ['/portfolio/natscent/screen-1.jpg', '/portfolio/natscent/screen-2.jpg']
+        gallery: [
+            { src: '/portfolio/natscent/content-1.png', video: false },
+            { src: '/portfolio/natscent/content-2.png', video: false },
+            { src: '/portfolio/natscent/content-3.png', video: false },
+            { src: '/portfolio/natscent/content-4.jpg', video: false }
+        ]
     },
 
+    /* ------------------------------------------------------------------ */
+    /* VIORICA */
+    /* ------------------------------------------------------------------ */
+
     {
-        thumbnail: '/portfolio/viorica/cover.jpg',
         slug: 'viorica-cosmetic',
         i18nKey: 'portfolio.projects.viorica',
         title: 'Viorica Cosmetic',
@@ -265,12 +369,28 @@ export const projects = [
         categoryKey: 'portfolio.categories.corporateBrandWebsite',
         statusKey: 'portfolio.status.completed',
 
+        thumbnail: '/portfolio/viorica/cover.jpg',
+
         hero: {
             image: '/portfolio/viorica/cover.jpg',
             logo: '/portfolio/viorica/logo.png',
             theme: 'light'
         },
 
+        demos: [
+            {
+                video: '/portfolio/viorica/videos/video-1.mp4',
+                titleKey: 'portfolio.projects.viorica.demos.erpSync.title',
+                bodyKey: 'portfolio.projects.viorica.demos.erpSync.body',
+                inverted: false
+            },
+            {
+                video: '/portfolio/viorica/videos/video-2.mp4',
+                titleKey: 'portfolio.projects.viorica.demos.orderAutomation.title',
+                bodyKey: 'portfolio.projects.viorica.demos.orderAutomation.body',
+                inverted: true
+            }
+        ],
         overview: {
             headlineKey: 'portfolio.projects.viorica.overview.headline',
             descriptionKey: 'portfolio.projects.viorica.overview.description'
@@ -283,18 +403,18 @@ export const projects = [
 
         scopeKeys: [
             'portfolio.scope.websiteRedesign',
-            'portfolio.scope.contentStructure',
             'portfolio.scope.brandPresentation'
         ],
 
         deliverableKeys: [
             'portfolio.deliverables.corporateWebsite',
-            'portfolio.deliverables.productPresentation',
             'portfolio.deliverables.multilingualStructure'
         ],
 
         tech: ['HTML', 'CSS', 'JavaScript'],
 
-        gallery: ['/portfolio/viorica/screen-1.jpg']
+        gallery: [{ src: '/portfolio/viorica/content-1.png', video: false },
+        { src: '/portfolio/viorica/content-2.png', video: false }
+        ]
     }
 ];

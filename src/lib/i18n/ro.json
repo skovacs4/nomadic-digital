@@ -426,66 +426,142 @@
         },
         "projects": {
             "conte": {
+                "demos": {
+                    "stock": {
+                        "title": "Sincronizare stoc în timp real",
+                        "body": "Actualizare automată a stocurilor între platforma e-commerce și sistemul ERP, asigurând disponibilitate corectă pe toate canalele, fără intervenție manuală."
+                    },
+                    "dashboard": {
+                        "title": "Dashboard administrativ unificat",
+                        "body": "Un dashboard centralizat care oferă echipei operaționale vizibilitate completă asupra comenzilor, stocurilor și integrărilor, conceput pentru viteză și claritate operațională."
+                    },
+                    "uiux": {
+                        "title": "Optimizare UX & UI",
+                        "body": "Îmbunătățiri de interfață axate pe claritate, utilizabilitate și conversie, păstrând experiența premium de brand."
+                    },
+                    "platform": {
+                        "title": "Arhitectură platformă e-commerce",
+                        "body": "O platformă scalabilă care susține fluxuri B2C și B2B, construită pentru performanță și creștere pe termen lung."
+                    }
+                },
                 "overview": {
                     "headline": "O platformă e-commerce scalabilă, construită pentru creștere.",
-                    "description": "Conte avea nevoie de o platformă modernă și performantă, care să susțină atât operațiuni B2C, cât și B2B, păstrând în același timp o experiență premium de brand în toate punctele de contact."
+                    "description": "Conte avea nevoie de o platformă modernă și performantă, care să susțină atât operațiuni B2C, cât și B2B, păstrând o experiență premium de brand."
                 },
                 "outcomes": {
                     "headline": "Construită să scaleze fără fricțiune.",
-                    "description": "Noua platformă a eliminat blocajele operaționale, a unificat fluxurile B2C și B2B și a îmbunătățit semnificativ performanța pe toate dispozitivele. Rezultatul este o experiență de cumpărare mai rapidă și mai stabilă, care susține creșterea fără a compromite calitatea brandului."
+                    "description": "Blocajele operaționale au fost eliminate, fluxurile unificate, iar performanța îmbunătățită semnificativ pe toate dispozitivele."
                 },
                 "testimonial": {
                     "quote": "Noua platformă ne-a oferit stabilitate, viteză și încrederea de a scala fără fricțiune."
                 }
             },
             "locallia": {
+                "demos": {
+                    "dashboard": {
+                        "title": "Dashboard campanii & dispozitive",
+                        "body": "Panou central pentru administrarea campaniilor, dispozitivelor și afișărilor în rețea."
+                    },
+                    "analytics": {
+                        "title": "Raportare & analytics",
+                        "body": "Raportare transparentă care transformă expunerea fizică în date clare și măsurabile."
+                    },
+                    "platform": {
+                        "title": "Arhitectură platformă SaaS",
+                        "body": "Fundație SaaS scalabilă pentru management multi-client și extindere viitoare."
+                    }
+                },
                 "overview": {
                     "headline": "O platformă de publicitate locală, cu impact în lumea reală.",
-                    "description": "Locallia conectează brandurile cu audiențe locale prin publicitate inteligentă în mașini și raportare transparentă, bazată pe date."
+                    "description": "Locallia conectează brandurile cu audiențe locale prin publicitate inteligentă și raportare bazată pe date."
                 },
                 "outcomes": {
                     "headline": "Transformă reach-ul fizic în performanță măsurabilă.",
-                    "description": "Locallia a obținut o fundație SaaS robustă, cu raportare în timp real, management scalabil al dispozitivelor și insights transparente despre campanii—permițând decizii bazate pe date atât pentru advertiseri, cât și pentru operatori."
+                    "description": "Platforma permite raportare în timp real, management scalabil al dispozitivelor și decizii bazate pe date."
                 }
             },
             "kronburg": {
+                "demos": {
+                    "uiux": {
+                        "title": "Design UX & UI corporate",
+                        "body": "Interfață sobru-profesională, construită pentru claritate, structură și încredere."
+                    },
+                    "website": {
+                        "title": "Website corporate",
+                        "body": "Website rapid și SEO-ready, orientat pe comunicare clară și mentenanță pe termen lung."
+                    }
+                },
                 "overview": {
                     "headline": "O prezență corporate curată, construită pe claritate și încredere.",
-                    "description": "Kronburg avea nevoie de un website sobru și profesional, care să comunice fiabilitate și structură, fără zgomot vizual."
+                    "description": "Kronburg avea nevoie de un website profesional care să comunice fiabilitate fără zgomot vizual."
                 },
                 "outcomes": {
-                    "headline": "O prezență digitală construită pe încredere și sobrietate.",
-                    "description": "Website-ul oferă un mesaj de brand clar și profesionist, cu distrageri minime, păstrând timpi de încărcare rapizi și o structură SEO solidă."
+                    "headline": "O prezență digitală construită pe încredere.",
+                    "description": "Mesaj de brand clar, performanță ridicată și structură SEO solidă."
                 }
             },
             "fluxum": {
+                "demos": {
+                    "dashboard": {
+                        "title": "Dashboard club & administrare",
+                        "body": "Panou central pentru managementul membrilor, claselor, plăților și comunicării."
+                    },
+                    "payments": {
+                        "title": "Plăți & abonamente",
+                        "body": "Sistem de plăți recurente și abonamente adaptat cluburilor sportive."
+                    },
+                    "platform": {
+                        "title": "Arhitectură SaaS",
+                        "body": "Platformă scalabilă pentru mai multe cluburi, roluri și funcționalități viitoare."
+                    }
+                },
                 "overview": {
-                    "headline": "O platformă modernă pentru managementul cluburilor sportive și comunităților.",
-                    "description": "Fluxum simplifică abonamentele, plățile, programările și comunicarea pentru săli și cluburi sportive."
+                    "headline": "O platformă modernă pentru managementul cluburilor sportive.",
+                    "description": "Fluxum simplifică abonamentele, plățile, programările și comunicarea."
                 },
                 "outcomes": {
-                    "headline": "Simplifică operațiuni complexe într-o singură platformă.",
-                    "description": "Fluxum centralizează abonamentele, plățile, programările și comunicarea într-un singur sistem, reducând munca administrativă și îmbunătățind experiența zilnică atât pentru administratori, cât și pentru membri."
+                    "headline": "Operațiuni simplificate într-un singur sistem.",
+                    "description": "Reducerea muncii administrative și îmbunătățirea experienței zilnice pentru administratori și membri."
                 }
             },
             "natscent": {
+                "demos": {
+                    "uiux": {
+                        "title": "UX editorial & identitate vizuală",
+                        "body": "Interfață calmă, orientată pe storytelling și conversie."
+                    },
+                    "ecommerce": {
+                        "title": "Storefront e-commerce",
+                        "body": "Experiență de cumpărare fluidă, optimizată pentru descoperirea produselor."
+                    }
+                },
                 "overview": {
                     "headline": "O experiență e-commerce rafinată pentru un brand de parfumuri.",
-                    "description": "Natscent avea nevoie de un storefront calm, editorial, care să balanseze storytelling-ul cu conversia."
+                    "description": "Un storefront editorial care echilibrează povestea și conversia."
                 },
                 "outcomes": {
-                    "headline": "Un storefront editorial, gândit pentru conversie.",
-                    "description": "Noua experiență echilibrează povestea și comerțul, permițând brandului să comunice identitate și atmosferă, păstrând un flux de cumpărare fluent și orientat spre conversie."
+                    "headline": "Un storefront editorial gândit pentru conversie.",
+                    "description": "Branding puternic combinat cu un flux de cumpărare eficient."
                 }
             },
             "viorica": {
+                "demos": {
+                    "erpSync": {
+                        "title": "Sincronizare produse și stoc cu ERP",
+                        "body": "Sincronizare automată între platforma online și sistemul ERP pentru produse, stocuri și prețuri, menținând datele consistente între sisteme."
+                    },
+                    "orderAutomation": {
+                        "title": "Automatizare procesare comenzi",
+                        "body": "Comenzile plasate online sunt trimise automat către ERP, reducând munca manuală, erorile operaționale și timpii de procesare."
+                    }
+                },
                 "overview": {
-                    "headline": "O prezență digitală orientată pe brand pentru o companie de cosmetice.",
-                    "description": "Viorica avea nevoie de un website clar și elegant, pentru a prezenta produsele și valorile brandului către o audiență internațională."
+                    "headline": "Integrare ERP și automatizare operațională pentru un brand de cosmetice.",
+                    "description": "Viorica avea nevoie de o integrare stabilă între magazinul online și sistemul ERP pentru a eficientiza operațiunile și a asigura acuratețea datelor."
                 },
                 "outcomes": {
-                    "headline": "O poveste de brand mai clară pentru o audiență internațională.",
-                    "description": "Website-ul actualizat a oferit o prezentare structurată și elegantă a produselor și valorilor brandului, susținând comunicarea multilingvă și consistența pe termen lung."
+                    "headline": "Operațiuni mai eficiente prin automatizare ERP.",
+                    "description": "Integrarea a eliminat procesele manuale repetitive și a asigurat un flux de date coerent între e-commerce și ERP."
                 }
             }
         }

@@ -33,8 +33,6 @@
 	<meta name="twitter:image" content={image} />
 </svelte:head>
 
-
-
 <!-- HERO -->
 <section class="relative min-h-[80vh] flex items-end bg-black text-white overflow-hidden">
 	<img
@@ -69,7 +67,7 @@
 </section>
 
 <!-- OVERVIEW -->
-<section class="max-w-[1600px] mx-auto px-6 md:px-0 py-32">
+<section class="max-w-[1600px] mx-auto px-6 md:px-0 py-24">
 	<div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
 		<div class="lg:col-span-4">
 			<h3 class="font-geist text-sm font-bold mb-6">{$t('portfolio.sections.scope')}</h3>
@@ -148,10 +146,10 @@
 {#if project.gallery?.length}
 	<section class="max-w-[1600px] mx-auto px-6 md:px-0 py-24">
 		<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-			{#each project.gallery as img, i}
+			{#each project.gallery as item}
 				<div class="overflow-hidden rounded-3xl">
 					<img
-						src={img}
+						src={item.src}
 						alt=""
 						class="w-full h-full object-cover transition-transform duration-[1200ms] ease-out hover:scale-[1.04]"
 					/>
@@ -172,6 +170,46 @@
 				— {project.testimonial.author}, {$t(project.testimonial.roleKey)}
 			</p>
 		</div>
+	</section>
+{/if}
+
+{#if project.demos?.length}
+	<section class="max-w-[1600px] mx-auto px-6 md:px-0 py-32 space-y-32">
+		{#each project.demos as demo}
+			<div
+				class="grid grid-cols-1 lg:grid-cols-11 gap-32 items-center mb-64 last:mb-14"
+				data-aos="fade-up"
+			>
+				<!-- VIDEO -->
+				<div class={`lg:col-span-6 ${demo.inverted ? 'lg:order-2' : ''}`}>
+					<div class="overflow-hidden rounded-3xl will-change-transform translate-z-0">
+						<div
+							class="scale-[1.10] transition-transform duration-[1400ms] ease-out hover:scale-[1.5]"
+						>
+							<video
+								src={demo.video}
+								class="w-full h-full object-cover rounded-[26px]"
+								autoplay
+								muted
+								loop
+								playsinline
+							/>
+						</div>
+					</div>
+				</div>
+
+				<!-- TEXT -->
+				<div class={`lg:col-span-5 ${demo.inverted ? 'lg:order-1' : ''}`}>
+					<h3 class="font-geist text-2xl md:text-3xl mb-8">
+						{$t(demo.titleKey)}
+					</h3>
+
+					<p class="font-inter text-black/60 text-lg max-w-md">
+						{$t(demo.bodyKey)}
+					</p>
+				</div>
+			</div>
+		{/each}
 	</section>
 {/if}
 
