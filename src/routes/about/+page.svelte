@@ -32,7 +32,7 @@
 </svelte:head>
 
 <!-- ================= HERO / INTRO ================= -->
-<section class="max-w-[1600px] mx-auto px-6 md:px-0 py-36 md:py-48">
+<section class="max-w-[1600px] mx-auto px-4 md:px-0 py-36 md:py-48">
 	<h1 data-aos="fade-up" class="text-5xl md:text-9xl tracking-tight leading-[1.05] mb-28">
 		{$t('about.pageTitle')}
 	</h1>
@@ -114,7 +114,7 @@
 </section>
 
 <!-- ================= APPROACH ================= -->
-<section class="max-w-[1600px] mx-auto px-6 md:px-0 py-36">
+<section class="max-w-[1600px] mx-auto px-4 md:px-0 py-36">
 	<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
 		<div data-aos="fade-up" class="lg:col-span-3">
 			<p class="font-geist text-base font-bold mb-3">Nomadic Digital ®</p>
@@ -149,7 +149,7 @@
 <ClientsV2 />
 
 <!-- ================= DIFFERENCE ================= -->
-<section class="max-w-[1600px] mx-auto px-6 md:px-0 py-36">
+<section class="max-w-[1600px] mx-auto px-4 md:px-0 py-36">
 	<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
 		<!-- LEFT: identity -->
 		<div data-aos="fade-up" class="lg:col-span-3">
@@ -182,9 +182,9 @@
 </section>
 
 <!-- ================= EDITORIAL CARDS ================= -->
-<section class="max-w-[1600px] mx-auto px-6 md:px-0 py-24">
+<section class="max-w-[1600px] mx-auto px-4 md:px-0 py-24">
 	<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-		{#each [{ img: '/content/team-working.jpg', title: $t('about.editorial.1.title'), year: '2024' }, { img: '/content/dev-working.png', title: $t('about.editorial.2.title'), year: '2025', tall: true }] as card, i}
+		{#each [{ img: '/content/team-working.jpg', title: $t('about.editorial.1.title'), year: 'People' }, { img: '/content/dev-working.png', title: $t('about.editorial.2.title'), year: 'Execution', tall: true }] as card, i}
 			<div data-aos="fade-up" data-aos-delay={i * 120} class="group">
 				<div class="relative overflow-hidden rounded-[28px] bg-neutral-100">
 					<img

@@ -11,22 +11,48 @@
 
 <section class="mt-2 max-w-[1600px] mx-auto px-6 md:px-12 py-24">
 	<!-- Header -->
-	<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-16">
-		<div class="lg:col-span-7">
-			<h2 class="font-calsans text-5xl md:text-7xl tracking-tight leading-[1.05]">
+	<div class="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-12 gap-8 sm:gap-12 mb-12 sm:mb-16">
+		<div class="md:col-span-4 lg:col-span-7">
+			<h2
+				class="
+				font-calsans
+				text-[32px] sm:text-[40px] md:text-5xl lg:text-7xl
+				tracking-tight
+				leading-[1.05]
+			"
+			>
 				{$t('blog.section.titleA')}
 				<span class="text-black/40">{$t('blog.section.titleB')}</span>
 			</h2>
 		</div>
 
-		<div class="lg:col-span-5 flex items-end justify-between">
-			<p class="font-inter text-lg text-black/60 max-w-sm">
+		<div
+			class="
+			md:col-span-2 lg:col-span-5
+			flex flex-col
+			md:items-start lg:items-end
+			md:justify-between
+			gap-6
+		"
+		>
+			<p class="font-inter text-base sm:text-lg text-black/60 max-w-sm">
 				{$t('blog.section.subtitle')}
 			</p>
 
 			<a
 				href="/blog"
-				class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-black text-white text-sm font-geist hover:bg-black/90 transition"
+				class="
+				inline-flex items-center justify-center
+				gap-2
+				w-full md:w-auto
+				px-5 py-3 md:py-2.5
+				rounded-full
+				bg-black text-white
+				text-xs sm:text-sm
+				font-geist
+				hover:bg-black/90
+				transition
+			"
 			>
 				{$t('blog.section.cta')}
 				<span class="inline-block w-2 h-2 rounded-full bg-white"></span>

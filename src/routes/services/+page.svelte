@@ -81,14 +81,14 @@
 
 	const highlights = [
 		{
-			img: '/content/team-working.jpg',
+			img: '/content/services/abstract-architecture.jpg',
 			tagKey: 'services.highlights.1.tag',
 			titleKey: 'services.highlights.1.title',
 			descKey: 'services.highlights.1.desc',
-			tall: false
+			tall: true
 		},
 		{
-			img: '/content/team-working.jpg',
+			img: '/content/services/product-design.jpg',
 			tagKey: 'services.highlights.2.tag',
 			titleKey: 'services.highlights.2.title',
 			descKey: 'services.highlights.2.desc',
@@ -115,7 +115,7 @@
 </svelte:head>
 
 
-<section class="max-w-[1600px] mx-auto px-6 md:px-0 py-36 md:py-48">
+<section class="max-w-[1600px] mx-auto px-4 md:px-0 py-36 md:py-48">
 	<h1 data-aos="fade-up" class="text-5xl md:text-9xl tracking-tight leading-[1.05] mb-28">
 		{$t('services.pageTitle')}
 	</h1>
@@ -155,7 +155,7 @@
 </section>
 
 <!-- IMAGE -->
-<div data-aos="fade-up" data-aos-delay="400" class="mt-4 max-w-[1600px] mx-auto px-6 md:px-0">
+<div data-aos="fade-up" data-aos-delay="400" class="mt-4 max-w-[1600px] mx-auto px-4 md:px-0">
 	<div class="relative overflow-hidden rounded-3xl group">
 		<img
 			src="/content/wheel.png"
@@ -165,7 +165,7 @@
 	</div>
 </div>
 
-<section class="max-w-[1600px] mx-auto px-6 md:px-0 py-28 space-y-32">
+<section class="max-w-[1600px] mx-auto px-4 md:px-0 py-28 space-y-32">
 	{#each services as s, idx}
 		<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start mb-28">
 			<div data-aos="fade-up" class="lg:col-span-3">
@@ -202,7 +202,7 @@
 </section>
 
 <!-- ================= SERVICE HIGHLIGHTS ================= -->
-<section class="max-w-[1600px] mx-auto px-6 md:px-0 py-24">
+<section class="max-w-[1600px] mx-auto px-4 md:px-0 py-24">
 	<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 		{#each highlights as card, i}
 			<div data-aos="fade-up" data-aos-delay={i * 120} class="group">
@@ -239,7 +239,7 @@
 	<HowItWorks />
 </div>
 
-<section class="max-w-[1600px] mx-auto px-6 md:px-0 py-32">
+<section class="max-w-[1600px] mx-auto px-4 md:px-0 py-32">
 	<div class="text-center space-y-6">
 		<h2
 			data-aos="fade-up"
@@ -296,6 +296,6 @@
 	</div>
 </section>
 
-<section class="max-w-[1700px] mx-auto px-6 md:px-0 pb-36">
+<section class="max-w-[1700px] mx-auto px-4 md:px-0 pb-36">
 	<Contact />
 </section>

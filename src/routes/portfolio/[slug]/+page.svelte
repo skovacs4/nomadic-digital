@@ -42,7 +42,7 @@
 	/>
 	<div class="absolute inset-0 bg-black/60"></div>
 
-	<div class="relative z-10 max-w-[1600px] mx-auto px-6 md:px-0 pb-20 w-full">
+	<div class="relative z-10 max-w-[1600px] mx-auto px-4 md:px-0 pb-20 w-full">
 		<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-end">
 			<div class="lg:col-span-8 space-y-6">
 				<img src={project.hero.logo} class="h-10 md:h-14 object-contain" alt="" />
@@ -67,7 +67,7 @@
 </section>
 
 <!-- OVERVIEW -->
-<section class="max-w-[1600px] mx-auto px-6 md:px-0 py-24">
+<section class="max-w-[1600px] mx-auto px-4 md:px-0 py-24">
 	<div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
 		<div class="lg:col-span-4">
 			<h3 class="font-geist text-sm font-bold mb-6">{$t('portfolio.sections.scope')}</h3>
@@ -101,7 +101,7 @@
 </section>
 
 <!-- OUTCOMES -->
-<section class="max-w-[1600px] mx-auto px-6 md:px-0 py-36">
+<section class="max-w-[1600px] mx-auto px-4 md:px-0 py-36">
 	<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
 		<div class="lg:col-span-3">
 			<p class="font-geist text-2xl md:text-4xl leading-[1.2] tracking-tight">
@@ -144,7 +144,7 @@
 
 <!-- GALLERY -->
 {#if project.gallery?.length}
-	<section class="max-w-[1600px] mx-auto px-6 md:px-0 py-24">
+	<section class="max-w-[1600px] mx-auto px-4 md:px-0 py-24">
 		<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 			{#each project.gallery as item}
 				<div class="overflow-hidden rounded-3xl">
@@ -174,7 +174,7 @@
 {/if}
 
 {#if project.demos?.length}
-	<section class="max-w-[1600px] mx-auto px-6 md:px-0 py-32 space-y-32">
+	<section class="max-w-[1600px] mx-auto px-4 md:px-0 py-32 space-y-32">
 		{#each project.demos as demo}
 			<div
 				class="grid grid-cols-1 lg:grid-cols-11 gap-32 items-center mb-64 last:mb-14"

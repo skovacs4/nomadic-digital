@@ -1,15 +1,15 @@
 <script>
 export let clients = [
-	{ logo: '/logos/clients/softone.png', year: '2025' },
-	{ logo: '/logos/clients/kronburg.png', year: '2025', maxWidth: '90px' }, // 👈 smaller
+	{ logo: '/logos/clients/softone.png', year: '2024' },
+	{ logo: '/logos/clients/kronburg.png', year: '2024', maxWidth: '90px' }, // 👈 smaller
 	{ logo: '/logos/clients/filicori.png', year: '2024' },
 	{ logo: '/logos/clients/conte.png', year: '2024' },
-	{ logo: '/logos/clients/natscent.png', year: '2023' },
-	{ logo: '/logos/clients/qbs.png', year: '2020' }
+	{ logo: '/logos/clients/natscent.png', year: '2025' },
+	{ logo: '/logos/clients/qbs.png', year: '2025' }
 ];
 </script>
 
-<section class="max-w-[1600px] mx-auto px-6 md:px-0 py-36">
+<section class="max-w-[1600px] mx-auto px-4 md:px-0 py-36">
 	<!-- HEADER -->
 	<div class="flex items-center gap-24 mb-20">
 		<div class="flex items-center gap-3">
@@ -19,7 +19,7 @@ export let clients = [
 			<h2 class="font-geist text-base font-bold">Our clients</h2>
 		</div>
 
-		<p class="font-inter text-sm text-black/40 font-bold">(2016–25©)</p>
+		<p class="font-inter text-sm text-black/40 font-bold">(Long term partnerships built on trust)</p>
 	</div>
 
 	<!-- GRID -->

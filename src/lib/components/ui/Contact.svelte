@@ -47,7 +47,7 @@
 	}
 </script>
 
-<section class="w-full px-6 md:px-12 py-32">
+<section class="w-full px-4 md:px-12 py-32">
 	<div class="relative mx-auto rounded-[40px] overflow-hidden bg-black text-white">
 		<!-- Background -->
 		<img
@@ -144,17 +144,31 @@
 				<!-- CONTACT CARD -->
 				<div
 					class="
-						group inline-flex items-center gap-4
-						bg-white text-black rounded-2xl px-5 py-4
-						shadow-lg transition-all duration-300
-						hover:-translate-y-1 hover:shadow-2xl
-					"
+		group
+		flex flex-col sm:flex-row
+		sm:items-center
+		gap-4
+		bg-white text-black
+		rounded-2xl
+		p-4 sm:px-5 sm:py-4
+		shadow-lg
+		transition-all duration-300
+		hover:-translate-y-1 hover:shadow-2xl
+	"
 				>
-					<img src="/content/teodora.jpeg" class="w-14 h-14 rounded-xl object-cover" alt="" />
+					<img
+						src="/content/teodora.jpeg"
+						class="w-12 h-12 sm:w-14 sm:h-14 rounded-xl object-cover"
+						alt=""
+					/>
 
-					<div>
-						<p class="text-xs text-black/60">{$t('contact.card.role')}</p>
-						<p class="font-geist text-sm font-medium">{$t('contact.card.name')}</p>
+					<div class="flex-1">
+						<p class="text-[11px] sm:text-xs text-black/60">
+							{$t('contact.card.role')}
+						</p>
+						<p class="font-geist text-sm font-medium">
+							{$t('contact.card.name')}
+						</p>
 					</div>
 
 					<a
@@ -162,13 +176,17 @@
 						target="_blank"
 						rel="noopener noreferrer"
 						class="
-							ml-4 rounded-full bg-black text-white
-							px-4 py-2 text-xs
-							transition-all duration-300
-							hover:bg-black/90 hover:scale-105
-							active:scale-95
-							whitespace-nowrap
-						"
+			w-full sm:w-auto
+			text-center
+			rounded-full
+			bg-black text-white
+			px-4 py-2
+			text-xs
+			transition-all duration-300
+			hover:bg-black/90 hover:scale-[1.03]
+			active:scale-95
+			whitespace-nowrap
+		"
 					>
 						{$t('contact.card.cta')}
 					</a>

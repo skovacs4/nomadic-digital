@@ -120,7 +120,7 @@
 			<div class="space-y-8">
 				<div>
 					<p class="font-geist text-sm mb-1">{$t('contact.left.emailLabel')}</p>
-					<p class="font-inter text-black/60">contact@nomadic.digital</p>
+					<p class="font-inter text-black/60">contact@thenomadicdigital.com</p>
 				</div>
 
 				<div>

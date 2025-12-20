@@ -25,7 +25,7 @@
 </svelte:head>
 
 <section
-	class="max-w-[1600px] mx-auto px-6 md:px-12 py-48 text-center"
+	class="max-w-[1600px] mx-auto px-2 md:px-12 py-48 text-center"
 	data-aos="fade-up"
 >
 	<h1
