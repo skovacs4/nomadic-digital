@@ -114,6 +114,16 @@
 					font-inter text-lg font-bold transition
 					{isPortfolioDetail || isLightHeader ? 'text-white hover:opacity-70' : 'text-black hover:opacity-60'}
 				"
+				href="/blog"
+			>
+				{$t('nav.blog')}
+			</a>
+
+			<a
+				class="
+					font-inter text-lg font-bold transition
+					{isPortfolioDetail || isLightHeader ? 'text-white hover:opacity-70' : 'text-black hover:opacity-60'}
+				"
 				href="/contact"
 			>
 				{$t('nav.contact')}
@@ -124,7 +134,7 @@
 				<button
 					class="text-sm font-inter font-semibold transition {isPortfolioDetail || isLightHeader
 						? 'text-white/80 hover:text-white'
-						: 'text-black/70 hover:text-black'} disabled:opacity-40  cursor-pointer"
+						: 'text-black/70 hover:text-black'} disabled:opacity-40 cursor-pointer"
 					disabled={$locale === 'en'}
 					on:click={() => switchLang('en')}
 					type="button"
@@ -138,7 +148,7 @@
 				<button
 					class="text-sm font-inter font-semibold transition {isPortfolioDetail || isLightHeader
 						? 'text-white/80 hover:text-white'
-						: 'text-black/70 hover:text-black'} disabled:opacity-40  cursor-pointer"
+						: 'text-black/70 hover:text-black'} disabled:opacity-40 cursor-pointer"
 					disabled={$locale === 'ro'}
 					on:click={() => switchLang('ro')}
 					type="button"
@@ -234,6 +244,10 @@
 				{$t('nav.about')}
 			</a>
 
+			<a href="/blog" on:click={closeMobileMenu} class="block font-inter text-xl font-bold">
+				{$t('nav.blog')}
+			</a>
+
 			<a href="/contact" on:click={closeMobileMenu} class="block font-inter text-xl font-bold">
 				{$t('nav.contact')}
 			</a>
@@ -269,7 +283,7 @@
 					w-fit px-4 py-2 rounded-full
 					text-sm font-inter font-semibold
 					transition-all duration-300 mt-4
-					{isPortfolioDetail || isLightHeader? 'bg-white text-black' : 'bg-black text-white'}
+					{isPortfolioDetail || isLightHeader ? 'bg-white text-black' : 'bg-black text-white'}
 				"
 			>
 				{$t('nav.bookCall')}

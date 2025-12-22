@@ -157,7 +157,7 @@
 	"
 				>
 					<img
-						src="/content/teodora.jpeg"
+						src="/content/team/teodora-portrait-2.jpeg"
 						class="w-12 h-12 sm:w-14 sm:h-14 rounded-xl object-cover"
 						alt=""
 					/>

@@ -2,6 +2,7 @@
     "nav.work": "Work",
     "nav.about": "About Us",
     "nav.services": "Services",
+    "nav.blog": "Blog",
     "nav.contact": "Contact",
     "nav.bookCall": "Book a call",
     "nav.lang.en": "EN",
@@ -222,6 +223,7 @@
     "footer.company.work": "Work",
     "footer.company.pricing": "Pricing",
     "footer.company.contact": "Contact",
+    "footer.company.careers": "Careers",
     "footer.services": "Services",
     "footer.services.1": "Web Design",
     "footer.services.2": "Web Development",
@@ -580,33 +582,25 @@
             "uiuxDesigner": "UI/UX Designer",
             "securityLead": "Security Lead",
             "cfoCoFounder": "CFO & Co-founder",
-            "growthAnalyst": "Growth Analyst"
+            "founder": "Founder",
+            "growthAnalyst": "Growth Analyst",
+            "developer": "Developer"
         },
         "posts": {
             "metricsForSaas": {
                 "title": "5 Metrics Every SaaS Founder Should Track",
                 "description": "Learn which KPIs matter when scaling your SaaS.",
-                "content": "<div class=\"space-y-10 text-gray-800 text-[15px] leading-relaxed\"><div><h2 class=\"text-2xl font-semibold mb-3\">Understanding the Numbers</h2><p class=\"font-[550]\">Knowing what to measure is essential when you’re growing a product. Metrics like churn, lifetime value, and customer acquisition cost offer powerful insights into the health of your business. Without these numbers, decisions are just guesses.</p></div><div><h2 class=\"text-2xl font-semibold mb-3\">The Metrics That Matter</h2><p class=\"font-[550]\">While there are many metrics to choose from, not all carry equal weight. Prioritize user engagement, conversion rates, and feature usage to truly understand how your product delivers value. These indicators guide you toward meaningful action.</p></div><div><h2 class=\"text-2xl font-semibold mb-3\">Applying the Insights</h2><p class=\"font-[550]\">Tracking metrics is only half the equation—what you do with them matters more. Use your data to validate ideas, improve user experiences, and spot areas of opportunity. Regular reviews lead to smarter decisions and more focused growth.</p></div></div>"
+                "content": "<div class=\"space-y-12 text-gray-800 text-[15px] leading-relaxed\"><div><h2 class=\"text-2xl font-semibold mb-3\">Understanding the Numbers</h2><p class=\"font-[550]\">Knowing what to measure is essential when you’re growing a product. Metrics like churn, lifetime value, and customer acquisition cost offer powerful insights into the health of your business. Without these numbers, decisions are just guesses.</p><p class=\"font-[550]\">Many SaaS founders rely heavily on intuition in the early days. While intuition helps you move fast, it quickly becomes unreliable as your user base grows. Metrics provide an objective view of reality, showing where value is created and where it quietly leaks.</p></div><div><h2 class=\"text-2xl font-semibold mb-3\">Why Growth Often Stalls</h2><p class=\"font-[550]\">Growth rarely stalls because teams stop working hard. More often, it stalls because effort is focused on the wrong areas. Without clear metrics, teams optimize surface-level activity instead of outcomes that compound over time.</p><p class=\"font-[550]\">A dashboard full of numbers can look impressive while hiding the real story. The goal isn’t to measure everything — it’s to measure what meaningfully reflects user value and long-term sustainability.</p></div><div><h2 class=\"text-2xl font-semibold mb-3\">The Metrics That Actually Matter</h2><p class=\"font-[550]\">Not all KPIs deserve equal attention. Vanity metrics like total signups or raw traffic can inflate confidence but rarely guide action. The most useful metrics help answer one simple question: are users finding lasting value?</p><p class=\"font-[550]\">Metrics tied to engagement, retention, and expansion tell you far more about your product’s trajectory than numbers that simply grow by default.</p></div><div><h2 class=\"text-2xl font-semibold mb-3\">Core Metrics Every SaaS Founder Should Track</h2><p class=\"font-[550]\"><strong>Activation rate</strong> shows how quickly users reach their first moment of value. If users don’t activate, retention and revenue will always suffer downstream.</p><p class=\"font-[550]\"><strong>Churn velocity</strong> matters more than churn as a static percentage. Understanding how fast and why users leave reveals structural issues in onboarding, pricing, or product fit.</p><p class=\"font-[550]\"><strong>Lifetime value (LTV)</strong> helps determine how much you can sustainably invest in acquiring customers. Healthy SaaS businesses grow by increasing value per customer, not just volume.</p><p class=\"font-[550]\"><strong>Expansion revenue</strong> indicates whether existing users continue to find increasing value. In mature SaaS products, expansion often becomes the most reliable growth engine.</p></div><div><h2 class=\"text-2xl font-semibold mb-3\">From Measurement to Insight</h2><p class=\"font-[550]\">Collecting data is easy. Interpreting it correctly is not. Metrics should always be reviewed in context — across cohorts, over time, and alongside qualitative feedback from real users.</p><p class=\"font-[550]\">A sudden change in churn or activation rarely happens in isolation. It usually reflects a shift in onboarding, messaging, pricing, or user expectations.</p></div><div><h2 class=\"text-2xl font-semibold mb-3\">Turning Metrics Into Decisions</h2><p class=\"font-[550]\">Metrics are only valuable when they inform action. Every number on your dashboard should connect to a potential decision, experiment, or hypothesis.</p><p class=\"font-[550]\">High-performing teams use regular reviews — weekly or bi-weekly — to validate ideas, challenge assumptions, and prioritize work that moves the needle instead of reacting to noise.</p></div><div><h2 class=\"text-2xl font-semibold mb-3\">Building a Metrics-Driven Culture</h2><p class=\"font-[550]\">Metrics should not live in isolation with founders or leadership. Sharing clear, relevant metrics across teams creates alignment and reduces friction in decision-making.</p><p class=\"font-[550]\">When everyone understands what success looks like — and how it’s measured — teams move faster with more confidence and less debate.</p></div><div><h2 class=\"text-2xl font-semibold mb-3\">Applying the Insights</h2><p class=\"font-[550]\">Tracking metrics is only half the equation. The real advantage comes from acting on them. Use insights to refine onboarding, improve retention loops, and focus development on features that consistently deliver value.</p><p class=\"font-[550]\">Data-driven teams don’t move slower. They move with clarity — making fewer guesses and more intentional decisions that compound over time.</p></div></div>"
             },
             "simplerDashboard": {
                 "title": "How We Designed a Simpler Dashboard Experience",
                 "description": "A behind-the-scenes look at how we built a dashboard that’s clear, fast, and user-focused.",
-                "content": "<div class=\"space-y-10 text-gray-800 text-[15px] leading-relaxed\"><div><h2 class=\"text-2xl font-semibold mb-3\">Design Challenges</h2><p class=\"font-[550]\">We began by identifying the most confusing elements in our current dashboard...</p></div><div><h2 class=\"text-2xl font-semibold mb-3\">Simplifying the UI</h2><p class=\"font-[550]\">Through testing and feedback, we refined the layout to improve clarity and reduce clutter...</p></div></div>"
+                "content": "<div class=\"space-y-12 text-gray-800 text-[15px] leading-relaxed\"><div><h2 class=\"text-2xl font-semibold mb-3\">Design Challenges</h2><p class=\"font-[550]\">As our products grew in complexity, it became clear that the existing dashboards were no longer serving users effectively. In both Locallia and Fluxum, users interacted with powerful systems, but the interfaces made it harder than necessary to understand what mattered at a glance.</p><p class=\"font-[550]\">The main challenge wasn’t a lack of features, but an overload of information presented without clear hierarchy. Users were spending too much time searching for data instead of acting on it.</p></div><div><h2 class=\"text-2xl font-semibold mb-3\">Identifying Friction Points</h2><p class=\"font-[550]\">We started by observing real usage patterns. In Locallia, advertisers needed quick access to campaign performance and device status, while in Fluxum, club owners cared most about memberships, payments, and daily operations.</p><p class=\"font-[550]\">By mapping common workflows, we identified friction points where users hesitated, clicked unnecessarily, or misunderstood system states. These moments guided every design decision that followed.</p></div><div><h2 class=\"text-2xl font-semibold mb-3\">Simplifying the UI</h2><p class=\"font-[550]\">Simplification did not mean removing functionality. Instead, we focused on progressive disclosure — showing essential information first and revealing advanced options only when needed.</p><p class=\"font-[550]\">For Fluxum, this meant prioritizing daily operational data over long-term analytics. For Locallia, it meant surfacing real-time performance metrics while reducing visual noise from secondary controls.</p></div><div><h2 class=\"text-2xl font-semibold mb-3\">Designing for Real Usage</h2><p class=\"font-[550]\">Both dashboards were redesigned with real-world usage in mind. Users often access these systems quickly, between tasks, or on mobile devices. The interface needed to support fast decisions, not exploration.</p><p class=\"font-[550]\">Clear typography, consistent spacing, and restrained visual language helped reduce cognitive load and made the dashboards feel calmer and more predictable.</p></div><div><h2 class=\"text-2xl font-semibold mb-3\">Iterating Through Feedback</h2><p class=\"font-[550]\">Throughout the process, we tested changes incrementally. Feedback from early users of Locallia and Fluxum validated that tasks were completed faster and with fewer errors.</p><p class=\"font-[550]\">These iterations confirmed that a simpler interface doesn’t limit power — it amplifies it by allowing users to focus on decisions instead of navigation.</p></div><div><h2 class=\"text-2xl font-semibold mb-3\">The Result</h2><p class=\"font-[550]\">The final dashboards are cleaner, faster, and easier to understand. Users can immediately see what requires attention and take action without second-guessing.</p><p class=\"font-[550]\">By aligning design with real operational needs, both Locallia and Fluxum gained interfaces that scale with complexity while remaining approachable and efficient.</p></div></div>"
             },
             "secureSyncing": {
                 "title": "Why Secure Syncing Matters More Than Ever",
                 "description": "Explore how our security-first approach keeps your financial data safe and your mind at ease.",
-                "content": "<div class=\"space-y-10 text-gray-800 text-[15px] leading-relaxed\"><div><h2 class=\"text-2xl font-semibold mb-3\">Risks of Insecure Data</h2><p class=\"font-[550]\">Data syncing can expose vulnerabilities if not done correctly...</p></div><div><h2 class=\"text-2xl font-semibold mb-3\">How We Secure It</h2><p class=\"font-[550]\">We use end-to-end encryption and strict access controls to ensure only authorized users can access sensitive data...</p></div></div>"
-            },
-            "scalingFinance": {
-                "title": "Scaling Your Startup Finance Without Stress",
-                "description": "Discover practical strategies and tools to manage your finances as your startup grows.",
-                "content": "<div class=\"space-y-10 text-gray-800 text-[15px] leading-relaxed\"><div><h2 class=\"text-2xl font-semibold mb-3\">Establishing Financial Hygiene</h2><p class=\"font-[550]\">Even in early-stage startups, basic financial hygiene is critical...</p></div><div><h2 class=\"text-2xl font-semibold mb-3\">Tools for Scaling</h2><p class=\"font-[550]\">We recommend automated forecasting tools and clear cash flow tracking dashboards...</p></div></div>"
-            },
-            "lessons10k": {
-                "title": "What We Learned From 10K+ Users",
-                "description": "Insights and lessons from real users that are shaping the future of our product.",
-                "content": "<div class=\"space-y-10 text-gray-800 text-[15px] leading-relaxed\"><div><h2 class=\"text-2xl font-semibold mb-3\">User Behavior Insights</h2><p class=\"font-[550]\">From onboarding to long-term usage, we tracked trends that revealed unexpected needs...</p></div><div><h2 class=\"text-2xl font-semibold mb-3\">Adapting Our Product</h2><p class=\"font-[550]\">We made several changes in response to these findings, including simplifying signup and improving support visibility...</p></div></div>"
+                "content": "<div class=\"space-y-12 text-gray-800 text-[15px] leading-relaxed\"><div><h2 class=\"text-2xl font-semibold mb-3\">Risks of Insecure Data Syncing</h2><p class=\"font-[550]\">Data synchronization becomes a critical risk surface when systems are loosely connected or poorly secured. Every integration point introduces the possibility of data leaks, inconsistencies, or unauthorized access if not handled correctly.</p><p class=\"font-[550]\">In real-world scenarios, insecure syncing often leads to duplicated orders, incorrect stock levels, broken customer records, or financial discrepancies that are difficult to trace after the fact.</p></div><div><h2 class=\"text-2xl font-semibold mb-3\">Why Syncing Fails in Practice</h2><p class=\"font-[550]\">Most syncing issues don’t come from malicious attacks, but from architectural shortcuts. One-way integrations, missing validation, and lack of idempotency quickly create chaos as volume grows.</p><p class=\"font-[550]\">Without proper safeguards, systems drift out of sync silently. By the time problems surface, manual correction becomes expensive and error-prone.</p></div><div><h2 class=\"text-2xl font-semibold mb-3\">Conte & SoftOne ERP Synchronization</h2><p class=\"font-[550]\">In the Conte ecosystem, accurate syncing between the e-commerce platform and SoftOne ERP is essential. Orders, products, stock levels, and pricing must remain consistent across systems to support daily operations.</p><p class=\"font-[550]\">A secure integration ensures that every order is transmitted exactly once, validated before processing, and logged for traceability. This prevents duplicated invoices, stock mismatches, and accounting errors.</p></div><div><h2 class=\"text-2xl font-semibold mb-3\">Order Syncing & Easy Sales Integrations</h2><p class=\"font-[550]\">Order synchronization across platforms such as Easy Sales adds another layer of complexity. Each marketplace introduces its own data formats, timing constraints, and edge cases.</p><p class=\"font-[550]\">Without strict validation and retry mechanisms, orders can be partially synced, lost, or processed multiple times. Secure syncing requires consistent identifiers, transactional guarantees, and clear error handling.</p></div><div><h2 class=\"text-2xl font-semibold mb-3\">CRM Syncing for Real Estate Platforms</h2><p class=\"font-[550]\">In real estate projects like Kron Imobiliare, syncing data with internal CRMs is just as critical. Property availability, leads, and client interactions must reflect reality at all times.</p><p class=\"font-[550]\">Insecure or delayed syncing can result in outdated listings, missed leads, or conflicting sales information, directly impacting trust and conversion.</p></div><div><h2 class=\"text-2xl font-semibold mb-3\">How We Secure the Sync</h2><p class=\"font-[550]\">We design syncing systems with security and reliability as first-class concerns. This includes authenticated API communication, scoped access, and encrypted data transfer between systems.</p><p class=\"font-[550]\">Every sync operation is validated, logged, and designed to be repeatable without side effects. If a system retries a request, it does not create duplicates or corrupt data.</p></div><div><h2 class=\"text-2xl font-semibold mb-3\">Building Trust Through Architecture</h2><p class=\"font-[550]\">Secure syncing is not just a technical requirement — it is a business necessity. Reliable integrations build trust across teams by ensuring data accuracy and operational stability.</p><p class=\"font-[550]\">When systems communicate clearly and securely, teams can focus on growth instead of firefighting integration issues.</p></div></div>"
             }
         }
     },
@@ -745,6 +739,46 @@
         "meta": {
             "title": "Digital Products, Platforms & Growth Systems",
             "description": "We design and build high-performance websites, platforms, and digital systems that scale with your business."
+        }
+    },
+    "careers": {
+        "meta": {
+            "title": "Careers | Nomadic Digital",
+            "description": "Careers at Nomadic Digital. We work on real products, real systems, and real problems."
+        },
+        "pageTitle": "Careers",
+        "joinUs": "Join us",
+        "hero": {
+            "bold": "We work on real products, real systems, and real problems.",
+            "sub": "Small team. High ownership. No fluff.",
+            "note": "Nomadic Digital is a focused digital studio building durable products for SaaS companies, e-commerce brands, and growing teams. We value clarity, responsibility, and people who care about doing things properly."
+        },
+        "openRoles": {
+            "title": "Open roles",
+            "subtitle": "We’re always open to working with the right people."
+        },
+        "roles": {
+            "frontend": {
+                "title": "Frontend / Full-stack Developer",
+                "desc": "You’ll work on production websites, SaaS platforms, dashboards, and client-facing systems. Clean code, clear thinking, and long-term maintainability matter."
+            },
+            "backend": {
+                "title": "Backend / Integrations Developer",
+                "desc": "API integrations, ERP syncs, automation workflows, and scalable backend logic. You’ll work close to real business operations."
+            },
+            "designer": {
+                "title": "UI / UX Designer",
+                "desc": "Product-focused design work across websites, dashboards, and mobile experiences. Clarity, structure, and usability over decoration."
+            },
+            "marketing": {
+                "title": "Marketing & Growth",
+                "desc": "Performance-focused marketing, analytics, SEO, and growth experiments aligned with real product constraints."
+            }
+        },
+        "apply": {
+            "title": "How to apply",
+            "body": "If you’re interested in one of the roles above — or think you’d be a good fit — send us an email at",
+            "note": "Please use the job title as the email subject and attach your CV and a short cover letter."
         }
     }
 }

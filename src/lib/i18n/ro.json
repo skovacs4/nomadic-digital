@@ -2,6 +2,7 @@
     "nav.work": "Portofoliu",
     "nav.about": "Despre noi",
     "nav.services": "Servicii",
+    "nav.blog": "Blog",
     "nav.contact": "Contact",
     "nav.bookCall": "Programează un apel",
     "nav.lang.en": "EN",
@@ -222,6 +223,7 @@
     "footer.company.work": "Portofoliu",
     "footer.company.pricing": "Prețuri",
     "footer.company.contact": "Contact",
+    "footer.company.careers": "Careers",
     "footer.services": "Servicii",
     "footer.services.1": "Web Design",
     "footer.services.2": "Dezvoltare Web",
@@ -580,7 +582,9 @@
             "uiuxDesigner": "Designer UI/UX",
             "securityLead": "Responsabil securitate",
             "cfoCoFounder": "CFO & co-fondator",
-            "growthAnalyst": "Analist growth"
+            "founder": "Fondator",
+            "growthAnalyst": "Analist growth",
+            "developer": "Programator"
         },
         "posts": {
             "metricsForSaas": {
@@ -597,16 +601,6 @@
                 "title": "De ce sincronizarea sigură contează mai mult ca niciodată",
                 "description": "Vezi cum abordarea noastră security-first îți protejează datele și îți oferă liniște.",
                 "content": "<div class=\"space-y-10 text-gray-800 text-[15px] leading-relaxed\"><div><h2 class=\"text-2xl font-semibold mb-3\">Riscurile datelor nesigure</h2><p class=\"font-[550]\">Sincronizarea datelor poate expune vulnerabilități dacă nu este făcută corect...</p></div><div><h2 class=\"text-2xl font-semibold mb-3\">Cum securizăm sincronizarea</h2><p class=\"font-[550]\">Folosim criptare end-to-end și controale stricte de acces pentru ca doar utilizatorii autorizați să poată vedea date sensibile...</p></div></div>"
-            },
-            "scalingFinance": {
-                "title": "Cum scalezi finanțele unui startup fără stres",
-                "description": "Strategii și instrumente practice pentru a-ți gestiona finanțele pe măsură ce crești.",
-                "content": "<div class=\"space-y-10 text-gray-800 text-[15px] leading-relaxed\"><div><h2 class=\"text-2xl font-semibold mb-3\">Igiena financiară</h2><p class=\"font-[550]\">Chiar și în stadiile incipiente, igiena financiară de bază este critică...</p></div><div><h2 class=\"text-2xl font-semibold mb-3\">Instrumente pentru scalare</h2><p class=\"font-[550]\">Recomandăm instrumente de forecasting automatizat și dashboard-uri clare pentru cash flow...</p></div></div>"
-            },
-            "lessons10k": {
-                "title": "Ce am învățat de la peste 10.000 de utilizatori",
-                "description": "Insight-uri reale care modelează direcția viitoare a produsului nostru.",
-                "content": "<div class=\"space-y-10 text-gray-800 text-[15px] leading-relaxed\"><div><h2 class=\"text-2xl font-semibold mb-3\">Insight-uri din comportamentul utilizatorilor</h2><p class=\"font-[550]\">De la onboarding până la utilizarea pe termen lung, am urmărit trenduri care au scos la iveală nevoi neașteptate...</p></div><div><h2 class=\"text-2xl font-semibold mb-3\">Adaptarea produsului</h2><p class=\"font-[550]\">Am făcut schimbări pe baza acestor observații, inclusiv simplificarea înscrierii și îmbunătățirea vizibilității suportului...</p></div></div>"
             }
         }
     },
@@ -745,6 +739,46 @@
         "meta": {
             "title": "Produse Digitale, Platforme și Sisteme de Creștere",
             "description": "Proiectăm și dezvoltăm website-uri, platforme și sisteme digitale performante care cresc odată cu afacerea ta."
+        }
+    },
+    "careers": {
+        "meta": {
+            "title": "Cariere | Nomadic Digital",
+            "description": "Cariere la Nomadic Digital. Lucrăm la produse reale, sisteme reale și probleme reale."
+        },
+        "pageTitle": "Cariere",
+        "joinUs": "Alătură-te echipei",
+        "hero": {
+            "bold": "Lucrăm la produse reale, sisteme reale și probleme reale.",
+            "sub": "Echipă mică. Responsabilitate mare. Fără zgomot inutil.",
+            "note": "Nomadic Digital este un studio digital concentrat pe construirea de produse durabile pentru SaaS, e-commerce și echipe în creștere. Apreciem claritatea, responsabilitatea și oamenii care fac lucrurile corect."
+        },
+        "openRoles": {
+            "title": "Roluri deschise",
+            "subtitle": "Suntem mereu deschiși să lucrăm cu oamenii potriviți."
+        },
+        "roles": {
+            "frontend": {
+                "title": "Frontend / Full-stack Developer",
+                "desc": "Vei lucra la website-uri de producție, platforme SaaS, dashboard-uri și sisteme orientate către clienți. Cod curat, gândire clară și mentenanță pe termen lung."
+            },
+            "backend": {
+                "title": "Backend / Developer Integrări",
+                "desc": "Integrări API, sincronizări ERP, automatizări și logică backend scalabilă. Vei lucra aproape de operațiunile reale ale business-ului."
+            },
+            "designer": {
+                "title": "UI / UX Designer",
+                "desc": "Design orientat pe produs pentru website-uri, dashboard-uri și experiențe mobile. Claritate, structură și uzabilitate înainte de decor."
+            },
+            "marketing": {
+                "title": "Marketing & Growth",
+                "desc": "Marketing bazat pe performanță, analytics, SEO și experimente de creștere aliniate cu realitatea produsului."
+            }
+        },
+        "apply": {
+            "title": "Cum aplici",
+            "body": "Dacă ești interesat de unul dintre rolurile de mai sus — sau consideri că te-ai potrivi — trimite-ne un email la",
+            "note": "Te rugăm să folosești titlul rolului ca subiect și să atașezi CV-ul și o scrisoare de intenție."
         }
     }
 }

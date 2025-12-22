@@ -16,7 +16,7 @@
         name: 'Teodora Szelyes',
         role: $t('team.member.teodora.role'),
         desc: $t('team.member.teodora.desc'),
-        image: '/content/team/teodora-portrait.jpeg',
+        image: '/content/team/teodora-portrait-2.jpeg',
         delay: 100
       },
       {

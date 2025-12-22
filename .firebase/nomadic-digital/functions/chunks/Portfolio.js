@@ -2,7 +2,7 @@ import { e as ensure_array_like, b as attr } from "./index2.js";
 import { p as projects } from "./portfolio2.js";
 import { V as escape_html } from "./context.js";
 function Portfolio($$renderer) {
-  $$renderer.push(`<section class="px-6 py-24 bg-[var(--color-background)]"><div class="grid grid-cols-1 md:grid-cols-2 gap-4"><!--[-->`);
+  $$renderer.push(`<section class="px-4 py-24 bg-[var(--color-background)]"><div class="grid grid-cols-1 md:grid-cols-2 gap-4"><!--[-->`);
   const each_array = ensure_array_like(projects);
   for (let $$index = 0, $$length = each_array.length; $$index < $$length; $$index++) {
     let p = each_array[$$index];

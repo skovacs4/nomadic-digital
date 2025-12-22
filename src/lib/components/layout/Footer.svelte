@@ -30,6 +30,7 @@
 						<li><a href="/about" class="hover:text-black">{$t('footer.company.about')}</a></li>
 						<li><a href="/portfolio" class="hover:text-black">{$t('footer.company.work')}</a></li>
 						<li><a href="/pricing" class="hover:text-black">{$t('footer.company.pricing')}</a></li>
+						<li><a href="/careers" class="hover:text-black">{$t('footer.company.careers')}</a></li>
 						<li><a href="/contact" class="hover:text-black">{$t('footer.company.contact')}</a></li>
 					</ul>
 				</div>

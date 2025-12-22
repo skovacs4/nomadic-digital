@@ -55,11 +55,16 @@ const projects = [
       "portfolio.deliverables.seoReadyStructure",
       "portfolio.deliverables.analyticsSetup"
     ],
-    tech: ["SvelteKit", "Tailwind CSS", "Node.js", "Stripe", "SoftOne ERP"],
+    tech: [
+      "Shopify",
+      "Node.js",
+      "SoftOne ERP",
+      "Custom Integrations"
+    ],
     results: [
-      { labelKey: "portfolio.metrics.pageSpeed", value: "+48%" },
-      { labelKey: "portfolio.metrics.conversionRate", value: "+1.7%" },
-      { labelKey: "portfolio.metrics.bounceRate", value: "-23%" }
+      { labelKey: "portfolio.metrics.pageSpeed", value: "+132%" },
+      { labelKey: "portfolio.metrics.conversionRate", value: "+9.1%" },
+      { labelKey: "portfolio.metrics.bounceRate", value: "-65%" }
     ],
     gallery: [
       { src: "/portfolio/conte/logo-brand-conte.jpeg", video: false },
@@ -125,8 +130,8 @@ const projects = [
     ],
     tech: ["SvelteKit", "Firebase", "Chart.js", "Stripe"],
     results: [
-      { labelKey: "portfolio.metrics.activeScreens", value: "100+" },
-      { labelKey: "portfolio.metrics.monthlyImpressions", value: "250K+" }
+      { labelKey: "portfolio.metrics.activeScreens", value: "10+" },
+      { labelKey: "portfolio.metrics.monthlyImpressions", value: "80K+" }
     ],
     gallery: [
       { src: "/portfolio/locallia/mockup-dashboard-cover.jpg", video: false },
@@ -182,7 +187,7 @@ const projects = [
       "portfolio.deliverables.responsiveLayouts",
       "portfolio.deliverables.seoReadyPages"
     ],
-    tech: ["SvelteKit", "Tailwind CSS"],
+    tech: ["PHP", "JavaScript"],
     gallery: [
       { src: "/portfolio/kronburg/content.png", video: false },
       { src: "/portfolio/kronburg/content-2.png", video: false }
@@ -205,20 +210,20 @@ const projects = [
       logo: "/portfolio/fluxum/fluxum.png",
       theme: "dark"
     },
-    demos: [
-      {
-        video: "/portfolio/placeholders/demo-dashboard.mp4",
-        titleKey: "portfolio.projects.fluxum.demos.dashboard.title",
-        bodyKey: "portfolio.projects.fluxum.demos.dashboard.body",
-        inverted: false
-      },
-      {
-        video: "/portfolio/placeholders/demo-payments.mp4",
-        titleKey: "portfolio.projects.fluxum.demos.payments.title",
-        bodyKey: "portfolio.projects.fluxum.demos.payments.body",
-        inverted: true
-      }
-    ],
+    // demos: [
+    //     {
+    //         video: '/portfolio/placeholders/demo-dashboard.mp4',
+    //         titleKey: 'portfolio.projects.fluxum.demos.dashboard.title',
+    //         bodyKey: 'portfolio.projects.fluxum.demos.dashboard.body',
+    //         inverted: false
+    //     },
+    //     {
+    //         video: '/portfolio/placeholders/demo-payments.mp4',
+    //         titleKey: 'portfolio.projects.fluxum.demos.payments.title',
+    //         bodyKey: 'portfolio.projects.fluxum.demos.payments.body',
+    //         inverted: true
+    //     }
+    // ],
     overview: {
       headlineKey: "portfolio.projects.fluxum.overview.headline",
       descriptionKey: "portfolio.projects.fluxum.overview.description"
@@ -230,18 +235,18 @@ const projects = [
     scopeKeys: [
       "portfolio.scope.saasArchitecture",
       "portfolio.scope.adminDashboard",
-      "portfolio.scope.paymentFlows",
-      "portfolio.scope.mobileFirstUx"
+      "portfolio.scope.paymentFlows"
     ],
     deliverableKeys: [
       "portfolio.deliverables.webAdminPanel",
       "portfolio.deliverables.memberDashboard",
-      "portfolio.deliverables.paymentSystem"
+      "portfolio.deliverables.paymentSystem",
+      "portfolio.deliverables.mobileDevelopment"
     ],
-    tech: ["SvelteKit", "Supabase", "Stripe"],
+    tech: ["SvelteKit", "Supabase", "Stripe", "Mailgun", "Flutter", "Firebase", "Vercel"],
     gallery: [
-      { src: "/portfolio/fluxum/screen-1.jpg", video: false },
-      { src: "/portfolio/fluxum/screen-2.jpg", video: false }
+      { src: "/portfolio/fluxum/fluxum-product.png", video: false },
+      { src: "/portfolio/fluxum/mobile-app-side.png", video: false }
     ]
   },
   /* ------------------------------------------------------------------ */
@@ -292,7 +297,7 @@ const projects = [
       "portfolio.deliverables.customStorefront",
       "portfolio.deliverables.productPages"
     ],
-    tech: ["SvelteKit", "Tailwind CSS", "Stripe"],
+    tech: ["Liquid", "Supabase", "Edge Functions", "Shopify"],
     gallery: [
       { src: "/portfolio/natscent/content-1.png", video: false },
       { src: "/portfolio/natscent/content-2.png", video: false },
@@ -340,14 +345,21 @@ const projects = [
       descriptionKey: "portfolio.projects.viorica.outcomes.description"
     },
     scopeKeys: [
-      "portfolio.scope.websiteRedesign",
-      "portfolio.scope.brandPresentation"
+      "portfolio.scope.erpApiIntegrations",
+      "portfolio.scope.automation"
     ],
     deliverableKeys: [
-      "portfolio.deliverables.corporateWebsite",
-      "portfolio.deliverables.multilingualStructure"
+      "portfolio.deliverables.productStockSync",
+      "portfolio.deliverables.automatedInvoicing"
     ],
-    tech: ["HTML", "CSS", "JavaScript"],
+    tech: [
+      "API Integrations",
+      "Node.js",
+      "Automation Services",
+      "Softone ERP",
+      "Shopify",
+      "Edge Functions"
+    ],
     gallery: [
       { src: "/portfolio/viorica/content-1.png", video: false },
       { src: "/portfolio/viorica/content-2.png", video: false }
