@@ -389,7 +389,8 @@
             "seoOptimization": "Optimizare SEO",
             "websiteRedesign": "Redesign website",
             "contentStructure": "Structură conținut",
-            "brandPresentation": "Prezentare brand"
+            "brandPresentation": "Prezentare brand",
+            "automation": "Automatizare Procese"
         },
         "deliverables": {
             "customStorefront": "Storefront custom",
@@ -410,7 +411,9 @@
             "classScheduling": "Programare clase",
             "productPages": "Pagini de produs",
             "contentDrivenLayout": "Layout orientat pe conținut",
-            "multilingualStructure": "Structură multilingvă"
+            "multilingualStructure": "Structură multilingvă",
+            "automatedInvoicing": "Facturare automată",
+            "mobileDevelopment": "Dezvoltare mobilă"
         },
         "metrics": {
             "pageSpeed": "Viteză pagină",
@@ -429,31 +432,31 @@
                 "demos": {
                     "stock": {
                         "title": "Sincronizare stoc în timp real",
-                        "body": "Actualizare automată a stocurilor între platforma e-commerce și sistemul ERP, asigurând disponibilitate corectă pe toate canalele, fără intervenție manuală."
+                        "body": "Actualizare automată a stocurilor între platforma Shopify și sistemul ERP, asigurând disponibilitate corectă pe toate canalele, fără intervenție manuală."
                     },
                     "dashboard": {
-                        "title": "Dashboard administrativ unificat",
-                        "body": "Un dashboard centralizat care oferă echipei operaționale vizibilitate completă asupra comenzilor, stocurilor și integrărilor, conceput pentru viteză și claritate operațională."
+                        "title": "Experiență e-commerce orientată spre conversie",
+                        "body": "Fluxuri și interfețe optimizate pentru a reduce fricțiunea, a ghida deciziile de cumpărare și a îmbunătăți performanța conversiilor și a checkout-ului."
                     },
                     "uiux": {
                         "title": "Optimizare UX & UI",
-                        "body": "Îmbunătățiri de interfață axate pe claritate, utilizabilitate și conversie, păstrând experiența premium de brand."
+                        "body": "Îmbunătățiri de interfață axate pe claritate, utilizabilitate și conversie, menținând în același timp o experiență premium de brand."
                     },
                     "platform": {
                         "title": "Arhitectură platformă e-commerce",
-                        "body": "O platformă scalabilă care susține fluxuri B2C și B2B, construită pentru performanță și creștere pe termen lung."
+                        "body": "O arhitectură Shopify scalabilă, configurată pentru a susține fluxuri B2C și B2B, performanță ridicată și creștere pe termen lung."
                     }
                 },
                 "overview": {
-                    "headline": "O platformă e-commerce scalabilă, construită pentru creștere.",
-                    "description": "Conte avea nevoie de o platformă modernă și performantă, care să susțină atât operațiuni B2C, cât și B2B, păstrând o experiență premium de brand."
+                    "headline": "Un ecosistem e-commerce Shopify optimizat pentru scalare.",
+                    "description": "Conte avea nevoie de un setup Shopify solid, integrat strâns cu sistemul ERP și operațiunile B2B, care să susțină automatizarea, creșterea și repoziționarea brandului."
                 },
                 "outcomes": {
-                    "headline": "Construită să scaleze fără fricțiune.",
-                    "description": "Blocajele operaționale au fost eliminate, fluxurile unificate, iar performanța îmbunătățită semnificativ pe toate dispozitivele."
+                    "headline": "Claritate operațională, automatizare și creștere scalabilă.",
+                    "description": "Munca manuală a fost redusă prin integrări ERP și B2B, instrumentele interne au eficientizat operațiunile zilnice, iar rebrandul a fost implementat coerent pe toate canalele digitale."
                 },
                 "testimonial": {
-                    "quote": "Noua platformă ne-a oferit stabilitate, viteză și încrederea de a scala fără fricțiune."
+                    "quote": "Integrările și automatizarea ne-au schimbat fundamental modul de lucru, oferindu-ne stabilitate și spațiu real de creștere."
                 }
             },
             "locallia": {

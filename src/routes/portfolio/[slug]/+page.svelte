@@ -45,15 +45,7 @@
 	<div class="relative z-10 max-w-[1600px] mx-auto px-4 md:px-0 pb-20 w-full">
 		<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-end">
 			<div class="lg:col-span-8 space-y-6">
-				<img src={project.hero.logo} class="h-10 md:h-14 object-contain" alt="" />
-
-				<h1 class="text-4xl md:text-6xl tracking-tight leading-[1.05]">
-					{$t(project.overview.headlineKey)}
-				</h1>
-
-				<p class="text-white/70 text-lg max-w-2xl">
-					{$t(project.overview.descriptionKey)}
-				</p>
+				<img src={project.hero.logo} class="h-auto max-h-[75px] md:max-h-[175px] object-contain" alt="Client Logo Portofolio" />
 			</div>
 
 			<div class="lg:col-span-4 text-sm text-white/70 space-y-2">
@@ -67,35 +59,51 @@
 </section>
 
 <!-- OVERVIEW -->
-<section class="max-w-[1600px] mx-auto px-4 md:px-0 py-24">
-	<div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
-		<div class="lg:col-span-4">
-			<h3 class="font-geist text-sm font-bold mb-6">{$t('portfolio.sections.scope')}</h3>
-			<ul class="space-y-3 text-black/70">
-				{#each project.scopeKeys ?? [] as key}
-					<li>— {$t(key)}</li>
+<!-- PROJECT FACTS -->
+<section class="max-w-[1600px] mx-auto px-4 md:px-0 py-28">
+	<div class="border-t border-black/10">
+		<!-- Scope -->
+		<div class="grid grid-cols-1 md:grid-cols-12 gap-6 py-8 border-b border-black/10">
+			<div class="md:col-span-3 text-sm text-black/40">
+				{$t('portfolio.sections.scope')}
+			</div>
+			<div class="md:col-span-9 text-black font-medium">
+				{#each project.scopeKeys ?? [] as key, i}
+					<span>
+						{$t(key)}{i < project.scopeKeys.length - 1 ? ' · ' : ''}
+					</span>
 				{/each}
-			</ul>
+			</div>
 		</div>
 
+		<!-- Deliverables -->
 		{#if project.deliverableKeys?.length}
-			<div class="lg:col-span-4">
-				<h3 class="font-geist text-sm font-bold mb-6">{$t('portfolio.sections.deliverables')}</h3>
-				<ul class="space-y-3 text-black/70">
-					{#each project.deliverableKeys as key}
-						<li>— {$t(key)}</li>
+			<div class="grid grid-cols-1 md:grid-cols-12 gap-6 py-8 border-b border-black/10">
+				<div class="md:col-span-3 text-sm text-black/40">
+					{$t('portfolio.sections.deliverables')}
+				</div>
+				<div class="md:col-span-9 text-black font-medium">
+					{#each project.deliverableKeys as key, i}
+						<span>
+							{$t(key)}{i < project.deliverableKeys.length - 1 ? ' · ' : ''}
+						</span>
 					{/each}
-				</ul>
+				</div>
 			</div>
 		{/if}
 
-		<div class="lg:col-span-4">
-			<h3 class="font-geist text-sm font-bold mb-6">{$t('portfolio.sections.technology')}</h3>
-			<ul class="flex flex-wrap gap-2">
-				{#each project.tech ?? [] as tech}
-					<li class="px-3 py-1 rounded-full bg-black/5 text-sm">{tech}</li>
+		<!-- Technology -->
+		<div class="grid grid-cols-1 md:grid-cols-12 gap-6 py-8">
+			<div class="md:col-span-3 text-sm text-black/40">
+				{$t('portfolio.sections.technology')}
+			</div>
+			<div class="md:col-span-9 text-black font-medium">
+				{#each project.tech ?? [] as tech, i}
+					<span>
+						{tech}{i < project.tech.length - 1 ? ' · ' : ''}
+					</span>
 				{/each}
-			</ul>
+			</div>
 		</div>
 	</div>
 </section>
@@ -141,6 +149,8 @@
 		</div>
 	</div>
 </section>
+
+
 
 <!-- GALLERY -->
 {#if project.gallery?.length}

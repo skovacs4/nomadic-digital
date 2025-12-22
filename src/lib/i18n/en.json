@@ -389,7 +389,8 @@
             "seoOptimization": "SEO optimization",
             "websiteRedesign": "Website redesign",
             "contentStructure": "Content structure",
-            "brandPresentation": "Brand presentation"
+            "brandPresentation": "Brand presentation",
+            "automation": "Process automation"
         },
         "deliverables": {
             "customStorefront": "Custom storefront",
@@ -410,7 +411,9 @@
             "classScheduling": "Class scheduling",
             "productPages": "Product pages",
             "contentDrivenLayout": "Content-driven layout",
-            "multilingualStructure": "Multilingual structure"
+            "multilingualStructure": "Multilingual structure",
+            "automatedInvoicing": "Automated invoicing",
+            "mobileDevelopment": "Mobile development"
         },
         "metrics": {
             "pageSpeed": "Page speed",
@@ -432,8 +435,8 @@
                         "body": "Automatic stock updates between the e-commerce platform and the ERP system, ensuring accurate availability across all channels without manual intervention."
                     },
                     "dashboard": {
-                        "title": "Unified admin dashboard",
-                        "body": "A centralized dashboard providing full visibility over orders, inventory, and integrations, designed for operational clarity and speed."
+                        "title": "High-conversion commerce experience",
+                        "body": "A conversion-focused storefront and admin experience optimized to reduce friction, guide purchase decisions, and improve overall checkout performance."
                     },
                     "uiux": {
                         "title": "UX & UI optimization",
@@ -445,15 +448,15 @@
                     }
                 },
                 "overview": {
-                    "headline": "A scalable e-commerce platform built for growth.",
-                    "description": "Conte needed a modern, performant platform that could support both B2C and B2B operations while maintaining a premium brand experience across all touchpoints."
+                    "headline": "A Shopify-based e-commerce ecosystem optimized for scale.",
+                    "description": "Conte needed a robust Shopify setup tightly integrated with their ERP and B2B operations, while supporting ongoing growth, automation, and brand repositioning."
                 },
                 "outcomes": {
-                    "headline": "Built to scale without friction.",
-                    "description": "Operational bottlenecks were removed, flows were unified, and performance improved across devices—resulting in a faster, more reliable shopping experience."
+                    "headline": "Operational clarity, automation, and scalable growth.",
+                    "description": "Manual work was reduced through ERP and B2B integrations, internal tools streamlined daily operations, and the rebrand was executed consistently across digital channels."
                 },
                 "testimonial": {
-                    "quote": "The new platform gave us stability, speed, and the confidence to scale without friction."
+                    "quote": "The integrations and automation fundamentally changed how we operate day-to-day, giving us stability and room to scale."
                 }
             },
             "locallia": {
