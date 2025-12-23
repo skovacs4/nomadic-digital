@@ -1,0 +1,1 @@
+import{al as o,u as a,am as t,Q as l,j as u}from"./TFu0eCG2.js";function f(n){t===null&&o(),l&&t.l!==null?c(t).m.push(n):a(()=>{const e=u(n);if(typeof e=="function")return e})}function c(n){var e=n.l;return e.u??={a:[],b:[],m:[]}}export{f as o};

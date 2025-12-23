@@ -526,7 +526,7 @@ function Team($$renderer, $$props) {
         name: "Teodora Szelyes",
         role: store_get($$store_subs ??= {}, "$t", t)("team.member.teodora.role"),
         desc: store_get($$store_subs ??= {}, "$t", t)("team.member.teodora.desc"),
-        image: "/content/team/teodora-portrait.jpeg",
+        image: "/content/team/teodora-portrait-2.jpeg",
         delay: 100
       },
       {

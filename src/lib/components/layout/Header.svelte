@@ -74,11 +74,11 @@
 	<div class="mx-auto px-6 py-0 flex items-center justify-between gap-12">
 		<!-- Logo -->
 		<a href="/" class="font-calsans text-[18px] tracking-tight">
-			<img src={logoSrc} alt="Nomadic Digital Logo" class="transition-opacity duration-300" />
+			<img src={logoSrc} alt="Nomadic Digital Logo" class="transition-opacity duration-300 w-full h-[85px] md:h-[100px]" />
 		</a>
 
 		<!-- Desktop nav -->
-		<nav class="hidden [@media(min-width:900px)]:flex items-center gap-12">
+		<nav class="hidden [@media(min-width:1200px)]:flex items-center gap-12">
 			<a
 				class="
 					font-inter text-lg font-bold transition
@@ -197,7 +197,7 @@
 		<!-- Mobile menu button -->
 		<!-- svelte-ignore a11y_consider_explicit_label -->
 		<button
-			class="[@media(min-width:900px)]:hidden relative w-10 h-10 flex items-center justify-center"
+			class="[@media(min-width:1200px)]:hidden relative w-10 h-10 flex items-center justify-center"
 			on:click={() => (mobileOpen = !mobileOpen)}
 			aria-label="Toggle menu"
 			type="button"
@@ -224,7 +224,7 @@
 	{#if mobileOpen}
 		<div
 			class="
-				[@media(min-width:900px)]:hidden px-10 py-10 space-y-6
+				[@media(min-width:1200px)]:hidden px-10 py-10 space-y-6
 				transition-colors duration-300
 				animate-fadeDown z-50 relative
 				{isPortfolioDetail || isLightHeader
@@ -303,7 +303,7 @@
 		animation: fadeDown 0.2s ease-out;
 	}
 
-	@media (min-width: 900px) {
+	@media (min-width: 1200px) {
 		header {
 			backdrop-filter: blur(3px);
 		}

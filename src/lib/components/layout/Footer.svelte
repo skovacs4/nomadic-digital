@@ -8,7 +8,7 @@
 		<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 mb-20">
 			<!-- BRAND -->
 			<div class="lg:col-span-4">
-				<img src="/logos/landscape-minimal-logo.png" class="mb-10" alt={$t('footer.logoAlt')} />
+				<img src="/logos/landscape-minimal-logo.png" class="mb-10 h-auto max-w-[150px]" alt={$t('footer.logoAlt')} />
 
 				<p class="font-inter text-sm text-black/60 max-w-sm">
 					{$t('footer.desc')}
