@@ -18,10 +18,13 @@ export async function POST({ request }) {
 	const name = sanitize(body.name, 120);
 	const email = sanitize(body.email, 200);
 	const message = sanitize(body.message, 4000);
+	const service = sanitize(body.service, 200);
 
-	if (!name || !email || !message) {
+
+	if (!name || !email || !message || !service) {
 		return json({ error: "Missing fields" }, { status: 400 });
 	}
+
 
 	if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
 		return json({ error: "Invalid email" }, { status: 422 });
@@ -29,15 +32,22 @@ export async function POST({ request }) {
 
 	const subject = `Contact message from ${name}`;
 	const to = "findyourway88@gmail.com";
-	const text = `Name: ${name}\nEmail: ${email}\n\n${message}`;
+	const text = `Name: ${name}
+	Email: ${email}
+	Service: ${service}
+
+	${message}`;
+
 	const html = `
-		<div style="font-family:Arial,sans-serif;line-height:1.5">
-			<p><strong>Name:</strong> ${escapeHtml(name)}</p>
-			<p><strong>Email:</strong> ${escapeHtml(email)}</p>
-			<p><strong>Message:</strong></p>
-			<pre style="white-space:pre-wrap">${escapeHtml(message)}</pre>
-		</div>
-	`;
+	<div style="font-family:Arial,sans-serif;line-height:1.5">
+		<p><strong>Name:</strong> ${escapeHtml(name)}</p>
+		<p><strong>Email:</strong> ${escapeHtml(email)}</p>
+		<p><strong>Service:</strong> ${escapeHtml(service)}</p>
+		<p><strong>Message:</strong></p>
+		<pre style="white-space:pre-wrap">${escapeHtml(message)}</pre>
+	</div>
+`;
+
 
 	try {
 		await sendEmail({

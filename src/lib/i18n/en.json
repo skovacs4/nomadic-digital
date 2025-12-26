@@ -199,6 +199,8 @@
     "blog.section.cta": "See all",
     "contact.brand": "Nomadic Digital ®",
     "contact.form.title": "Have a project in mind?",
+    "contact.form.serviceLabel": "Service",
+    "contact.form.servicePlaceholder": "Choose a service",
     "contact.form.name": "Your name",
     "contact.form.email": "E-mail",
     "contact.form.message": "Tell us about your project",

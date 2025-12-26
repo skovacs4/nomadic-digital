@@ -199,6 +199,8 @@
     "blog.section.cta": "Vezi tot",
     "contact.brand": "Nomadic Digital ®",
     "contact.form.title": "Ai un proiect în minte?",
+    "contact.form.serviceLabel": "Serviciu",
+    "contact.form.servicePlaceholder": "Alege un serviciu",
     "contact.form.name": "Numele tău",
     "contact.form.email": "E-mail",
     "contact.form.message": "Spune-ne despre proiectul tău",

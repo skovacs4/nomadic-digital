@@ -7,9 +7,9 @@ import {
 } from "$env/static/private";
 
 const transporter = nodemailer.createTransport({
-    host: "thenomadicdigital.com",
-    port: 465,
-    secure: true, // correct for 465
+    host: "smtp.mailgun.org",
+    port: 587,
+    secure: false, // correct for 587
     auth: {
         user: EMAIL_USER,
         pass: EMAIL_PASSWORD

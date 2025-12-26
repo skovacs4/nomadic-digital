@@ -9,8 +9,35 @@
 	let form = {
 		name: '',
 		email: '',
-		message: ''
+		message: '',
+		service: ''
 	};
+
+	// REACTIVE SERVICE OPTIONS
+	// REACTIVE: label = translated, value = fixed English
+$: serviceOptions = [
+	{
+		value: "Brand Identity Design",
+		label: $t('services.01.headline')
+	},
+	{
+		value: "Web Design & Development",
+		label: $t('services.02.headline')
+	},
+	{
+		value: "Product UI/UX Design",
+		label: $t('services.03.headline')
+	},
+	{
+		value: "Marketing & Conversion Optimization",
+		label: $t('services.04.headline')
+	},
+	{
+		value: "Ongoing Growth & Creative Partnership",
+		label: $t('services.05.headline')
+	}
+];
+
 
 	const url = $page.url.href;
 	const title = `${$t('contact.meta.title')} | Nomadic Digital`;
@@ -32,7 +59,7 @@
 			if (!res.ok) throw new Error(data.error || $t('contact.form.genericError'));
 
 			success = true;
-			form = { name: '', email: '', message: '' };
+			form = { name: '', email: '', message: '', service: '' };
 		} catch (e) {
 			error = e?.message || $t('contact.form.genericError');
 		} finally {
@@ -57,8 +84,6 @@
 	<meta name="twitter:title" content={title} />
 	<meta name="twitter:description" content={description} />
 </svelte:head>
-
-
 
 <section class="mx-auto py-24">
 	<!-- TOP BANNER -->
@@ -162,6 +187,26 @@
 							class="w-full rounded-xl bg-black/5 px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-black transition-all duration-200 focus:scale-[1.01]"
 							placeholder={$t('contact.form.emailPlaceholder')}
 						/>
+					</div>
+
+					<div>
+						<label class="block font-inter text-sm mb-2">
+							{$t('contact.form.serviceLabel')}
+						</label>
+
+						<select
+							bind:value={form.service}
+							required
+							class="w-full rounded-xl bg-black/5 px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-black transition-all duration-200 focus:scale-[1.01]"
+						>
+							<option value="" disabled selected>
+								{$t('contact.form.servicePlaceholder')}
+							</option>
+
+							{#each serviceOptions as opt}
+								<option value={opt.value}>{opt.label}</option>
+							{/each}
+						</select>
 					</div>
 
 					<div>
