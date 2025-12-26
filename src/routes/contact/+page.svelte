@@ -93,9 +93,9 @@ $: serviceOptions = [
 		data-aos-duration="300"
 	>
 		<img
-			src="https://thenomadicdigital.com/wp-content/uploads/2024/09/IMG.png"
+			src="/content/wheel.png"
 			alt={$t('contact.hero.imageAlt')}
-			class="absolute inset-0 w-full h-full object-cover opacity-35"
+			class="absolute inset-0 w-full h-full object-cover opacity-85"
 		/>
 
 		<div class="absolute inset-0 bg-gradient-to-br from-black/80 via-black/60 to-black/40"></div>
